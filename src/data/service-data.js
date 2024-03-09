@@ -49,8 +49,3 @@ export const service_data =[
 
     
 ]
-export const  aboutData =[
-    {
-        about: "about"
-    }
-]

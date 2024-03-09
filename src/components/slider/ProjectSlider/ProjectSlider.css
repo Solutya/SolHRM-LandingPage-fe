@@ -1,0 +1,12 @@
+.swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  height: 1px!important;
+  width: 50% !important;
+  margin: auto auto !important;
+  left: 0 !important;
+  right: 0 !important;
+  background: #cccccc!important;
+}
+.swiper-scrollbar-drag {
+background: black!important;
+}

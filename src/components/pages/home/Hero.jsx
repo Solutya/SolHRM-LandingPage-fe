@@ -21,7 +21,7 @@ const Hero = () => {
             </Link>
           </div>
           <p className="text-secondary text-sm font-medium">
-            Get Support:<Link className="text-primary hover:text-">+806 (000) 888 99</Link>
+            Get Support:<Link href="#" className="text-primary hover:text-">+806 (000) 888 99</Link>
           </p>
         </div>
       </SectionWrapper>
