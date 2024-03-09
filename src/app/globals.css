@@ -4,3 +4,18 @@
 
 /* utils class */
 
+/* bg color */
+.bg-primary {
+  @apply bg-[#6865ff];
+}
+
+/* text color */
+.text-primary {
+  @apply text-[#000229];
+}
+.text-secondary {
+    @apply text-gray-500
+}
+.text-third{
+    @apply text-[#ff3c82]
+}
