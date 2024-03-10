@@ -3,6 +3,27 @@
 @tailwind utilities;
 
 /* bg color */
+<<<<<<< HEAD
+.bg-primary-1 {
+  @apply bg-[#6865FF];
+}
+/* text color */
+.text-primary-1 {
+  @apply text-[#000229];
+}
+.text-primary-2 {
+  @apply text-gray-500;
+}
+.text-primary-3 {
+  @apply text-[#FF3C82];
+}
+.bg-secondary-1 {
+  @apply bg-[#295dfb1a];
+}
+.text-secondary-1 {
+  @apply text-[#6865ff];
+}
+=======
 /* .bg-primary-1 {
   @apply bg-[#6865ff];
 }
@@ -36,3 +57,4 @@
 .border-primary-2{
   @apply border-gray-800
 } */
+>>>>>>> b269093f513750a8dd08c09f2be62175a1435ec7

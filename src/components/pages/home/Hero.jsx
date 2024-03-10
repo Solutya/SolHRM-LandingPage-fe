@@ -29,6 +29,10 @@ const Hero = () => {
               <MdKeyboardArrowRight />
             </Link>
           </div>
+<<<<<<< HEAD
+          <p className="text-secondary text-sm font-medium">
+            Get Support:<Link href="#" className="text-primary hover:text-">+806 (000) 888 99</Link>
+=======
           <p className="text-gray-500 text-sm font-medium">
             Get Support:
             <Link
@@ -37,6 +41,7 @@ const Hero = () => {
             >
               +806 (000) 888 99
             </Link>
+>>>>>>> b269093f513750a8dd08c09f2be62175a1435ec7
           </p>
         </div>
       </div>
