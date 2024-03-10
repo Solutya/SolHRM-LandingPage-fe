@@ -15,10 +15,10 @@ const ExploreService = () => {
           subTitle={"More than 15,000 companies trust and choose Itech"}
         />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 xl:w-[1180px] mx-auto gap-6 p-6 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:w-[1180px] mx-auto gap-6 p-6 ">
         {myData?.map((item, i) => (
           <div key={i} className="">
-            <div className="border rounded-2xl w-fit p-10 hover:shadow-2xl hover:shadow-gray-300 transition duration-300">
+            <div className="border rounded-3xl w-full p-10 hover:shadow-2xl hover:shadow-gray-300 transition duration-300">
               <div className="mb-6">
                 <Image src={item.icon.src} width={46} height={46} alt="icons" className="aspect-square object-contain"></Image>
               </div>
@@ -38,7 +38,7 @@ const ExploreService = () => {
             </div>
           </div>
         ))}
-        <div className="bg-[url('/assets/images/service/sv-bg.jpg')] rounded-2xl p-10 pb-0 z-20 w-fit relative ">
+        <div className="bg-[url('/assets/images/service/sv-bg.jpg')] rounded-3xl p-10 pb-0 z-20 w-fit relative ">
           <div className="text-white">
             <h2 className="font-bold  text-[30px]">
               Data Analysis Tools & Methods
@@ -52,11 +52,11 @@ const ExploreService = () => {
           </div>
           <div className="z-10 w-fit ">
 
-          <Image src={'/assets/images/service/sv-dashbord.png'} alt="demo" width={240} height={100} className="md:w-[491px] h-[250px] float-right mt-10 -mb-2 end-0 "></Image>
+          <Image src={'/assets/images/service/sv-dashbord.png'} alt="demo" width={240} height={100} className="w-auto float-right mt-10 -mb-2 end-0 pt-4"></Image>
           </div>
         </div>
       </div>
-      <div className="border-b-[60px] border-[#f6f5fa] absolute bottom-0 w-full">
+      <div className="border-b-[60px] lg:border-b-[80px] border-[#f6f5fa] absolute bottom-0 w-full">
 
       </div>
     </div>
