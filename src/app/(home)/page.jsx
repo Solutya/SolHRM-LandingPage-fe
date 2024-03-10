@@ -1,7 +1,11 @@
 import Hero from "@/components/pages/home/Hero";
 import ExploreService from "@/components/pages/home/ExploreService";
+<<<<<<< HEAD
 import SectionWrapper from "@/components/wrapper's/SectionWrapper";
 import { service_data } from "@/data/service-data";
+=======
+import { service_data } from "@/data/home";
+>>>>>>> b269093f513750a8dd08c09f2be62175a1435ec7
 import React from "react";
 import RecentWork from "@/components/pages/home/RecentWork";
 import TestimonialArea from "@/components/pages/home/TestimonialArea";
@@ -11,7 +15,7 @@ import PriceArea from "@/components/pages/home/PriceArea";
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="h-[2000px]">
       <Hero />
       <div>
         <ExploreService />

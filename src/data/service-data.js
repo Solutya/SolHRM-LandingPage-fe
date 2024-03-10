@@ -1,4 +1,4 @@
-// images import  
+// images import
 import img_1 from "../../public/assets/images/service/sv-icon-1.png";
 import img_2 from "../../public/assets/images/service/sv-icon-2.png";
 import img_3 from "../../public/assets/images/service/sv-icon-3.png";
@@ -49,3 +49,11 @@ export const service_data =[
 
     
 ]
+<<<<<<< HEAD:src/data/service-data.js
+=======
+export const aboutData =[
+    {
+        about: "about"
+    }
+]
+>>>>>>> b269093f513750a8dd08c09f2be62175a1435ec7:src/data/home.js

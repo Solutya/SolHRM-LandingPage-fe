@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const ExploreService = () => {
   const myData = service_data;
-  console.log(myData);
+
   return (
     <div className="relative mt-20" >
       <div className="text-center pb-[50px]">
