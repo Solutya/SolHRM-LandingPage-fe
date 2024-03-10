@@ -3,7 +3,7 @@ import { service_data } from "@/data/home";
 
 const ExploreService = () => {
   const myData = service_data;
-  console.log(myData);
+
   return (
     <div>
       <div className="text-center">
