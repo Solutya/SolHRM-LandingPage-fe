@@ -60,8 +60,8 @@ const rank_data = [
 
 const MoreSales = () => {
   return (
-    <div className="lg:m-[10%] grid grid-cols-1 md:grid-cols-2 ">
-      <div className="space-y-4">
+    <div className="lg:m-[10%] md:grid  md:grid-cols-2 flex flex-col-reverse justify-between  ">
+      <div className="space-y-4 bg-yellow-500">
         <p className="uppercase bg-[#f6f5fa] text-myBlue text-sm font-semibold rounded-full p-2 px-4 w-fit ">
           Key Benfits
         </p>
@@ -78,38 +78,40 @@ const MoreSales = () => {
           <BlueBtn>Explore More</BlueBtn>
         </div>
       </div>
-      <div className="relative">
-        <div className="absolute">
+      <div className="relative bg-red-500 h-[600px] md:h-auto ">
+        <div className="absolute ">
           <Image src={bg_right_img} alt="bg-right-img"></Image>
         </div>
         <div className="relative h-[90%] ">
           {rank_data.map((item, i) => (
             <div
               key={i}
-              className={`rank-item absolute  ${item.clg_1} absolute rounded-3xl h-[100%] my-auto mx-2  p-4 bg-white drop-shadow-2xl text-center w-40 transition duration-700 hover:-translate-y-4 hover:-translate-x-4 cursor-pointer `}
+              className={`rank-item absolute  ${item.clg_1}  rounded-3xl h-[100%] my-auto mx-2  p-4 bg-white drop-shadow-2xl text-center w-40 transition duration-700 hover:-translate-y-4 hover:-translate-x-4 cursor-pointer `}
             >
               <div className="relative flex flex-col justify-between h-full py-4">
-              {item.top_img && (
-                <div className="absolute -top-6 border border-myBlue left-1/2 transform -translate-x-1/2 bg-white p-2 rounded-full w-fit ">
+                {item.top_img && (
+                  <div className="absolute -top-6 border border-myBlue left-1/2 transform -translate-x-1/2 bg-white p-2 rounded-full w-fit ">
+                    <span>
+                      <Image src={item.top_img} alt="top-image" />
+                    </span>
+                  </div>
+                )}
+
+                <div className="pt-5 flex items-center justify-center">
+                  <i className="text-2xl text-gray-300 mr-2">#</i>
+                  <span className="text-[66px] font-[500]">{item.count}</span>
+                </div>
+                <div className="bg-white rounded-full p-2  mx-auto border ">
                   <span>
-                    <Image src={item.top_img} alt="top-image"  />
+                    <Image src={item.img} alt="icon" />
                   </span>
                 </div>
-              )}
-
-              <div className="pt-5 flex items-center justify-center">
-                <i className="text-2xl text-gray-300 mr-2">#</i>
-                <span className="text-[66px] font-[500]">{item.count}</span>
-              </div>
-              <div className="bg-white rounded-full p-2  mx-auto border ">
-                <span>
-                  <Image src={item.img} alt="icon" />
-                </span>
-              </div>
-              <div className="flex flex-col">
-                <Link href="#" className="font-semibold">{item.domain} </Link>
-                <span className="text-sm">{item.visitors}</span>
-              </div>
+                <div className="flex flex-col">
+                  <Link href="#" className="font-semibold">
+                    {item.domain}{" "}
+                  </Link>
+                  <span className="text-sm">{item.visitors}</span>
+                </div>
               </div>
             </div>
           ))}
