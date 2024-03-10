@@ -49,11 +49,3 @@ export const service_data =[
 
     
 ]
-<<<<<<< HEAD:src/data/service-data.js
-=======
-export const aboutData =[
-    {
-        about: "about"
-    }
-]
->>>>>>> b269093f513750a8dd08c09f2be62175a1435ec7:src/data/home.js
