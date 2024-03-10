@@ -9,9 +9,11 @@ import { FaInstagram } from "react-icons/fa6";
 import Link from "next/link";
 import { IoMailOutline } from "react-icons/io5";
 import { IoIosArrowDropupCircle } from "react-icons/io";
+import footerData from "@/data/footerData";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+
   return (
     <footer className="lg:rounded-3xl lg:mx-10 bg-myDark text-white space-y-10 p-[5%] mt-10 lg:mt-20">
       {/* Footer top */}
@@ -46,7 +48,7 @@ const Footer = () => {
       </div>
       <hr className="w-[90%] mx-auto border-[#cfcfcf2a]" />
       {/* Footer middle */}
-      <div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between">
         <div className="space-y-4">
           <Image
             src={"/assets/images/home/logo-white.png"}
@@ -81,9 +83,47 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div>
+          <h3 className="font-bold text-lg capitalize pb-6">What we do</h3>
+          <div className="text-gray-500 flex flex-col gap-4 font-semibold">
+
+          {
+            footerData.dataOne.map((item,i)=>(
+                <Link href={item.path} className="transition duration-200 hover:text-white hover:translate-x-1"><p key={i}>{item.title}</p></Link>
+            ))
+          }
+          </div>
+        </div>
+        <div>
+          <h3 className="font-bold text-lg capitalize pb-6">Other Pages</h3>
+          <div className="text-gray-500 flex flex-col gap-4 font-semibold">
+
+          {
+            footerData.dataTwo.map((item,i)=>(
+                <Link href={item.path}><p key={i} className="transition duration-200 hover:text-white hover:translate-x-1">{item.title}</p></Link>
+            ))
+          }
+          </div>
+        </div>
+        <div>
+          <h3 className="font-bold text-lg capitalize pb-6">Contact Us</h3>
+          <div className="text-gray-500 flex flex-col gap-4 font-semibold">
+          {
+            footerData.dataThree.map((item,i)=>(
+            <div className="flex gap-4">
+
+                <p key={i}>{item.icon}</p>
+                <p className="transition duration-200 text-white hover:translate-x-1">{item.title}</p>
+            </div>))
+          }
+         <div>
+
+         </div>
+         <div></div>
+         <div></div>
+          </div>
+        </div>
+        
       </div>
       <hr className=" border-[#cfcfcf2a]" />
       {/* Footer bottom */}
@@ -94,6 +134,7 @@ const Footer = () => {
             name="HeadlineAct"
             id="HeadlineAct"
             className="mt-1.5 w-full rounded-full sm:text-sm outline-none p-1 mb-2 px-4 bg-transparent appearance-none mr-6"
+           
           >
             <option value="en" className="text-gray-800">
               English (US)

@@ -1,0 +1,50 @@
+.alt-color-black {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+  }
+  .tp-btn-blue {
+    color: white;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 30px;
+    padding: 0 35px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+    overflow: hidden;
+    transition: color 0.5s ease;
+    transition-duration: 0.4s;
+  }
+  .tp-btn-blue:hover {
+    color: white;
+    transition-duration: 0.5s;
+  }
+  .tp-btn-hover.alt-color-black b {
+    background-color: #000229;
+  }
+  .tp-btn-hover:hover b {
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+  }
+  .tp-btn-hover b {
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: #000229;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 1s ease;
+    z-index: 1;
+  }
+  .tp-btn-blue:hover span.white-text {
+    color: white;
+  }
+  .tp-btn-blue span {
+    position: relative;
+    z-index: 5;
+    transition: 0.5s;
+    transition-delay: 0.1s;
+  }
