@@ -60,8 +60,8 @@ const rank_data = [
 
 const MoreSales = () => {
   return (
-    <div className="xl:m-[8%] lg:m-[5%] lg:grid  lg:grid-cols-3 xl:grid-cols-2 flex flex-col-reverse justify-between  ">
-      <div className="space-y-4 bg-yellow- pl-4 py-6">
+    <div className=" lg:m-[5%] lg:grid  lg:grid-cols-3 xl:grid-cols-2 flex flex-col-reverse justify-between xl:w-[1180px] xl:mx-auto ">
+      <div className="space-y-4 bg-yellow- pl-4 md:py-6 py-28 mobile:py-16">
         <p className="uppercase bg-[#f6f5fa] text-myBlue text-sm font-semibold rounded-full p-2 px-4 w-fit ">
           Key Benfits
         </p>
@@ -72,19 +72,19 @@ const MoreSales = () => {
           <BlueBtn>Explore More</BlueBtn>
         </div>
       </div>
-      <div className="relative bg-red-500 h-[600px] md:h-auto lg:col-span-2 xl:col-span-1 lg:ml-20 ">
+      <div className="relative  h-[600px] md:h-auto lg:col-span-2 xl:col-span-1 lg:ml-20 ">
         <div className="mx-auto w-fit py-4">
           <Image src={bg_right_img} alt="bg-right-img" ></Image>
         </div>
-        <div className="absolute top-0 mx-auto inset-x-0  w-full h-[80%] py-4  2xl:w-[82%] ">
+        <div className="absolute top-0 mx-auto inset-x-0  w-full h-[80%] py-4 flex flex-wrap lg:flex-nowrap justify-center items-center text-center xl:  2xl:w-[82%] px-2 gap-2 sm:gap-0 ">
           {rank_data.map((item, i) => (
             <div
               key={i}
-              className={`rank-item absolute  ${item.clg_1}  rounded-3xl h-[100%] my-auto mx-2  p-4 bg-white drop-shadow-2xl text-center w-40 transition duration-700 hover:-translate-y-4 hover:-translate-x-4 cursor-pointer `}
+              className={`rank-item ${item.clg_1}  rounded-3xl p-2 bg-white h-[300px] drop-shadow-2xl transition duration-500 hover:-translate-x-4 hover:-translate-y-6 `}
             >
-              <div className="relative flex flex-col justify-between h-full py-4">
+              <div className="relative flex flex-col justify-between h-full py-4 w-[120px] ">
                 {item.top_img && (
-                  <div className="absolute -top-6 border border-myBlue left-1/2 transform -translate-x-1/2 bg-white p-2 rounded-full w-fit ">
+                  <div className="absolute -top-6 border-4 border-purple-600 left-1/2 transform -translate-x-1/2 bg-white p-2 rounded-full w-fit ">
                     <span>
                       <Image src={item.top_img} alt="top-image" />
                     </span>

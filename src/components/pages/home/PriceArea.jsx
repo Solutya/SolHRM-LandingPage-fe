@@ -1,3 +1,4 @@
+import PriceTabCards from "@/components/cards/PriceTabCards/PriceTabCards";
 import HeaderTitle from "@/components/headerTitle/HeaderTitle";
 import React from "react";
 
@@ -17,8 +18,8 @@ const PriceArea = () => {
           />
         </div>
         {/* tabs section */}
-        <div>
-
+        <div className=" xl:w-[1180px] mx-auto">
+            <PriceTabCards/>
         </div>
       </div>
     </div>

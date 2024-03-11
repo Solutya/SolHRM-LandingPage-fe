@@ -3,22 +3,34 @@
 @tailwind utilities;
 
 .one{
-  background-color: #6865ff;
+  /* background-color: #6865ff; */
+  background-image: linear-gradient(#8583ff, #6865ff);
   color: white;
   z-index: 10;
-
 }
 .two{
 z-index: 7;
-left: 25%;
-bottom:-30px;
+margin-right: -3%;
+margin-left: -3%;
+margin-bottom:-12%;
 }
 .three{
   z-index: 9;
-  left: 50%;
-  bottom:-60px;
+ 
+margin-right: -3%;
+margin-bottom:-25%;
 }
 .four{
   z-index: 8;
   right: 0;
+}
+.slick-list .slick-slide{
+ padding: 0 20px;
+ margin-bottom: 10px;
+}
+.brand-slider .slick-slide{
+    opacity: .5;
+}
+.brand-slider .slick-current{
+    opacity: 1;
 }
