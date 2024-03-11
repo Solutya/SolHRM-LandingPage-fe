@@ -16,7 +16,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <footer className="lg:rounded-3xl lg:mx-10 bg-myDark pl-[2%] ">
+    <footer className="lg:rounded-3xl lg:mx-10 bg-myDark px-[2%] ">
       <div className="text-white space-y-10  mt-10 lg:mt-20 xl:w-[1180px] mx-auto p-[1%] pt-[50px] px-[6%] md:px-[0] ">
         {/* Footer top */}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-0 items-center  ">
@@ -152,11 +152,11 @@ const Footer = () => {
           <IoIosArrowDropupCircle className="text-2xl" />
         </div>
       </div>
-      <div className={`absolute bottom-full mt-[calc(-100% - 5px)] right-0 w-full bg-white rounded-xl text-myDark  ${isOpen? "hidden":"block"}`}>
-        <p className="p-2">Bengali</p>
-        <p className="p-2">Arabic</p>
-        <p className="p-2">Hindi</p>
-        <p className="p-2">Spanish</p>
+      <div className={`absolute bottom-full mt-[calc(-100% - 5px)] right-0 w-full bg-white rounded-xl text-myDark p-2  ${isOpen? "block":"hidden"}`}>
+        <p className="p-2 hover:bg-myBlue hover:text-white rounded-lg cursor-pointer">Bengali</p>
+        <p className="p-2 hover:bg-myBlue hover:text-white rounded-lg cursor-pointer">Arabic</p>
+        <p className="p-2 hover:bg-myBlue hover:text-white rounded-lg cursor-pointer">Hindi</p>
+        <p className="p-2 hover:bg-myBlue hover:text-white rounded-lg cursor-pointer">Spanish</p>
       </div>
     </div>
         </div>

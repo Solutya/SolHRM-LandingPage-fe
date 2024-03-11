@@ -2,6 +2,7 @@
 import pric_img_1 from "../../public/assets/images/price/price-icon-1.png";
 import pric_img_2 from "../../public/assets/images/price/price-icon-2.png";
 import pric_img_3 from "../../public/assets/images/price/price-icon-3.png";
+import pric_img_4 from "../../public/assets/images/price/price-4.1.png";
 
 const PriceList = <>
 <svg
@@ -130,7 +131,7 @@ const price_data = [
     {
         id: 4,
         category:"monthly", 
-        img: pric_img_3,
+        img: pric_img_4,
         title: "Addons",
         desctiption: <>Customized anything in anytime</>,
         cls: "",
@@ -230,7 +231,7 @@ const price_data = [
         id: 7,
         category:"yearly", 
         img: pric_img_3,
-        title: "Reccomended Yearly",
+        title: "Recommended Yearly",
         desctiption: <>Customized anything in anytime</>,
         cls: "",
         price: "299.00",
@@ -261,7 +262,7 @@ const price_data = [
     {
         id: 8,
         category:"yearly", 
-        img: pric_img_3,
+        img: pric_img_4,
         title: "Addons",
         desctiption: <>Customized anything in anytime</>,
         cls: "",

@@ -16,7 +16,7 @@ import CircleBtn from "../../btn's/CircleBtn";
 const setting = {
   loop: true,
   autoplay: {
-    delay: 22500,
+    delay: 2500,
   },
   slidesPerView: 2,
   centeredSlides: true,

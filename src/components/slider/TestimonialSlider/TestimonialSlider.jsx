@@ -12,11 +12,13 @@ import { MdArrowForward } from "react-icons/md";
 const tp_setting = {
   slidesToShow: 1,
   slidesToScroll: 1,
+  autoplay: true,
+  speed: 1000,
+  autoplaySpeed: 3000,
   infinite: true,
-  speed: 500,
+
   arrows: false,
   fade: false,
-  
 };
 
 const brands_setting = {
@@ -71,60 +73,12 @@ const TestimonialSlider = () => {
   }, []);
   return (
     <div className="slider-container pt-20 px-2">
-      {/* <Slider asNavFor={nav2} ref={slider => (sliderRef1 = slider)}>
-        <div>
-          <h3>1</h3>
-        </div>
-        <div>
-          <h3>2</h3>
-        </div>
-        <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
-        </div>
-        <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
-        </div>
-      </Slider>
-      <h4>Second Slider</h4>
-      <Slider
-        asNavFor={nav1}
-        ref={slider => (sliderRef2 = slider)}
-        slidesToShow={3}
-        swipeToSlide={true}
-        focusOnSelect={true}
-      >
-        <div>
-          <h3>1</h3>
-        </div>
-        <div>
-          <h3>2</h3>
-        </div>
-        <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
-        </div>
-        <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
-        </div>
-      </Slider> */}
-
       <Slider
         asNavFor={slider2}
         // ref={sliderRef}
         ref={(slider) => setSlider1(slider)}
         {...tp_setting}
-        className="rounded-3xl lg:w-[90%] xl:w-[65%] mx-auto mainSlick "
+        className="rounded-3xl lg:w-[90%] xl:w-[65%] 2xl:w-[50%] mx-auto mainSlick "
         data-wow-duration=".9s"
         data-wow-delay=".5s"
       >
@@ -132,7 +86,7 @@ const TestimonialSlider = () => {
           <div key={i} className="h-full   ">
             <div className="flex flex-col lg:flex-row h-full w-full shadow-md rounded-3xl ">
               <div className="lg:w-[65%] h-auto">
-                <div className="bg-myBlue text-white h-full p-6 md:p-10 rounded-3xl  rounded-br-none shadow-md ">
+                <div className="bg-myBlue text-white h-full p-6 md:p-10 rounded-3xl  rounded-br-none shadow-md 2xl:p-16">
                   <div className="">
                     <Image src={item?.img} alt="brand-logo" className="py-4" />
                   </div>

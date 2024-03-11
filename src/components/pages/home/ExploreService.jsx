@@ -8,7 +8,7 @@ const ExploreService = () => {
   const myData = service_data;
 
   return (
-    <div className="relative mt-20 border ">
+    <div className="relative mt-20  ">
       <div className="text-center pb-[50px]">
         <HeaderTitle
           title={"Explore Our Data Services"}
