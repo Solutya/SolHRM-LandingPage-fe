@@ -42,7 +42,22 @@ const PriceTabCards = () => {
         <div className={`bg-myBlue w-[48%] text-white transition duration-300 ease-in-out rounded-full absolute z-10 h-[75%] top-2 left-1  ${(currentTab==="yearly")?" translate-x-[100%]":""}`}>
 
         </div>
-        <div className="absolute hidden sm:block bottom-full mt-[calc(-100% - 5px)] -right-20 text-center rounded-full bg-gradient-to-br from-fuchsia-500 to-myBlue text-white w-12 h-12">
+        <div className="absolute hidden sm:block bottom-full -top-3 -right-[66px] z-0 price-shape-line">
+        <svg
+        width="80"
+        height="42"
+        viewBox="0 0 80 42"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M78.5938 8.78059C59.0829 45.2801 2.05127 -8.72021 27.0652 32.28C52.079 73.2801 48.5771 -41.2195 0.550438 18.7821"
+          stroke="#FF3C82"
+          strokeDasharray="3 3"
+        />
+      </svg>
+        </div>
+        <div className="absolute hidden sm:block bottom-full mt-[calc(-100% - 5px)] -right-24 text-center rounded-full bg-gradient-to-br from-fuchsia-500 to-myBlue text-white w-12 h-12">
           <p className="text-xs font-bold leading-tight pt-2">SAVE 35%</p>
         </div>
       </div>
@@ -77,7 +92,7 @@ const PriceTabCards = () => {
                       {/* Purchase button */}
                       <div className="relative  mx-auto text-center rounded-full p-3 bg-[#5956e914] font-semibold text-sm w-full">
                         <span className="  text-myBlue  cursor-pointer">Price: ${item.price}</span>
-                        <Link href="" className="absolute bg-black text-white 
+                        <Link href="" className="absolute bg-myBlue text-white 
                         w-full rounded-full  top-0 py-3 left-0 -translate-x-10 transition opacity-0 duration-500 hover:opacity-100 hover:translate-x-0" >
                           Purchase Now <GoArrowRight className="inline text-xl ml-2 "/> 
                         </Link>

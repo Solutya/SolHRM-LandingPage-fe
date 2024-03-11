@@ -37,3 +37,19 @@ margin-bottom:-25%;
 .inactive span{
   color: rgba(128, 128, 128, 0.349);
 }
+
+/* line dash animation */
+.price-shape-line{
+  
+  -webkit-animation: lineDash 90s linear infinite;
+  animation: lineDash 90s linear infinite;
+
+}
+@keyframes lineDash {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 1000;
+  }
+}
