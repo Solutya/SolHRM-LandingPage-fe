@@ -60,29 +60,23 @@ const rank_data = [
 
 const MoreSales = () => {
   return (
-    <div className="lg:m-[10%] md:grid  md:grid-cols-2 flex flex-col-reverse justify-between  ">
-      <div className="space-y-4 bg-yellow-500">
+    <div className="xl:m-[8%] lg:m-[5%] lg:grid  lg:grid-cols-3 xl:grid-cols-2 flex flex-col-reverse justify-between  ">
+      <div className="space-y-4 bg-yellow- pl-4 py-6">
         <p className="uppercase bg-[#f6f5fa] text-myBlue text-sm font-semibold rounded-full p-2 px-4 w-fit ">
           Key Benfits
         </p>
-        <div className="">
-          <HeaderTitle
-            title={
-              <>
-                Get more Sales <br /> by Improving <br /> Results
-              </>
-            }
-          />
-        </div>
+        <h2 className="text-[33px] md:text-[38px] xl:text-[55px] font-bold">
+          Get more Sales <br /> by Improving <br /> Results
+        </h2>
         <div className="w-fit pt-3">
           <BlueBtn>Explore More</BlueBtn>
         </div>
       </div>
-      <div className="relative bg-red-500 h-[600px] md:h-auto ">
-        <div className="absolute ">
-          <Image src={bg_right_img} alt="bg-right-img"></Image>
+      <div className="relative bg-red-500 h-[600px] md:h-auto lg:col-span-2 xl:col-span-1 lg:ml-20 ">
+        <div className="mx-auto w-fit py-4">
+          <Image src={bg_right_img} alt="bg-right-img" ></Image>
         </div>
-        <div className="relative h-[90%] ">
+        <div className="absolute top-0 mx-auto inset-x-0  w-full h-[80%] py-4  2xl:w-[82%] ">
           {rank_data.map((item, i) => (
             <div
               key={i}

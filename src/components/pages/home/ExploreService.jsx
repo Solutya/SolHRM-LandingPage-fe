@@ -18,7 +18,7 @@ const ExploreService = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:w-[1180px] mx-auto gap-6 p-6 ">
         {myData?.map((item, i) => (
           <div key={i} className="">
-            <div className="border rounded-3xl w-full p-10 hover:shadow-2xl hover:shadow-gray-300 transition duration-300">
+            <div className="border rounded-3xl  md:w-fit relative w-full max-w-96 mx-auto p-10 hover:shadow-2xl hover:shadow-gray-300 transition duration-300">
               <div className="mb-6">
                 <Image src={item.icon.src} width={46} height={46} alt="icons" className="aspect-square object-contain"></Image>
               </div>
@@ -38,7 +38,7 @@ const ExploreService = () => {
             </div>
           </div>
         ))}
-        <div className="bg-[url('/assets/images/service/sv-bg.jpg')] rounded-3xl p-10 pb-0 z-20 w-fit relative ">
+        <div className="bg-[url('/assets/images/service/sv-bg.jpg')] rounded-3xl p-10 pb-0 z-20 md:w-fit relative w-full max-w-96 mx-auto bg-cover">
           <div className="text-white">
             <h2 className="font-bold  text-[30px]">
               Data Analysis Tools & Methods

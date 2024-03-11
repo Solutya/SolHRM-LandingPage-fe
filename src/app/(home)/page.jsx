@@ -10,7 +10,7 @@ import Footer from "@/components/footer/Footer";
 
 const HomePage = () => {
   return (
-    <div className="h-[2000px]">
+    <div className="">
       <Hero />
       <div>
         <ExploreService />
