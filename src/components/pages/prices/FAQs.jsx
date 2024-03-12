@@ -71,7 +71,7 @@ const FAQs = () => {
           {accordianDataset.map((accordian, index) => (
             <div className="mt-[15px] rounded-xl   px-6 py-2 " key={accordian.id}>
               <div
-                className=" flex justify-between pb-2"
+                className=" flex justify-between pb-2 cursor-pointer"
                 onClick={() => setTheAccordianToOpen(accordian.id)}
               >
                 <div className="font-medium text-[25px] ">

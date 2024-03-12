@@ -15,9 +15,11 @@ const Price = () => {
     setCurrentTab(selectedTab);
   };
   return (
-    <div className="pb-20">
-      <div className="bg-purple-700  min-h-[60vh] grid grid-cols-1 md:grid-cols-2 justify-center items-center p-10 ">
-        <div className="text-white flex  text-center md:text-left flex-col width-[50%]">
+    <div className="pb-20 relative ">
+     <Image src={'/assets/images/price/price-shape-1.png'} alt="shape-1" width={500} height={500} className="absolute w-full h-auto "></Image>
+     <Image src={'/assets/images/price/price-shape-1.png'} alt="shape-2" width={300} height={300} className="absolute  right-0  w-full h-auto "></Image>
+      <div className="bg-[#600ee4] min-h-[60vh] grid grid-cols-1 md:grid-cols-2 justify-center items-center p-10 2xl:px-[10%] ">
+        <div className="text-white flex  text-center md:text-left flex-col width-[50%] ">
           <h2 className="md:text-[56px] text-4xl pb-6 font-bold">
             Pricing plans
           </h2>
