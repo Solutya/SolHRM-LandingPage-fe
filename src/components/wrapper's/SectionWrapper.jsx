@@ -1,7 +1,11 @@
 import React from "react";
 
 const SectionWrapper = ({ children }) => {
-  return <div className="max-w-[1170px] mx-auto">{children}</div>;
+  return (
+    <div className="max-w-[1170px] mx-auto lg:px-10 sm:px-[15%] px-[10%]">
+      {children}
+    </div>
+  );
 };
 
 export default SectionWrapper;

@@ -8,7 +8,7 @@ import { BiSearch } from "react-icons/bi";
 import { LuUser2 } from "react-icons/lu";
 import { HiBars3 } from "react-icons/hi2";
 
-const NavBar = ({ isOpen,setIsOpen }) => {
+const NavBar = ({ isOpen, setIsOpen }) => {
   const [isNavFixed, setIsNavFixed] = useState(false);
 
   useEffect(() => {
@@ -36,7 +36,7 @@ const NavBar = ({ isOpen,setIsOpen }) => {
           : ""
       } `}
     >
-      <div className="max-w-[1170px] mx-auto xl:px-0 lg:px-10 md:px-36">
+      <div className="max-w-[1170px] mx-auto xl:px-0 lg:px-10 sm:px-[15%] px-[6%]  max-md:bg-white">
         <div className="flex items-center justify-between py-5 font-medium text-dark">
           <div className="flex items-center xl:gap-11 gap-9">
             <Link href="/">
@@ -48,7 +48,7 @@ const NavBar = ({ isOpen,setIsOpen }) => {
                 alt="Logo"
               />
             </Link>
-            <div className="flex items-center xl:gap-10 gap-8">
+            <div className="flex items-center xl:gap-10 gap-7">
               {navData.map((item, index) => (
                 <Link
                   className="hover:text-[#6865FF] lg:block hidden"
@@ -61,8 +61,8 @@ const NavBar = ({ isOpen,setIsOpen }) => {
             </div>
           </div>
           <div className="flex items-center xl:gap-7 gap-4">
-            <BiSearch className="text-2xl cursor-pointer" />
-            <div className="w-[1px] h-[27px] bg-dark lg:block hidden"></div>
+            <BiSearch className="text-2xl cursor-pointer max-md:hidden" />
+            <div className="w-[1px] h-[27px] bg-myDark max-lg:hidden"></div>
             <div className="lg:block hidden">
               <Link
                 href="#"
@@ -72,12 +72,14 @@ const NavBar = ({ isOpen,setIsOpen }) => {
                 Log In
               </Link>
             </div>
-            <WhiteBtn />
-            <div
-              onClick={() => setIsOpen(!isOpen)}
-              className="bg-white w-11 h-11 rounded-full flex items-center justify-center text-2xl border"
-            >
-              <HiBars3 />
+            <WhiteBtn component="nav" />
+            <div className="max-lg:block hidden">
+              <div
+                onClick={() => setIsOpen(!isOpen)}
+                className="bg-white w-11 h-11 rounded-full flex items-center justify-center text-2xl border"
+              >
+                <HiBars3 />
+              </div>
             </div>
           </div>
         </div>

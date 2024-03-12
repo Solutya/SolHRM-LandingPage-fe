@@ -8,15 +8,16 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        sm: "480px",
+        xs: "380px",
+        mobile: "480px",
       },
       colors: {
-        blue: "#6865ff",
-        dark: "#000229",
-        "low-dark": "#1d2041",
-        pink: "#ff3c82",
+        myBlue: "#6865FF",
+        myDark: "#000229",
+        "low-dark": "#1D2041",
+        myPink: "#FF3C82",
         "low-pink": "#FFA8B8",
-        "real-blue": "#0a58ca",
+        "real-blue": "#0A58CA",
       },
     },
   },

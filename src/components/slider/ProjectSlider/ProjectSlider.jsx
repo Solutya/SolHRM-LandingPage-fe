@@ -1,17 +1,17 @@
-"use client"
+"use client";
 import { project_data } from "@/data/project-data";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 // import Swiper from "swiper";
 // import { Autoplay, Navigation, Scrollbar } from 'swiper';
-import {Autoplay, Navigation, Scrollbar } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Navigation, Scrollbar } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/scrollbar';
-import './ProjectSlider.css'
+import "swiper/css";
+import "swiper/css/scrollbar";
+import "./ProjectSlider.css";
 import CircleBtn from "../../btn's/CircleBtn";
 const setting = {
   loop: true,
@@ -40,7 +40,6 @@ const setting = {
   },
 
   scrollbar: {
-
     clickable: true,
   },
 };
@@ -69,26 +68,38 @@ const ProjectSlider = () => {
             }`}
           >
             {project_data.map((item, i) => (
-              <SwiperSlide
-                key={i}
-                className=""
-              
-              >
+              <SwiperSlide key={i} className="">
                 <div className="pb-20 ">
                   <div className="rounded-2xl flex  items-center  bg-white transition duration-300 hover:shadow-xl">
                     <div className="h-[100%] ">
-                      <Image src={item.img_1.src} alt="theme-pure" width={297} height={450} className="rounded-l-2xl h-[100%] object-cover " />
+                      <Image
+                        src={item.img_1.src}
+                        alt="theme-pure"
+                        width={297}
+                        height={450}
+                        className="rounded-l-2xl h-[100%] object-cover "
+                      />
                     </div>
-                    <div className=" flex-1
-                     py-10 px-10 flex flex-col">
+                    <div
+                      className=" flex-1
+                     py-10 px-10 flex flex-col"
+                    >
                       <div className="">
-                        <Image src={item.img_2.src} alt="theme-pure" width={100} height={30} className="mb-7 w-20 lg:w-28 "/>
+                        <Image
+                          src={item.img_2.src}
+                          alt="theme-pure"
+                          width={100}
+                          height={30}
+                          className="mb-7 w-20 lg:w-28 "
+                        />
                       </div>
                       <div className="">
                         <h4 className="text-2xl xl:text-3xl font-bold pb-4">
                           <Link href="">{item.title}</Link>
                         </h4>
-                        <p className="text-[16px] leading-[1.9] ">{item.description}</p>
+                        <p className="text-[16px] leading-[1.9] ">
+                          {item.description}
+                        </p>
                         <hr className="my-10" />
                       </div>
                       <div className="flex justify-between pr-[10%]">
@@ -104,7 +115,7 @@ const ProjectSlider = () => {
                           </h4>
                         </div>
                         <div className="">
-                         <CircleBtn/>
+                          <CircleBtn />
                         </div>
                       </div>
                     </div>
@@ -113,7 +124,6 @@ const ProjectSlider = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-         
         </div>
       </div>
     </div>
