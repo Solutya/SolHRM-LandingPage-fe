@@ -13,7 +13,7 @@ const PriceTabCards = () => {
     setCurrentTab(selectedTab);
   };
   return (
-    <div className="py-20">
+    <div className="py-20 w-fit mx-auto">
       {/* TAB SWITCHING SECTION */}
 
       <div className="rounded-full relative uppercase w-fit mx-auto grid grid-cols-2 text-center shadow-md bg-white p-1 ">
@@ -60,7 +60,7 @@ const PriceTabCards = () => {
 
       {/* PRICE CARD SECTION */}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 2xl:w-[1160px] pt-10 items-center justify-center ">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  2xl:grid-cols-4 gap-6 xl:w-fit xl:mx-auto 2xl:w-[1160px] pt-10 items-center justify-center ">
         {price_data
           .filter((item) => item.category === currentTab)
           .map((item, i) => (
@@ -69,7 +69,7 @@ const PriceTabCards = () => {
               className=" mb-30 w-full md:w-fit max-w-80 mx-auto h-full"
             >
               <div
-                className={` ${item.cls} bg-white rounded-3xl px-[30px] py-[25px] md:px-[60px] md:py-[50px] lg:px-[35px] lg:py-[28px] space-y-4 h-full flex flex-col justify-between `}
+                className={` ${item.cls} bg-white rounded-3xl px-[30px] py-[25px] md:px-[60px] md:py-[50px] lg:px-[35px] lg:w-[320px] lg:py-[28px] space-y-4 h-full flex flex-col justify-between `}
               >
                 <div className="">
                   <Image

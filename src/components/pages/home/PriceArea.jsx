@@ -18,7 +18,7 @@ const PriceArea = () => {
           />
         </div>
         {/* tabs section */}
-        <div className=" xl:w-[1180px] mx-auto">
+        <div className="">
             <PriceTabCards/>
         </div>
       </div>

@@ -142,12 +142,11 @@ const price_data = [
         cls: "",
       },
       {
-        list: "৳ 50/Month For every Employees/Month (Upcoming)",
-        icon: PriceList,
-        cls: "inactive",
-      },
-      {
-        list: "Live Tracking (UPCOMING)",
+        list: (
+          <>
+            Live Tracking<br /> ৳ 50/Month / Employees.  (UPCOMING) 
+          </>
+        ),
         icon: PriceList,
         cls: "inactive",
       },

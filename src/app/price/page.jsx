@@ -1,4 +1,6 @@
 "use client";
+import FAQs from "@/components/pages/prices/FAQs";
+import TrustedBrands from "@/components/pages/prices/TrustedBrands";
 import price_data from "@/data/price-data";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,10 +15,12 @@ const Price = () => {
     setCurrentTab(selectedTab);
   };
   return (
-    <div className="pb-20 ">
+    <div className="pb-20">
       <div className="bg-purple-700  min-h-[60vh] grid grid-cols-1 md:grid-cols-2 justify-center items-center p-10 ">
-        <div className="text-white flex items-center flex-col width-[50%]">
-          <h2 className="text-[66px] font-bold">Pricing plans</h2>
+        <div className="text-white flex  text-center md:text-left flex-col width-[50%]">
+          <h2 className="md:text-[56px] text-4xl pb-6 font-bold">
+            Pricing plans
+          </h2>
           <p>Clear, affordable plans for every team and requirement.</p>
         </div>
         <div className="rounded-full relative uppercase w-fit mx-auto grid grid-cols-2 text-center shadow-md bg-white p-1 h-fit ">
@@ -65,16 +69,13 @@ const Price = () => {
 
       {/* PRICE CARD SECTION */}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 2xl:w-[1160px] pt-10 items-center justify-center  bg-white border rounded-3xl w-[80%] mx-auto shadow-md -mt-24">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6  pt-10 items-center justify-center  bg-white border rounded-3xl w-[80%] mx-auto shadow-md md:-mt-14 lg:-mt-24 p-6">
         {price_data
           .filter((item) => item.category === currentTab)
           .map((item, i) => (
-            <div
-              key={i}
-              className="w-full md:w-fit max-w-80 mx-auto h-full"
-            >
+            <div key={i} className="even:bg-slate-100 p-6 rounded-3xl h-full  ">
               <div
-                className={` ${item.cls} bg-white rounded-3xl space-y-4 h-full flex flex-col justify-between items-center text-center`}
+                className={` ${item.cls} justify-center flex flex-col items-center text-center  `}
               >
                 {/* <div className="">
                   <Image
@@ -89,7 +90,7 @@ const Price = () => {
                   <p className="text-sm text-gray-500">{item.description}</p>
                 </div>
                 {/* Purchase button */}
-                <div className="flex flex-col items-center justify-center gap-4">
+                <div className="flex flex-col items-center justify-center gap-4 w-fit">
                   {item.price === "" ? (
                     <span className="  text-myBlue   text-2xl font-bold">
                       Customized
@@ -125,6 +126,14 @@ const Price = () => {
               </div>
             </div>
           ))}
+      </div>
+      {/* Trusted by Thousands Business
+Section */}
+      <div>
+        <TrustedBrands/>
+      </div>
+      <div>
+        <FAQs/>
       </div>
     </div>
   );
