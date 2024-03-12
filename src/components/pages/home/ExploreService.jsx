@@ -18,14 +18,14 @@ const ExploreService = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:w-[1180px] mx-auto gap-6">
         {myData?.map((item, i) => (
           <div key={i} className="">
-            <div className="border rounded-3xl  md:w-fit relative w-full max-w-96 mx-auto p-10 hover:shadow-2xl hover:shadow-gray-300 transition duration-300">
+            <div className="border rounded-3xl  md:w-fit relative w-full max-w-96 mx-auto p-10 hover:shadow-2xl hover:shadow-gray-300  transition duration-300 group">
               <div className="mb-6">
                 <Image
                   src={item.icon.src}
                   width={46}
                   height={46}
                   alt="icons"
-                  className="aspect-square object-contain"
+                  className="group-hover:[transform:rotateY(180deg)] transition-all duration-500 aspect-square object-contain"
                 ></Image>
               </div>
               <div className="">

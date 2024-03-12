@@ -35,7 +35,7 @@ margin-bottom:-25%;
     opacity: 1;
 }
 .inactive span{
-  color: rgba(128, 128, 128, 0.349);
+  color: rgba(128, 128, 128, 0.5);
 }
 
 /* line dash animation */
