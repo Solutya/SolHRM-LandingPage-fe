@@ -1,3 +1,4 @@
+import { compareTabledData } from "@/data/compare-table-data";
 import price_data from "@/data/price-data";
 import Link from "next/link";
 import { FaCheck } from "react-icons/fa";
@@ -48,142 +49,30 @@ const ComparePlanTable = () => {
 
         <tbody className="divide-y divide-gray-200     ">
           {/* Custom row starts */}
-          {/* Row 1 */}
-          <tr className="odd:bg-slate-100">
-            <td className="whitespace-nowrap px-4 py-4 font-semibold text-gray-900 ">
-              Employess Management
-            </td>
-            <td className="whitespace-nowrap px-4 py-4 text-gray-700  text-center ">
-              <IoCheckmarkCircle className="w-fit mx-auto text-xl text-myBlue   " />
-            </td>
-            <td className="whitespace-nowrap px-4 py-4 text-gray-700 ">
-              <IoCheckmarkCircle className="w-fit mx-auto text-xl text-myBlue   " />
-            </td>
-            <td className="whitespace-nowrap px-4 py-4 text-gray-700">
-              <IoCheckmarkCircle className="w-fit mx-auto text-xl text-myBlue   " />
-            </td>
-          </tr>
-          {/* Row 2 */}
-          <tr className="odd:bg-slate-100">
-            <td className="whitespace-nowrap px-4 py-4 font-semibold text-gray-900 ">
-              Attendance Management
-            </td>
-             <td className="whitespace-nowrap px-4 py-4 text-gray-700  text-center ">
-              <IoCheckmarkCircle className="w-fit mx-auto text-xl text-myBlue   " />
-            </td>
-            <td className="whitespace-nowrap px-4 py-4 text-gray-700 ">
-              <IoCheckmarkCircle className="w-fit mx-auto text-xl text-myBlue   " />
-            </td>
-            <td className="whitespace-nowrap px-4 py-4 text-gray-700">
-              <IoCheckmarkCircle className="w-fit mx-auto text-xl text-myBlue   " />
-            </td>
-            </tr>
-
-          {/* Row 3 */}
-          <tr className="odd:bg-slate-100">
-            <td className="whitespace-nowrap px-4 py-4 font-semibold text-gray-900 ">
-              Leave Management
-            </td>
-             <td className="whitespace-nowrap px-4 py-4 text-gray-700  text-center ">
-              <IoCheckmarkCircle className="w-fit mx-auto text-xl text-myBlue   " />
-            </td>
-            <td className="whitespace-nowrap px-4 py-4 text-gray-700 ">
-              <IoCheckmarkCircle className="w-fit mx-auto text-xl text-myBlue   " />
-            </td>
-            <td className="whitespace-nowrap px-4 py-4 text-gray-700">
-              <IoCheckmarkCircle className="w-fit mx-auto text-xl text-myBlue   " />
-            </td>
-            </tr>
-          {/* Row 4 */}
-          <tr className="odd:bg-slate-100">
-            <td className="whitespace-nowrap px-4 py-4 font-semibold text-gray-900 ">
-              Project Management
-            </td>
-             <td className="whitespace-nowrap px-4 py-4 text-gray-700  text-center ">
-              <IoCheckmarkCircle className="w-fit mx-auto text-xl text-myBlue   " />
-            </td>
-            <td className="whitespace-nowrap px-4 py-4 text-gray-700 ">
-              <IoCheckmarkCircle className="w-fit mx-auto text-xl text-myBlue   " />
-            </td>
-            <td className="whitespace-nowrap px-4 py-4 text-gray-700">
-              <IoCheckmarkCircle className="w-fit mx-auto text-xl text-myBlue   " />
-            </td>
-            </tr>
-          {/* Row 5 */}
-          <tr className="odd:bg-slate-100">
-            <td className="whitespace-nowrap px-4 py-4 font-semibold text-gray-900 ">
-              Task Management
-            </td>
-             <td className="whitespace-nowrap px-4 py-4 text-gray-700  text-center ">
-              <IoCheckmarkCircle className="w-fit mx-auto text-xl text-myBlue   " />
-            </td>
-            <td className="whitespace-nowrap px-4 py-4 text-gray-700 ">
-              <IoCheckmarkCircle className="w-fit mx-auto text-xl text-myBlue   " />
-            </td>
-            <td className="whitespace-nowrap px-4 py-4 text-gray-700">
-              <IoCheckmarkCircle className="w-fit mx-auto text-xl text-myBlue   " />
-            </td>
-            </tr>
-          {/* Row 6 */}
-          <tr className="odd:bg-slate-100">
-            <td className="whitespace-nowrap px-4 py-4 font-semibold text-gray-900 ">
-              Holidays Schedule
-            </td>
-             <td className="whitespace-nowrap px-4 py-4 text-gray-700  text-center ">
-              <IoCheckmarkCircle className="w-fit mx-auto text-xl text-myBlue   " />
-            </td>
-            <td className="whitespace-nowrap px-4 py-4 text-gray-700 ">
-              <IoCheckmarkCircle className="w-fit mx-auto text-xl text-myBlue   " />
-            </td>
-            <td className="whitespace-nowrap px-4 py-4 text-gray-700">
-              <IoCheckmarkCircle className="w-fit mx-auto text-xl text-myBlue   " />
-            </td>
-            </tr>
-          {/* Row 7 */}
-          <tr className="odd:bg-slate-100">
-            <td className="whitespace-nowrap px-4 py-4 font-semibold text-gray-900 ">
-              Clients Management
-            </td>
-             <td className="whitespace-nowrap px-4 py-4 text-gray-700  text-center ">
-              <IoCheckmarkCircle className="w-fit mx-auto text-xl text-myBlue   " />
-            </td>
-            <td className="whitespace-nowrap px-4 py-4 text-gray-700 ">
-              <IoCheckmarkCircle className="w-fit mx-auto text-xl text-myBlue   " />
-            </td>
-            <td className="whitespace-nowrap px-4 py-4 text-gray-700">
-              <IoCheckmarkCircle className="w-fit mx-auto text-xl text-myBlue   " />
-            </td>
-            </tr>
-          {/* Row 8 */}
-          <tr className="odd:bg-slate-100">
-            <td className="whitespace-nowrap px-4 py-4 font-semibold text-gray-900 ">
-              Account Management
-            </td>
-             <td className="whitespace-nowrap px-4 py-4 text-gray-700  text-center ">
-              <IoCheckmarkCircle className="w-fit mx-auto text-xl text-myBlue   " />
-            </td>
-            <td className="whitespace-nowrap px-4 py-4 text-gray-700 ">
-              <IoCheckmarkCircle className="w-fit mx-auto text-xl text-myBlue   " />
-            </td>
-            <td className="whitespace-nowrap px-4 py-4 text-gray-700">
-              <IoCheckmarkCircle className="w-fit mx-auto text-xl text-myBlue   " />
-            </td>
-            </tr>
-          {/* Row 9 */}
-          <tr className="odd:bg-slate-100">
-            <td className="whitespace-nowrap px-4 py-4 font-semibold text-gray-900 ">
-              Overall Configuration
-            </td>
-             <td className="whitespace-nowrap px-4 py-4 text-gray-700  text-center ">
-              <IoCheckmarkCircle className="w-fit mx-auto text-xl text-myBlue   " />
-            </td>
-            <td className="whitespace-nowrap px-4 py-4 text-gray-700 ">
-              <IoCheckmarkCircle className="w-fit mx-auto text-xl text-myBlue   " />
-            </td>
-            <td className="whitespace-nowrap px-4 py-4 text-gray-700">
-              <IoCheckmarkCircle className="w-fit mx-auto text-xl text-myBlue   " />
-            </td>
-            </tr>
+          {/* Rows */}
+          {compareTabledData.map((item) => (
+            <>
+              <tr className="odd:bg-slate-100">
+                <td className="whitespace-nowrap px-4 py-4 font-semibold text-gray-900 ">
+                  {item.feature_title}
+                </td>
+                <td className="whitespace-nowrap px-4 py-4  ">
+                  {
+                    item.plan1
+                  }
+                </td>
+                <td className="whitespace-nowrap px-4 py-4   ">
+                  {
+                    item.plan2
+                  }
+                </td><td className="whitespace-nowrap px-4 py-4   text-center ">
+                  {
+                    item.plan3
+                  }
+                </td>
+              </tr>
+            </>
+          ))}
         </tbody>
       </table>
     </div>

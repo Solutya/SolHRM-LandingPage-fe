@@ -1,6 +1,7 @@
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { UtilsProvider } from "@/context/utilsProvider";
+import Footer from "@/components/footer/Footer";
 
 const plus = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
@@ -14,6 +15,10 @@ const RootLayout = ({ children }) => {
     <html lang="en">
       <body className={plus.className}>
         <UtilsProvider>{children}</UtilsProvider>
+        <Footer/>
+        {/* <script>
+          AOS.init({once: true});
+        </script> */}
       </body>
     </html>
   );

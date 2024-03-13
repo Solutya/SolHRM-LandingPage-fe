@@ -33,12 +33,12 @@
 ::-moz-selection {
   /* Code for Firefox */
   color: white;
-  background: #38b6ff;
+  background: #6865ff;
 }
 
 ::selection {
   color: white;
-  background: #2b9cdd;
+  background: #6865ff;
 }
 .one{
   /* background-color: #6865ff; */
@@ -92,3 +92,16 @@ margin-bottom:-25%;
   }
 }
 
+/* Icon styles */
+.checkIcon{
+  font-size: 24px;
+  width: fit-content;
+  color: #6865ff;
+  margin: 0 auto;
+}
+.closeIcon{
+  font-size: 24px;
+  width: fit-content;
+  color: gray;
+  margin: 0 auto;
+}
