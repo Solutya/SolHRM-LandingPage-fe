@@ -12,10 +12,10 @@ module.exports = {
         mobile: "480px",
       },
       colors: {
-        myBlue: "#6865FF",
+        myBlue: "#6865ff",
         myDark: "#000229",
-        "low-dark": "#1D2041",
-        myPink: "#FF3C82",
+        "low-dark": "#1d2041",
+        myPink: "#ff3c82",
         "low-pink": "#FFA8B8",
         "real-blue": "#0A58CA",
       },

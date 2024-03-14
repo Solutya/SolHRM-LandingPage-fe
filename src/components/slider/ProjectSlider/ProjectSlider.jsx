@@ -16,7 +16,7 @@ import CircleBtn from "../../btn's/CircleBtn";
 const setting = {
   loop: true,
   autoplay: {
-    delay: 10000,
+    delay: 2500,
   },
   slidesPerView: 2,
   centeredSlides: true,
@@ -70,14 +70,14 @@ const ProjectSlider = () => {
             {project_data.map((item, i) => (
               <SwiperSlide key={i} className="">
                 <div className="pb-20 ">
-                  <div className="rounded-2xl flex  items-center  bg-white transition duration-300 hover:shadow-xl">
-                    <div className="h-[100%] ">
+                  <div className="rounded-3xl flex  items-center flex-col md:flex-row bg-white transition duration-300 hover:shadow-xl w-full">
+                    <div className="h-[100%]  md:w-fit w-[100%]  ">
                       <Image
                         src={item.img_1.src}
                         alt="theme-pure"
                         width={297}
                         height={450}
-                        className="rounded-l-2xl h-[100%] object-cover "
+                        className="rounded-ss-3xl md:rounded-es-3xl rounded-se-3xl md:rounded-se-none   h-[100%] object-cover w-full md:w-80 "
                       />
                     </div>
                     <div
@@ -102,14 +102,16 @@ const ProjectSlider = () => {
                         </p>
                         <hr className="my-10" />
                       </div>
-                      <div className="flex justify-between pr-[10%]">
+                      <div className="grid grid-cols-2 sm:flex justify-between pr-[10%] gap-2">
                         <div className="">
-                          <span>Client Name</span>
-                          <h4 className="font-semibold">{item.client_name}</h4>
+                          <span className="text-[14px]">Client Name</span>
+                          <h4 className="font-[500] text-[16px]">
+                            {item.client_name}
+                          </h4>
                         </div>
                         <div className="">
-                          <span>Budget</span>
-                          <h4 className="font-semibold">
+                          <span className="text-[14px]">Budget</span>
+                          <h4 className="font-[500]">
                             ${item.budget}
                             {item.budget_simble}
                           </h4>

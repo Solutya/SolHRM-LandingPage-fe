@@ -2,6 +2,109 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6865ff;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4f4cff;
+}
+
+/* selection text color */
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: #6865ff;
+}
+
+::selection {
+  color: white;
+  background: #6865ff;
+}
+.one{
+  /* background-color: #6865ff; */
+  background-image: linear-gradient(#8583ff, #6865ff);
+  color: white;
+  z-index: 10;
+}
+.two{
+z-index: 7;
+margin-right: -3%;
+margin-left: -3%;
+margin-bottom:-12%;
+}
+.three{
+  z-index: 9;
+ 
+margin-right: -3%;
+margin-bottom:-25%;
+}
+.four{
+  z-index: 8;
+  right: 0;
+}
+.slick-list .slick-slide{
+ padding: 0 20px;
+ margin-bottom: 10px;
+}
+.brand-slider .slick-slide{
+    opacity: .5;
+}
+.brand-slider .slick-current{
+    opacity: 1;
+}
+.inactive span{
+  color: rgba(128, 128, 128, 0.5);
+}
+
+/* line dash animation */
+.price-shape-line{
+  
+  -webkit-animation: lineDash 90s linear infinite;
+  animation: lineDash 90s linear infinite;
+
+}
+@keyframes lineDash {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 1000;
+  }
+}
+
+/* Icon styles */
+.checkIcon{
+  font-size: 24px;
+  width: fit-content;
+  color: #6865ff;
+  margin: 0 auto;
+}
+.closeIcon{
+  font-size: 24px;
+  width: fit-content;
+  color: gray;
+  margin: 0 auto;
+}
 /* SVG styling */
 .hero-title-underline svg {
   width: 100%;
