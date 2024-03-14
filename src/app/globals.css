@@ -105,3 +105,29 @@ margin-bottom:-25%;
   color: gray;
   margin: 0 auto;
 }
+/* SVG styling */
+.hero-title-underline svg {
+  width: 100%;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .hero-title-underline svg {
+    width: 50%;
+  }
+}
+
+/* Path styling */
+.hero-title-underline svg path.line1 {
+  stroke-width: 2.7px;
+  stroke: #6865ff;
+  stroke-dasharray: 2300;
+  stroke-dashoffset: 3200;
+  animation: dash 2s linear both;
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0px;
+    stroke-dasharray: 3000;
+  }
+}

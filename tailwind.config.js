@@ -17,7 +17,7 @@ module.exports = {
         "low-dark": "#1d2041",
         myPink: "#ff3c82",
         "low-pink": "#FFA8B8",
-        "real-blue": "#0a58ca",
+        "real-blue": "#0A58CA",
       },
     },
   },
