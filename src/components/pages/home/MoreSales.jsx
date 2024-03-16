@@ -60,8 +60,12 @@ const rank_data = [
 
 const MoreSales = () => {
   return (
-    <div className="py-24 lg:m-[5%] lg:grid  lg:grid-cols-3 xl:grid-cols-2 flex flex-col-reverse justify-between xl:w-[1180px] xl:mx-auto ">
-      <div className="space-y-4 bg-yellow- pl-4 md:py-6 py-28 mobile:py-16">
+    <div className="py-24 overflow-x-hidden lg:m-[5%] lg:grid  lg:grid-cols-3 xl:grid-cols-2 flex flex-col-reverse justify-between xl:w-[1180px] xl:mx-auto ">
+      <div 
+       data-aos="fade-right"
+       data-aos-duration="1000"
+       data-aos-once="true"
+      className="space-y-4 bg-yellow- pl-4 md:py-6 py-28 mobile:py-16">
         <p className="uppercase bg-[#f6f5fa] text-myBlue text-sm font-semibold rounded-full p-2 px-4 w-fit ">
           Key Benfits
         </p>
@@ -72,11 +76,15 @@ const MoreSales = () => {
           <BlueBtn>Explore More</BlueBtn>
         </div>
       </div>
-      <div className="relative  h-[600px] md:h-auto lg:col-span-2 xl:col-span-1 lg:ml-20 ">
+      <div  
+      //  data-aos="fade-left"
+      //  data-aos-duration="1000"
+      //  data-aos-once="true"
+      className="relative h-[600px] md:h-auto lg:col-span-2 xl:col-span-1 lg:ml-20 px-2 ">
         <div className="mx-auto w-fit py-4">
           <Image src={bg_right_img} alt="bg-right-img" ></Image>
         </div>
-        <div className="absolute top-0 mx-auto inset-x-0  w-full h-[80%] py-4 flex flex-wrap lg:flex-nowrap justify-center items-center text-center xl:  2xl:w-[82%] px-2 gap-2 sm:gap-0 ">
+        <div className="absolute top-0 mx-auto inset-x-0  w-full h-[80%] py-4 flex flex-wrap lg:flex-nowrap justify-center items-center text-center xl:  2xl:w-[82%] px-4 gap-2 sm:gap-0 ">
           {rank_data.map((item, i) => (
             <div
               key={i}

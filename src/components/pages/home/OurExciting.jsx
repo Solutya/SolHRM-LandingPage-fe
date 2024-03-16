@@ -12,7 +12,11 @@ const OurExciting = () => {
   return (
     <div className="py-24 lg:mt-10 mt-6 bg-[url('/assets/images/home/exciting-bg.png')] bg-cover bg-center lg:h-[750px] md:h-[1100px] h-[1200px]">
       <SectionWrapper>
-        <div className="text-center">
+        <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-once="true"
+        className="text-center">
           <HeaderTitle
             title="Our Exciting Features"
             subTitle="More than 15,000 companies trust and choose Itech"
@@ -21,6 +25,10 @@ const OurExciting = () => {
         <div className="mt-12 grid lg:grid-cols-3 md:grid-cols-2 gap-6">
           {OurExcitingData.map((item, index) => (
             <div
+            data-aos="fade-up"
+          data-aos-duration="1200"
+          data-aos-delay="50"
+          data-aos-once="true"
               className="p-10 rounded-2xl flex flex-col gap-8 border transition-all duration-300 hover:shadow-2xl z-40 group bg-white"
               key={index}
             >

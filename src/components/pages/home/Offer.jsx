@@ -8,8 +8,13 @@ import { IoIosCheckmark } from "react-icons/io";
 const Offer = () => {
   return (
     <SectionWrapper>
-      <div className="py-24 grid lg:grid-cols-2 gap-x-20 text-myDark">
-        <div className="bg-[url('/assets/images/home/offer-bg.png')] bg-cover bg-center bg-no-repeat md:h-[450px] h-[300px] relative">
+      <div className="py-24 overflow-x-hidden grid lg:grid-cols-2 gap-x-20 gap-y-16 text-myDark">
+        <div 
+        data-aos="fade-right"
+        data-aos-duration="800"
+        
+        data-aos-once="true"
+        className="bg-[url('/assets/images/home/offer-bg.png')] bg-cover bg-center bg-no-repeat md:h-[450px] h-[300px] relative">
           <Image
             className="shadow-2xl rounded-2xl absolute top-12 max-md:hidden block animate-leftRight"
             src="/assets/images/home/offer1.jpg"
@@ -46,7 +51,12 @@ const Offer = () => {
             alt="Offer"
           />
         </div>
-        <div className="max-lg:mt-12">
+        <div
+         data-aos="fade-left"
+         data-aos-duration="800"
+         
+         data-aos-once="true"
+        className="max-lg:mt-12">
           <button className="bg-[#7472ee1c] px-4 py-1 flex items-center justify-center rounded-full text-sm text-myBlue font-medium cursor-text">
             OVER 150K+ CLIENT
           </button>

@@ -8,6 +8,7 @@ import React, { useEffect, useState } from "react";
 import { BiSearch } from "react-icons/bi";
 import { LuUser2 } from "react-icons/lu";
 import { HiBars3 } from "react-icons/hi2";
+import { motion } from 'framer-motion';
 
 
 //  PROPS: 3 Props are  provide (isOpen, setIsOpen mandatory) , isWhite is for other pages where background is darker. 
@@ -34,6 +35,7 @@ const NavBar = ({ isOpen, setIsOpen ,isWhite}) => {
 
   return (
     <div
+
       className={`${
         isNavFixed
           ? "fixed top-0 left-0 right-0 z-50 bg-white border-b transition-all duration-300 "

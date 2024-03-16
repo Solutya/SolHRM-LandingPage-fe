@@ -11,7 +11,12 @@ const ExploreService = () => {
   return (
     <div className="relative py-24 ">
       <SectionWrapper>
-      <div className="text-center ">
+      <div
+       data-aos="fade-up"
+       data-aos-duration="1000"
+       
+       data-aos-once="true"
+      className="text-center ">
         <HeaderTitle
           title={"Explore Our Data Services"}
           subTitle={"More than 15,000 companies trust and choose Itech"}
@@ -19,7 +24,11 @@ const ExploreService = () => {
       </div>
       <div className="mt-12 grid lg:grid-cols-3 md:grid-cols-2 gap-6">
         {myData?.map((item, i) => (
-          <div key={i} className="">
+          <div
+          data-aos="fade-up"
+          data-aos-duration={800 + i*200}       
+          data-aos-once="true"
+          key={i} className="">
             <div className="border rounded-3xl  md:w-fit relative w-full max-w-96 mx-auto p-10 hover:shadow-2xl hover:shadow-gray-300  transition duration-300 group">
               <div className="mb-6">
                 <Image
@@ -46,7 +55,10 @@ const ExploreService = () => {
             </div>
           </div>
         ))}
-        <div className="bg-[url('/assets/images/service/sv-bg.jpg')] rounded-3xl p-10 pb-0 z-20 md:w-fit relative w-full mx-auto bg-cover">
+        <div  data-aos="fade-up"
+        data-aos-duration="1400"
+        
+        data-aos-once="true" className="bg-[url('/assets/images/service/sv-bg.jpg')] rounded-3xl p-10 pb-0 z-20 md:w-fit relative w-full mx-auto bg-cover">
           <div className="text-white">
             <h2 className="font-bold  text-[30px]">
               Data Analysis Tools & Methods
