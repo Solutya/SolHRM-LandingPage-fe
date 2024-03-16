@@ -151,7 +151,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="lg:mt-20 md:mt-12 mt-8 text-center">
-          <h1 className="text-myDark lg:text-[80px] md:text-[60px] text-[50px] leading-tight font-bold">
+          <h1 className="text-myDark lg:text-[80px] md:text-[60px] text-[36px] leading-tight font-bold">
             The Leading Customer <br /> Data Platform
           </h1>
           <div className="mt-4">

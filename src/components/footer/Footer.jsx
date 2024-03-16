@@ -53,9 +53,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between xl:space-x-4 space-y-10">
           <div className="space-y-4">
             <Image
-              src={"/assets/images/home/logo-white.png"}
-              width={135}
-              height={40}
+              src={"/assets/images/logo/solhrmForDark.png"}
+              width={180}
+              height={80}
               alt="logo-white-footer"
             />
             <p className="text-sm leading-relaxed">

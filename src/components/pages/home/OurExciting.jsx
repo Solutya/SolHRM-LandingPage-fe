@@ -6,10 +6,11 @@ import Link from "next/link";
 import React from "react";
 import { MdArrowForward } from "react-icons/md";
 import bg from "../../../../public/assets/images/home/exciting-bg.png";
+import CircleBtn from "@/components/btn's/CircleBtn";
 
 const OurExciting = () => {
   return (
-    <div className="lg:mt-10 mt-6 bg-[url('/assets/images/home/exciting-bg.png')] bg-cover bg-center lg:h-[750px] md:h-[1100px] h-[1200px]">
+    <div className="py-24 lg:mt-10 mt-6 bg-[url('/assets/images/home/exciting-bg.png')] bg-cover bg-center lg:h-[750px] md:h-[1100px] h-[1200px]">
       <SectionWrapper>
         <div className="text-center">
           <HeaderTitle
@@ -32,12 +33,7 @@ const OurExciting = () => {
                 alt="Exciting Image"
               />
               <h5 className="text-xl font-bold">{item?.title}</h5>
-              <Link
-                className="bg-[#7472ee1c] w-12 h-12 rounded-full flex items-center justify-center text-myBlue text-xl cursor-pointer"
-                href={item?.path}
-              >
-                <MdArrowForward />
-              </Link>
+             <CircleBtn/>
             </div>
           ))}
         </div>

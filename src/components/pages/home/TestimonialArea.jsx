@@ -5,7 +5,7 @@ import React from "react";
 
 const TestimonialArea = () => {
   return (
-    <div className="py-24">
+    <div className="py-24" >
       <div className="text-center">
         <HeaderTitle
           title={"Word From Our Client"}

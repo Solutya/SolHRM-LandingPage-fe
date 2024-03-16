@@ -60,7 +60,7 @@ const rank_data = [
 
 const MoreSales = () => {
   return (
-    <div className=" lg:m-[5%] lg:grid  lg:grid-cols-3 xl:grid-cols-2 flex flex-col-reverse justify-between xl:w-[1180px] xl:mx-auto ">
+    <div className="py-24 lg:m-[5%] lg:grid  lg:grid-cols-3 xl:grid-cols-2 flex flex-col-reverse justify-between xl:w-[1180px] xl:mx-auto ">
       <div className="space-y-4 bg-yellow- pl-4 md:py-6 py-28 mobile:py-16">
         <p className="uppercase bg-[#f6f5fa] text-myBlue text-sm font-semibold rounded-full p-2 px-4 w-fit ">
           Key Benfits

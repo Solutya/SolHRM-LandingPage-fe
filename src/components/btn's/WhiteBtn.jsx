@@ -6,9 +6,9 @@ const WhiteBtn = ({component=""}) => {
   return (
     <Link
       className={`tp-btn-white tp-btn-hover alt-color-black ${component === "nav"&&" max-md:hidden"}`}
-      href="#"
+      href="/price"
     >
-      <span className="white-text">Get Free</span>
+      <span className="white-text">Purchase Now</span>
       <b></b>
     </Link>
   );
