@@ -13,6 +13,7 @@ import Offer from "@/components/pages/home/Offer";
 import FeatursScrollSection from "@/components/pages/home/FeaturesScroll/FeaturesScroll";
 import HorizontalSwipe from "@/components/others/HorizontalSwipe.jsx/HorizontalSwipe";
 import PinScroll from "@/components/others/PinScroll/PinScroll";
+import MessengerChat from "@/utils/MessengerChat";
 // import Footer from "@/components/footer/Footer";
 
 const HomePage = () => {
@@ -55,7 +56,9 @@ const HomePage = () => {
       <div id="price">
         <PriceArea />
       </div>
-      <div>{/* <Footer/> */}</div>
+      <div>
+        <MessengerChat/>
+      </div>
     </div>
   );
 };

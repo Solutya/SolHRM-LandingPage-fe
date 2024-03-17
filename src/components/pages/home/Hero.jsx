@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import NavBar from "./NavBar";
 import Image from "next/image";
@@ -13,9 +13,24 @@ import HeroUnderline from "./HeroUnderline";
 import { CiMail } from "react-icons/ci";
 import BlueBtn from "@/components/btn's/BlueBtn";
 import { motion } from "framer-motion";
+import gsap from "gsap";
 
 const Hero = () => {
   const [isOpen, setIsOpen] = useState(false);
+  let hero_bg = useRef(null);
+
+  useEffect(() => {
+      gsap.from(hero_bg.current, {
+          opacity: 0,
+          scale: 1.2,
+          duration: 1.5
+      });
+      gsap.to(hero_bg.current, {
+          opacity: 1,
+          scale: 1,
+          duration: 1.5
+      })
+  }, []);
   return (
     <div className="lg:px-[3%] relative overflow-hidden">
       <div className="max-w-[1170px] mx-auto lg:px-10 sm:px-[15%] px-[10%] bg-white max-md:hidden">
@@ -52,16 +67,16 @@ const Hero = () => {
         </div>
       </div>
       <div
-        // data-aos="zoom-out"
-        // data-aos-duration="1000"
-        
-        // data-aos-once="true"
+        data-aos="zoom-out"
+        data-aos-duration="500"
+        data-aos-once="true"
+        useRef={hero_bg}
         className="lg:bg-[url('/assets/images/home/hero-bg.png')] bg-[url('/assets/images/home/hero-bg-max-lg.png')] bg-cover bg-center bg-no-repeat lg:rounded-[35px] lg:h-[900px] md:h-[650px] sm:h-[80vh] h-[90vh] "
       >
         <NavBar isOpen={isOpen} setIsOpen={setIsOpen} />
         
         <div
-          className={`z-[1000] transition-all duration-300 ${
+          className={`z-[1000] transition-all duration-1000 ${
             isOpen
               ? "fixed h-[100vh] right-0 top-0 bottom-0"
               : "absolute top-0 bottom-0 -right-[120%]"

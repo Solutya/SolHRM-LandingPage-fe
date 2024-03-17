@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import HeaderTitle from "../../headerTitle/HeaderTitle";
 import BlueBtn from "@/components/btn's/BlueBtn";
 import { GoNoEntry, GoPlusCircle } from "react-icons/go";
+import Image from "next/image";
 
 const FAQs = () => {
   const accordianDataset = [
@@ -46,7 +47,7 @@ const FAQs = () => {
   };
   return (
     <div className=" px-10 md:px-0 lg:m-[5%] lg:grid  lg:grid-cols-3 xl:grid-cols-2 flex flex-col justify-between items-center xl:w-[1180px] xl:mx-auto ">
-      <div className="space-y-4 bg-yellow- pl-4 md:py-6 py-28 mobile:py-16">
+      <div className="space-y-4 bg-yellow- pl-4 md:py-6 py-28 mobile:py-16 relative">
         <p className="uppercase bg-[#f6f5fa] text-myBlue text-sm font-semibold rounded-full p-2 px-4 w-fit ">
           SUPPORT
         </p>
@@ -61,9 +62,15 @@ const FAQs = () => {
             <>The most frequently asked questions from our clents are here</>
           }
         />
-        <div className="w-fit pt-3">
+        <div className="pt-3 relative w-full ">
+          <div className="w-fit">
+
           <BlueBtn>Get In Touch</BlueBtn>
+          </div>
+          <Image src={'/assets/images/faq/faq-1.png'} alt="faq-bg" width={210} height={240} className="absolute top-0 right-10 " />
         </div>
+      
+        
       </div>
       <div className="relative  h-[600px] md:h-auto lg:col-span-2 xl:col-span-1 lg:ml-20 ">
         {/* Faqs starts */}

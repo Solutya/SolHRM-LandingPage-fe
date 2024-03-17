@@ -26,9 +26,6 @@ const RootLayout = ({ children }) => {
       <body className={plus.className}>
         <UtilsProvider>{children}</UtilsProvider>
         <Footer />
-        {/* <script>
-          AOS.init({once: true});
-        </script> */}
       </body>
     </html>
   );

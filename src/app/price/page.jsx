@@ -66,7 +66,7 @@ const Price = () => {
                       className={`border-low-myDark py-[15px] font-medium flex items-center justify-between group ${
                         item?.path === "/contact" ? "" : "border-b"
                       }`}
-                      href={item?.path}
+                      href={"/"}
                       key={index}
                     >
                       <span className="group-hover:text-[#FFA8B8]">
@@ -140,13 +140,22 @@ const Price = () => {
       </div>
       {/* Navbar components Ends */}
         <div className=" min-h-[60vh] grid grid-cols-1 md:grid-cols-2 justify-between items-center p-10  mx-auto w-[80%]">
-          <div className="text-white flex  text-center md:text-left flex-col width-[50%] ">
+          <div 
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          className="text-white flex  text-center md:text-left flex-col width-[50%] ">
             <h2 className="lg:text-[56px] text-4xl pb-6 font-bold">
               Pricing plans
             </h2>
             <p>Clear, affordable plans for every team and requirement.</p>
           </div>
-          <div className="rounded-full relative uppercase w-fit mx-auto grid grid-cols-2 text-center shadow-md bg-white p-1 h-fit ">
+          <div 
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="50"
+          data-aos-once="true"
+          className="rounded-full relative uppercase w-fit mx-auto grid grid-cols-2 text-center shadow-md bg-white p-1 h-fit ">
             <span
               className={`font-black text-[14px] p-3 rounded-full cursor-pointer z-20 ${
                 currentTab === "monthly" ? "text-white " : ""

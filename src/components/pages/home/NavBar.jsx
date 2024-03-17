@@ -31,7 +31,7 @@ const NavBar = ({ isOpen, setIsOpen ,isWhite}) => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [isNavFixed]);
 
   return (
     <div

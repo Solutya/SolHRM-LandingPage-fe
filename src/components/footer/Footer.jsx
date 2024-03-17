@@ -11,60 +11,79 @@ import Link from "next/link";
 import { IoMailOutline } from "react-icons/io5";
 import { IoIosArrowDropupCircle } from "react-icons/io";
 import footerData from "@/data/footerData";
-import { motion, useAnimation } from "framer-motion";
-import BlueBtn from "../btn's/BlueBtn";
+import { motion, useAnimation, useIsomorphicLayoutEffect } from "framer-motion";
+import { gsap } from "gsap";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const [isOpen, setIsOpen] = useState(false);
 
   // Footer width scroll animation
-  const [footerMargin, setFooterMargin] = useState("5%"); // Initial margin values
-  const controls = useAnimation();
+//   const [footerMargin, setFooterMargin] = useState("5%"); // Initial margin values
+//   const controls = useAnimation();
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const isAtBottom =
-        window.innerHeight + window.scrollY >= document.body.offsetHeight;
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       const isAtBottom =
+//         window.innerHeight + window.scrollY >= document.body.offsetHeight - 300;
+// console.log(isAtBottom)
+//       if (window.innerWidth > 1024) {
+//         // Adjust for large screens only
 
-      if (window.innerWidth > 1024) {
-        // Adjust for large screens only
+//         if (!isAtBottom && window.scrollY > 0) {
+//           controls.start({
+//             marginLeft: "0%",
+//             marginRight: "0%",
+//             transition: { duration: 0.8 },
+//           });
+//         } else {
+//           controls.start({
+//             marginLeft: "5%",
+//             marginRight: "5%",
+//             transition: { duration: 0.8 },
+//           });
+//         }
+//       } else {
+//         // For screens less than 1024, remove margins entirely
+//         controls.start({
+//           marginLeft: "0%",
+//           marginRight: "0%",
+//           transition: { duration: 0.5 },
+//         });
+//       }
+//     };
 
-        if (!isAtBottom && window.scrollY > 0) {
-          controls.start({
-            marginLeft: "0%",
-            marginRight: "0%",
-            transition: { duration: 0.8 },
-          });
-        } else {
-          controls.start({
-            marginLeft: "5%",
-            marginRight: "5%",
-            transition: { duration: 0.8 },
-          });
-        }
-      } else {
-        // For screens less than 1024, remove margins entirely
-        controls.start({
-          marginLeft: "0%",
-          marginRight: "0%",
-          transition: { duration: 0.5 },
-        });
-      }
-    };
+//     window.addEventListener("scroll", handleScroll);
 
-    window.addEventListener("scroll", handleScroll);
+//     return () => {
+//       window.removeEventListener("scroll", handleScroll);
+//     };
+//   }, [controls]);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [controls]);
+useIsomorphicLayoutEffect(() => {
+  gsap.set(".tp-gsap-bg", { scaleX: 1 });
+  let mm = gsap.matchMedia();
+  mm.add("(min-width:1400px)", () => {
+    gsap.to(".tp-gsap-bg", {
+      scrollTrigger: {
+        trigger: ".tp-gsap-bg",
+        scrub: 0.02,
+        start: "top bottom",
+        end: "bottom bottom",
+      },
+      scaleX: 0.95,
+      borderRadius: "30px",
+      transformOrigin: "center center",
+      ease: "none",
+    });
+  });
+}, []);
 
   return (
-    <motion.footer
-      style={{ marginLeft: footerMargin, marginRight: footerMargin }}
-      initial={{ marginLeft: "5%", marginRight: "5%" }} // Initial margin values
-      animate={controls}
-      className="lg:rounded-3xl lg:mb-10  bg-myDark px-[2%] "
+    <footer
+      // style={{ marginLeft: footerMargin, marginRight: footerMargin }}
+      // initial={{ marginLeft: "5%", marginRight: "5%" }} 
+      // animate={controls}
+      className="lg:rounded-3xl lg:mb-10  bg-myDark tp-gsap-bg px-[2%] "
     >
       <div className="text-white space-y-10  mt-10 lg:mt-20 xl:w-[1180px] mx-auto p-[1%] pt-[50px] px-[6%] md:px-6 ">
         {/* Footer top */}
@@ -90,7 +109,7 @@ const Footer = () => {
             <input
               className="w-full  h-16 rounded-full px-16 text-myDark"
               type="email"
-              placeholder="Business email address"
+              
             />
             <CiMail className="absolute md:top-[35%] top-6 text-xl md:left-7 left-6 text-black" />
             <div className="absolute md:right-2 top-1 right-2 ">
@@ -156,6 +175,7 @@ const Footer = () => {
             <div className="text-gray-500 flex flex-col gap-4 font-semibold">
               {footerData.dataOne.map((item, i) => (
                 <Link
+                key={i}
                   href={item.path}
                   className="transition duration-200 hover:text-white hover:translate-x-1"
                 >
@@ -173,7 +193,7 @@ const Footer = () => {
             <h3 className="font-bold text-lg capitalize pb-6">Other Pages</h3>
             <div className="text-gray-500 flex flex-col gap-4 font-semibold">
               {footerData.dataTwo.map((item, i) => (
-                <Link href={item.path}>
+                <Link key={i} href={item.path}>
                   <p
                     key={i}
                     className="transition duration-200 hover:text-white hover:translate-x-1"
@@ -256,7 +276,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </motion.footer>
+    </footer>
   );
 };
 

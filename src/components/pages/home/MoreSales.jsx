@@ -77,9 +77,9 @@ const MoreSales = () => {
         </div>
       </div>
       <div  
-      //  data-aos="fade-left"
-      //  data-aos-duration="1000"
-      //  data-aos-once="true"
+       data-aos="fade-left"
+       data-aos-duration="1000"
+       data-aos-once="true"
       className="relative h-[600px] md:h-auto lg:col-span-2 xl:col-span-1 lg:ml-20 px-2 ">
         <div className="mx-auto w-fit py-4">
           <Image src={bg_right_img} alt="bg-right-img" ></Image>
