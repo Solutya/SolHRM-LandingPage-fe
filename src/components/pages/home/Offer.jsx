@@ -24,12 +24,13 @@ const Offer = () => {
             priority={true}
           />
            <Image
-            className="hidden sm:block absolute bottom-0 "
+            className="hidden sm:block absolute bottom-0 left-0 "
             src="/assets/images/home/offer4.png"
             width={150}
             height={170}
             quality={100}
             alt="Offer"
+            priority="true"
           />
           <Image
             className="hidden sm:block animate-leftRight absolute shadow-2xl rounded-3xl top-0 left-5"

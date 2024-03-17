@@ -7,6 +7,17 @@ html {
   scroll-behavior: smooth !important;
 
 }
+
+#topButton{
+  z-index: 9999;
+  bottom: 35px;
+  right:35px;
+}
+.arrowUp{
+  left:10px;
+  top:9px
+}
+
 /* scroll bar */
 
 /* width */
