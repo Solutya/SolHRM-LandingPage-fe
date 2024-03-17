@@ -18,7 +18,7 @@ const HomePage = () => {
       <div>
       <Hero />
       </div>
-      <div className="-mt-[480px] hidden lg:block">
+      <div className="2xl:-mt-[480px] -mt-[380px] hidden lg:block">
         <FeatursScrollSection/>
       </div>
 
