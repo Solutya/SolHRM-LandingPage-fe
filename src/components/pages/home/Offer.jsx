@@ -8,55 +8,62 @@ import { IoIosCheckmark } from "react-icons/io";
 const Offer = () => {
   return (
     <SectionWrapper>
-      <div className="py-24 overflow-x-hidden grid lg:grid-cols-2 gap-x-20 gap-y-16 text-myDark">
+      <div className="text-myDark  grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-16 ">
         <div 
-        data-aos="fade-right"
-        data-aos-duration="800"
-        
-        data-aos-once="true"
-        className="bg-[url('/assets/images/home/offer-bg.png')] bg-cover bg-center bg-no-repeat md:h-[450px] h-[300px] relative">
+        // data-aos="fade-right"
+        // data-aos-duration="800"
+        // data-aos-once="true"
+        className=" relative bg-center bg-no-repeat ">
           <Image
-            className="shadow-2xl rounded-2xl absolute top-12 max-md:hidden block animate-leftRight"
-            src="/assets/images/home/offer1.jpg"
-            width={250}
-            height={250}
+            className="w-full lg:w-[80%] mx-auto pt-[200px] sm:pt-10"
+            src="/assets/images/home/offer-bg.png"
+            width={525}
+            height={482}
             quality={100}
             alt="Offer"
-            layout="fixed" 
+            priority={true}
+          />
+           <Image
+            className="hidden sm:block absolute bottom-0 "
+            src="/assets/images/home/offer4.png"
+            width={150}
+            height={170}
+            quality={100}
+            alt="Offer"
           />
           <Image
-            className="shadow-2xl rounded-2xl absolute md:top-24 top-6 lg:right-0 md:right-[230px] animate-zoomInOut"
+            className="hidden sm:block animate-leftRight absolute shadow-2xl rounded-3xl top-0 left-5"
+            src="/assets/images/home/offer1.jpg"
+            width={231}
+            height={192}
+            quality={100}
+            alt="Offer"
+          />
+          <Image
+            className="animate-zoomInOut absolute shadow-2xl rounded-3xl top-[50%] sm:top-20  sm:left-[120px]"
             src="/assets/images/home/offer2.jpg"
-            width={350}
-            height={350}
+            width={365}
+            height={265}
             quality={100}
             alt="Offer"
            
           />
           <Image
-            className="shadow-2xl rounded-2xl absolute bottom-0 lg:right-[60px] right-[200px] max-md:hidden block animate-updown"
+            className="hidden sm:block animate-updown absolute shadow-2xl rounded-3xl bottom-8 left-[220px] "
             src="/assets/images/home/offer3.jpg"
-            width={210}
-            height={210}
+            width={204}
+            height={215}
             quality={100}
             alt="Offer"
-            layout="fixed" 
+           
           />
-          <Image
-            className="rounded-2xl absolute -bottom-12 left-0 z-10 max-md:hidden block"
-            src="/assets/images/home/offer4.png"
-            width={180}
-            height={180}
-            quality={100}
-            alt="Offer"
-          />
+         
         </div>
         <div
          data-aos="fade-left"
          data-aos-duration="800"
-         
          data-aos-once="true"
-        className="max-lg:mt-12">
+        className="max-lg:mt-12 flex-1">
           <button className="bg-[#7472ee1c] px-4 py-1 flex items-center justify-center rounded-full text-sm text-myBlue font-medium cursor-text">
             OVER 150K+ CLIENT
           </button>
@@ -64,7 +71,7 @@ const Offer = () => {
             <h1 className="lg:text-[50px] text-[40px] leading-none font-bold">
               We Offer Real Time Data Solutions
             </h1>
-            <p className="text-gray-500 md:text-xl = md:mt-6 mt-4">
+            <p className="text-gray-500 md:text-xl  md:mt-6 mt-4">
               Excepteur sint occaecat cupidatat officia non proident sunt in
               culpa qui deserunt.!
             </p>

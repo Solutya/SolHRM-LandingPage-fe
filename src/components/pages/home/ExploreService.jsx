@@ -9,8 +9,8 @@ const ExploreService = () => {
   const myData = service_data;
 
   return (
-    <div className="relative py-24 ">
       <SectionWrapper>
+    <div className="relative pt-24">
       <div
        data-aos="fade-up"
        data-aos-duration="1000"
@@ -55,10 +55,11 @@ const ExploreService = () => {
             </div>
           </div>
         ))}
-        <div  data-aos="fade-up"
+        <div  
+        data-aos="fade-up"
         data-aos-duration="1400"
-        
-        data-aos-once="true" className="bg-[url('/assets/images/service/sv-bg.jpg')] rounded-3xl p-10 pb-0 z-20 md:w-fit relative w-full mx-auto bg-cover">
+        data-aos-once="true" 
+        className="bg-[url('/assets/images/service/sv-bg.jpg')] rounded-3xl p-16 pb-0 z-20 md:w-fit relative w-full mx-auto bg-cover">
           <div className="text-white">
             <h2 className="font-bold  text-[30px]">
               Data Analysis Tools & Methods
@@ -74,19 +75,20 @@ const ExploreService = () => {
           </div>
           <div className="z-10 w-fit ">
             <Image
+              data-aos="fade-left"
+              data-aos-duration="1400"
+              data-aos-once="true"
               src={"/assets/images/service/sv-dashbord.png"}
               alt="demo"
               width={240}
               height={100}
-              className="w-auto float-right mt-10 -mb-2 end-0 pt-4"
+              className="w-auto float-right mt-10 -mb-2 end-0 pt-4 pb-[3px]"
             ></Image>
           </div>
         </div>
       </div>
-      <div className="border-b-[60px] lg:border-b-[80px] border-[#f6f5fa] absolute bottom-0 w-full left-0"></div>
-      </SectionWrapper>
-
     </div>
+      </SectionWrapper>
   );
 };
 

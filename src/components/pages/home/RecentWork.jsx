@@ -4,7 +4,7 @@ import React from 'react';
 
 const RecentWork = () => {
     return (
-        <div className='py-24 bg-[#f6f5fa] pb-[80px]' id="projects">
+        <div className='-mt-12 py-24 bg-[#f6f5fa] pb-[80px]' id="projects">
             <div
              data-aos="fade-up"
              data-aos-duration="1000"

@@ -10,6 +10,7 @@ import Offer from "@/components/pages/home/Offer";
 import FeatursScrollSection from "@/components/pages/home/FeaturesScroll/FeaturesScroll";
 import HorizontalSwipe from "@/components/others/HorizontalSwipe.jsx/HorizontalSwipe";
 import PinScroll from "@/components/others/PinScroll/PinScroll";
+import ScrollToTop from "@/utils/ScrollToTop";
 
 const HomePage = () => {
   
@@ -43,7 +44,7 @@ const HomePage = () => {
       <div id="price">
         <PriceArea />
       </div>
-      
+     
     </div>
   );
 };

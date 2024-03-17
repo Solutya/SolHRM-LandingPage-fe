@@ -26,7 +26,7 @@ module.exports = {
             transform: 'translateX(0)',
           },
           '50%': {
-            transform: 'translateX(-10px)', // Adjust this value as per your requirement
+            transform: 'translateX(-25px)', // Adjust this value as per your requirement
           },
         },
         updown: {
