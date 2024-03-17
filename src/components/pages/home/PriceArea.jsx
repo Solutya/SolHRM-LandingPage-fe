@@ -9,7 +9,6 @@ const PriceArea = () => {
         <div 
          data-aos="fade-up"
          data-aos-duration="1000"
-         
          data-aos-once="true"
         className="text-center">
           <HeaderTitle
