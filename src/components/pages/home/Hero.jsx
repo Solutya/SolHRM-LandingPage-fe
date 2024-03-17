@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import NavBar from "./NavBar";
 import Image from "next/image";
@@ -12,14 +12,34 @@ import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import HeroUnderline from "./HeroUnderline";
 import { CiMail } from "react-icons/ci";
 import BlueBtn from "@/components/btn's/BlueBtn";
+import { motion } from "framer-motion";
+import gsap from "gsap";
 
 const Hero = () => {
   const [isOpen, setIsOpen] = useState(false);
+  let hero_bg = useRef(null);
+
+  useEffect(() => {
+      gsap.from(hero_bg.current, {
+          opacity: 0,
+          scale: 1.2,
+          duration: 1.5
+      });
+      gsap.to(hero_bg.current, {
+          opacity: 1,
+          scale: 1,
+          duration: 1.5
+      })
+  }, []);
   return (
     <div className="lg:px-[3%] relative overflow-hidden">
       <div className="max-w-[1170px] mx-auto lg:px-10 sm:px-[15%] px-[10%] bg-white max-md:hidden">
         <div className="py-5 flex items-center justify-between">
-          <div className="flex items-center gap-1">
+          <motion.div 
+           initial={{ opacity: 0, y: 10 }}
+           animate={{ opacity: 1, y: 0 }}
+           transition={{ duration: 0.5 ,delay:0.5}}
+          className="flex items-center gap-1">
             <p className="text-gray-500 text-sm font-medium">
               <span className="text-myDark">Offer</span> is going on till
               Friday, $2.99/mo.{" "}
@@ -30,8 +50,12 @@ const Hero = () => {
             >
               <MdKeyboardArrowRight />
             </Link>
-          </div>
-          <p className=" text-myDark  text-sm font-medium">
+          </motion.div>
+          <motion.p
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3 ,delay:0.5 , ease:"linear"}}
+          className=" text-myDark  text-sm font-medium">
             Get Support:
             <Link
               href="#"
@@ -39,13 +63,20 @@ const Hero = () => {
             >
               +806 (000) 888 99
             </Link>
-          </p>
+          </motion.p>
         </div>
       </div>
-      <div className="lg:bg-[url('/assets/images/home/hero-bg.png')] bg-[url('/assets/images/home/hero-bg-max-lg.png')] bg-cover bg-center bg-no-repeat lg:rounded-[35px] lg:h-[900px] md:h-[650px] sm:h-[80vh] h-[90vh]">
+      <div
+        data-aos="zoom-out"
+        data-aos-duration="500"
+        data-aos-once="true"
+        useRef={hero_bg}
+        className="lg:bg-[url('/assets/images/home/hero-bg.png')] bg-[url('/assets/images/home/hero-bg-max-lg.png')] bg-cover bg-center bg-no-repeat lg:rounded-[35px] lg:h-[900px] md:h-[650px] sm:h-[80vh] h-[90vh] "
+      >
         <NavBar isOpen={isOpen} setIsOpen={setIsOpen} />
+        
         <div
-          className={`z-[1000] transition-all duration-300 ${
+          className={`z-[1000] transition-all duration-1000 ${
             isOpen
               ? "fixed h-[100vh] right-0 top-0 bottom-0"
               : "absolute top-0 bottom-0 -right-[120%]"
@@ -150,25 +181,43 @@ const Hero = () => {
             </div>
           </div>
         </div>
+
+        {/* hero section */}
         <div className="lg:mt-20 md:mt-12 mt-8 text-center">
-          <h1 className="text-myDark lg:text-[80px] md:text-[60px] text-[50px] leading-tight font-bold">
+          <h1
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="100"
+            data-aos-once="true"
+            className="text-myDark lg:text-[80px] md:text-[60px] text-[36px] leading-tight font-bold"
+          >
             The Leading Customer <br /> Data Platform
           </h1>
           <div className="mt-4">
             <HeroUnderline />
           </div>
-          <div className="md:max-w-[630px] max-w-[500px] md:h-[60px] h-[50px] relative mx-auto md:mt-8 mt-5 max-md:flex flex-col items-center justify-center max-md:px-4">
+          <div 
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+          data-aos-once="true"
+          className="md:max-w-[630px] max-w-[500px] md:h-[60px] h-[50px] relative mx-auto md:mt-8 mt-5 max-md:flex flex-col items-center justify-center max-md:px-4">
             <input
               className="w-full h-full rounded-full px-[58px] outline-none"
               type="email"
-              placeholder="Business eamil address"
+              placeholder="Business email address"
             />
             <CiMail className="absolute md:top-[35%] top-[30%] text-xl md:left-7 left-9" />
             <div className="absolute md:right-2 md:top-[7px] max-md:mt-32">
               <BlueBtn>Get A Demo</BlueBtn>
             </div>
           </div>
-          <p className="text-sm md:mt-5 max-md:pt-24 text-gray-500">
+          <p 
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="100"
+          data-aos-once="true"
+          className="text-sm md:mt-5 max-md:pt-24 text-gray-500">
             We are not going to save your data
           </p>
         </div>

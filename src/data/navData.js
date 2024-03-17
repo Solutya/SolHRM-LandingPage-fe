@@ -1,23 +1,32 @@
 const navData = [
+ 
   {
-    title: "Home",
-    path: "/",
+    title: "Features",
+    path: "features",
   },
   {
-    title: "Pages",
-    path: "/page",
+    title: "Offers",
+    path: "offers",
   },
   {
-    title: "Projects",
-    path: "/projects",
+    title: "Services",
+    path: "services",
   },
   {
-    title: "Blog",
-    path: "/blog",
+    title: "Works",
+    path: "works",
   },
   {
-    title: "Contact",
-    path: "/contact",
+    title: "Clients",
+    path: "clients",
+  },
+  {
+    title: "Sales",
+    path: "sales",
+  },
+  {
+    title: "Price",
+    path: "price",
   },
 ];
 export default navData;

@@ -77,7 +77,7 @@ const ProjectSlider = () => {
                         alt="theme-pure"
                         width={297}
                         height={450}
-                        className="rounded-ss-3xl md:rounded-es-3xl rounded-se-3xl md:rounded-se-none   h-[100%] object-cover w-full md:w-80 "
+                        className="rounded-ss-3xl md:rounded-es-3xl rounded-se-3xl md:rounded-se-none h-[100%] object-cover w-full md:w-80 "
                       />
                     </div>
                     <div

@@ -65,11 +65,14 @@ const PriceTabCards = () => {
           .filter((item) => item.category === currentTab)
           .map((item, i) => (
             <div
+            data-aos="fade-up"
+            data-aos-duration="500" 
+            data-aos-once="false"
               key={i}
               className=" mb-30 w-full md:w-fit max-w-80 mx-auto h-full"
             >
               <div
-                className={` ${item.cls} bg-white rounded-3xl px-[30px] py-[25px] md:px-[60px] md:py-[50px] lg:px-[35px] lg:w-[320px] lg:py-[28px] space-y-4 h-full flex flex-col justify-between `}
+                className={` ${item.cls} bg-white rounded-3xl px-[30px] py-[25px] md:px-[60px] md:py-[50px] lg:px-[35px] lg:w-[320px] lg:py-[28px] space-y-4 h-full flex flex-col justify-between 2xl:w-72`}
               >
                 <div className="">
                   <Image

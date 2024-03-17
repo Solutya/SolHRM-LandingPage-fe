@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
 
+}
 /* scroll bar */
 
 /* width */
@@ -25,7 +29,7 @@
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #4f4cff;
+  background: #4441ff;
 }
 
 /* selection text color */
@@ -131,3 +135,6 @@ margin-bottom:-25%;
     stroke-dasharray: 3000;
   }
 }
+
+
+

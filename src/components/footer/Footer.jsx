@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import CircleBtn from "../btn's/CircleBtn";
 import { CiMail } from "react-icons/ci";
 import Image from "next/image";
@@ -11,51 +11,131 @@ import Link from "next/link";
 import { IoMailOutline } from "react-icons/io5";
 import { IoIosArrowDropupCircle } from "react-icons/io";
 import footerData from "@/data/footerData";
-
+import { motion, useAnimation, useIsomorphicLayoutEffect } from "framer-motion";
+import { gsap } from "gsap";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const [isOpen, setIsOpen] = useState(false);
+
+  // Footer width scroll animation
+//   const [footerMargin, setFooterMargin] = useState("5%"); // Initial margin values
+//   const controls = useAnimation();
+
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       const isAtBottom =
+//         window.innerHeight + window.scrollY >= document.body.offsetHeight - 300;
+// console.log(isAtBottom)
+//       if (window.innerWidth > 1024) {
+//         // Adjust for large screens only
+
+//         if (!isAtBottom && window.scrollY > 0) {
+//           controls.start({
+//             marginLeft: "0%",
+//             marginRight: "0%",
+//             transition: { duration: 0.8 },
+//           });
+//         } else {
+//           controls.start({
+//             marginLeft: "5%",
+//             marginRight: "5%",
+//             transition: { duration: 0.8 },
+//           });
+//         }
+//       } else {
+//         // For screens less than 1024, remove margins entirely
+//         controls.start({
+//           marginLeft: "0%",
+//           marginRight: "0%",
+//           transition: { duration: 0.5 },
+//         });
+//       }
+//     };
+
+//     window.addEventListener("scroll", handleScroll);
+
+//     return () => {
+//       window.removeEventListener("scroll", handleScroll);
+//     };
+//   }, [controls]);
+
+useIsomorphicLayoutEffect(() => {
+  gsap.set(".tp-gsap-bg", { scaleX: 1 });
+  let mm = gsap.matchMedia();
+  mm.add("(min-width:1400px)", () => {
+    gsap.to(".tp-gsap-bg", {
+      scrollTrigger: {
+        trigger: ".tp-gsap-bg",
+        scrub: 0.02,
+        start: "top bottom",
+        end: "bottom bottom",
+      },
+      scaleX: 0.95,
+      borderRadius: "30px",
+      transformOrigin: "center center",
+      ease: "none",
+    });
+  });
+}, []);
+
   return (
-    <footer className="lg:rounded-3xl lg:mx-10 bg-myDark px-[2%] ">
-      <div className="text-white space-y-10  mt-10 lg:mt-20 xl:w-[1180px] mx-auto p-[1%] pt-[50px] px-[6%] md:px-[0] ">
+    <footer
+      // style={{ marginLeft: footerMargin, marginRight: footerMargin }}
+      // initial={{ marginLeft: "5%", marginRight: "5%" }} 
+      // animate={controls}
+      className="lg:rounded-3xl lg:mb-10  bg-myDark tp-gsap-bg px-[2%] "
+    >
+      <div className="text-white space-y-10  mt-10 lg:mt-20 xl:w-[1180px] mx-auto p-[1%] pt-[50px] px-[6%] md:px-6 ">
         {/* Footer top */}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-0 items-center  ">
           <div>
-            <h3 className="text-xl">
+            <h3
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-once="true"
+              className="text-xl"
+            >
               Get Our Latest's News <br /> & Updates
             </h3>
           </div>
-          <div className="relative text-black bg-white px-2 flex justify-between items-center rounded-full ">
-            <div className="flex flex-1 pl-4 items-center">
-              <CiMail className="text-2xl" />
-              <input
-                type="text"
-                className="p-6 rounded-full w-full shadow-sm sm:text-sm focus:outline-none "
-              />
-            </div>
-            <div className="">
+
+          <div
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="100"
+            data-aos-once="true"
+            className="relative :w-[90%]"
+          >
+            <input
+              className="w-full  h-16 rounded-full px-16 text-myDark"
+              type="email"
+              
+            />
+            <CiMail className="absolute md:top-[35%] top-6 text-xl md:left-7 left-6 text-black" />
+            <div className="absolute md:right-2 top-1 right-2 ">
               <CircleBtn />
             </div>
           </div>
-          {/* <div className="relative w-[500px] h-[70px]">
-          <input
-            className="absolute top-0 left-0 w-full h-full bg-white outline-none rounded-full px-8"
-            type="email"
-            placeholder="Bussiness email address"
-          />
-          <div className="absolute right-3 top-[10%]">
-            <CircleBtn />
-          </div>
-        </div> */}
         </div>
-        <hr className="w-[90%] mx-auto border-[#cfcfcf2a]" />
+        <hr
+          data-aos="fade-up"
+          data-aos-duration="800"
+
+          data-aos-once="true"
+          className="w-[90%] mx-auto border-[#cfcfcf2a]"
+        />
         {/* Footer middle */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between xl:space-x-4 space-y-10">
-          <div className="space-y-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between xl:space-x-4 xl:space-y-0 space-y-10">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-once="true"
+            className="space-y-4"
+          >
             <Image
-              src={"/assets/images/home/logo-white.png"}
-              width={135}
-              height={40}
+              src={"/assets/images/logo/solhrmForDark.png"}
+              width={180}
+              height={80}
               alt="logo-white-footer"
             />
             <p className="text-sm leading-relaxed">
@@ -85,11 +165,17 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <div>
+          <div
+             data-aos="fade-up"
+             data-aos-duration="1000"
+             data-aos-delay="50"
+             data-aos-once="true" 
+          >
             <h3 className="font-bold text-lg capitalize pb-6">What we do</h3>
             <div className="text-gray-500 flex flex-col gap-4 font-semibold">
               {footerData.dataOne.map((item, i) => (
                 <Link
+                key={i}
                   href={item.path}
                   className="transition duration-200 hover:text-white hover:translate-x-1"
                 >
@@ -98,11 +184,16 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <div>
+          <div
+          data-aos="fade-up"
+          data-aos-duration="1200"
+          data-aos-delay="80"
+          data-aos-once="true" 
+          >
             <h3 className="font-bold text-lg capitalize pb-6">Other Pages</h3>
             <div className="text-gray-500 flex flex-col gap-4 font-semibold">
               {footerData.dataTwo.map((item, i) => (
-                <Link href={item.path}>
+                <Link key={i} href={item.path}>
                   <p
                     key={i}
                     className="transition duration-200 hover:text-white hover:translate-x-1"
@@ -113,7 +204,12 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <div>
+          <div
+          data-aos="fade-up"
+          data-aos-duration="1400"
+          data-aos-delay="120"
+          data-aos-once="true" 
+          >
             <h3 className="font-bold text-lg capitalize pb-6">Contact Us</h3>
             <div className="text-gray-500 flex flex-col gap-4 font-semibold">
               {footerData.dataThree.map((item, i) => (
@@ -124,13 +220,17 @@ const Footer = () => {
                   </p>
                 </div>
               ))}
-            
             </div>
           </div>
         </div>
         <hr className=" border-[#cfcfcf2a]" />
         {/* Footer bottom */}
-        <div className="flex justify-between items-center text-xs md:text-base pb-4 flex-wrap gap-6">
+        <div 
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="150"
+        data-aos-once="true" 
+        className="flex justify-between items-center text-xs md:text-base pb-4 flex-wrap gap-6">
           <p className="">
             Copyright &copy; {currentYear}
             <Link
@@ -144,21 +244,36 @@ const Footer = () => {
             . All Rights Reserved.
           </p>
           <div className="relative">
-      <div className="relative bg-[#7a7a7a48] rounded-full">
-        <div className="w-full p-2 pr-9 cursor-pointer" onClick={()=>setIsOpen(!isOpen)}>
-          <p>English (US)</p>
-        </div>
-        <div className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
-          <IoIosArrowDropupCircle className="text-2xl" />
-        </div>
-      </div>
-      <div className={`absolute bottom-full mt-[calc(-100% - 5px)] right-0 w-full bg-white rounded-xl text-myDark p-2  ${isOpen? "block":"hidden"}`}>
-        <p className="p-2 hover:bg-myBlue hover:text-white rounded-lg cursor-pointer">Bengali</p>
-        <p className="p-2 hover:bg-myBlue hover:text-white rounded-lg cursor-pointer">Arabic</p>
-        <p className="p-2 hover:bg-myBlue hover:text-white rounded-lg cursor-pointer">Hindi</p>
-        <p className="p-2 hover:bg-myBlue hover:text-white rounded-lg cursor-pointer">Spanish</p>
-      </div>
-    </div>
+            <div className="relative bg-[#7a7a7a48] rounded-full">
+              <div
+                className="w-full p-2 pr-9 cursor-pointer"
+                onClick={() => setIsOpen(!isOpen)}
+              >
+                <p>English (US)</p>
+              </div>
+              <div className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+                <IoIosArrowDropupCircle className="text-2xl" />
+              </div>
+            </div>
+            <div
+              className={`absolute bottom-full mt-[calc(-100% - 5px)] right-0 w-full bg-white rounded-xl text-myDark p-2  ${
+                isOpen ? "block" : "hidden"
+              }`}
+            >
+              <p className="p-2 hover:bg-myBlue hover:text-white rounded-lg cursor-pointer">
+                Bengali
+              </p>
+              <p className="p-2 hover:bg-myBlue hover:text-white rounded-lg cursor-pointer">
+                Arabic
+              </p>
+              <p className="p-2 hover:bg-myBlue hover:text-white rounded-lg cursor-pointer">
+                Hindi
+              </p>
+              <p className="p-2 hover:bg-myBlue hover:text-white rounded-lg cursor-pointer">
+                Spanish
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

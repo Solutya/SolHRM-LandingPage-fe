@@ -3,12 +3,17 @@ import WhiteBtn from "@/components/btn's/WhiteBtn";
 import navData from "@/data/navData";
 import Image from "next/image";
 import Link from "next/link";
+import { Link as RLink, animateScroll as scroll } from 'react-scroll';
 import React, { useEffect, useState } from "react";
 import { BiSearch } from "react-icons/bi";
 import { LuUser2 } from "react-icons/lu";
 import { HiBars3 } from "react-icons/hi2";
+import { motion } from 'framer-motion';
 
-const NavBar = ({ isOpen, setIsOpen }) => {
+
+//  PROPS: 3 Props are  provide (isOpen, setIsOpen mandatory) , isWhite is for other pages where background is darker. 
+const NavBar = ({ isOpen, setIsOpen ,isWhite}) => {
+
   const [isNavFixed, setIsNavFixed] = useState(false);
 
   useEffect(() => {
@@ -26,38 +31,56 @@ const NavBar = ({ isOpen, setIsOpen }) => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [isNavFixed]);
 
   return (
     <div
+
       className={`${
         isNavFixed
-          ? "fixed top-0 left-0 right-0 z-50 bg-white border-b transition-all duration-300"
+          ? "fixed top-0 left-0 right-0 z-50 bg-white border-b transition-all duration-300 "
           : ""
-      } `}
+      } ${!isNavFixed && isWhite ? "text-white":""}`}
     >
-      <div className="max-w-[1170px] mx-auto xl:px-0 lg:px-10 sm:px-[15%] px-[6%]  max-md:bg-white">
+      <div className="max-w-[1170px] mx-auto xl:px-0 lg:px-10 sm:px-[15%] px-[6%]  max-md:bg-white w-full">
         <div className="flex items-center justify-between py-5 font-medium text-dark">
-          <div className="flex items-center xl:gap-11 gap-9">
+          <div className="flex items-center xl:gap-16 lg:gap-6 sm:gap-9 gap-0">
+            {/* Logo change on isWhite props */}
             <Link href="/">
-              <Image
-                src="/assets/images/home/logo-black.png"
-                width={130}
-                height={50}
+              {
+               !isNavFixed && isWhite? <Image
+                src="/assets/images/logo/solhrmForDark.png"
+                width={160}
+                height={60}
                 quality={100}
                 alt="Logo"
-              />
+                className="w-32"
+              /> :  <Image
+              src="/assets/images/logo/solhrm.png"
+              width={160}
+              height={60}
+              quality={100}
+              alt="Logo"
+              className="w-32"
+            />
+              }
+             
             </Link>
-            <div className="flex items-center xl:gap-10 gap-7">
+            <div className="flex items-center xl:gap-8 gap-7 lg:text-[15px]">
               {navData.map((item, index) => (
-                <Link
-                  className="hover:text-[#6865FF] lg:block hidden"
-                  href={`/${item?.path}`}
+                
+                 
+                <RLink
+                  className={`hover:text-[#6865FF] lg:block hidden cursor-pointer ${isWhite? "lg:hidden":""}`}
+                  to={`${item?.path}`}
                   key={index}
+                  duration={1500}
                 >
                   {item.title}
-                </Link>
-              ))}
+                </RLink>
+                
+              ))
+              }
             </div>
           </div>
           <div className="flex items-center xl:gap-7 gap-4">
@@ -76,7 +99,7 @@ const NavBar = ({ isOpen, setIsOpen }) => {
             <div className="max-lg:block hidden">
               <div
                 onClick={() => setIsOpen(!isOpen)}
-                className="bg-white w-11 h-11 rounded-full flex items-center justify-center text-2xl border"
+                className="bg-white w-11 h-11 rounded-full flex items-center justify-center text-2xl border z-20 text-myDark"
               >
                 <HiBars3 />
               </div>

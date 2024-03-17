@@ -1,5 +1,6 @@
 import CircleBtn from "@/components/btn's/CircleBtn";
 import HeaderTitle from "@/components/headerTitle/HeaderTitle";
+import SectionWrapper from "@/components/wrapper's/SectionWrapper";
 import { service_data } from "@/data/service-data";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,16 +9,26 @@ const ExploreService = () => {
   const myData = service_data;
 
   return (
-    <div className="relative mt-20  ">
-      <div className="text-center pb-[50px]">
+    <div className="relative py-24 ">
+      <SectionWrapper>
+      <div
+       data-aos="fade-up"
+       data-aos-duration="1000"
+       
+       data-aos-once="true"
+      className="text-center ">
         <HeaderTitle
           title={"Explore Our Data Services"}
           subTitle={"More than 15,000 companies trust and choose Itech"}
         />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:w-[1180px] mx-auto gap-6">
+      <div className="mt-12 grid lg:grid-cols-3 md:grid-cols-2 gap-6">
         {myData?.map((item, i) => (
-          <div key={i} className="">
+          <div
+          data-aos="fade-up"
+          data-aos-duration={800 + i*200}       
+          data-aos-once="true"
+          key={i} className="">
             <div className="border rounded-3xl  md:w-fit relative w-full max-w-96 mx-auto p-10 hover:shadow-2xl hover:shadow-gray-300  transition duration-300 group">
               <div className="mb-6">
                 <Image
@@ -44,7 +55,10 @@ const ExploreService = () => {
             </div>
           </div>
         ))}
-        <div className="bg-[url('/assets/images/service/sv-bg.jpg')] rounded-3xl p-10 pb-0 z-20 md:w-fit relative w-full max-w-96 mx-auto bg-cover">
+        <div  data-aos="fade-up"
+        data-aos-duration="1400"
+        
+        data-aos-once="true" className="bg-[url('/assets/images/service/sv-bg.jpg')] rounded-3xl p-10 pb-0 z-20 md:w-fit relative w-full mx-auto bg-cover">
           <div className="text-white">
             <h2 className="font-bold  text-[30px]">
               Data Analysis Tools & Methods
@@ -69,7 +83,9 @@ const ExploreService = () => {
           </div>
         </div>
       </div>
-      <div className="border-b-[60px] lg:border-b-[80px] border-[#f6f5fa] absolute bottom-0 w-full"></div>
+      <div className="border-b-[60px] lg:border-b-[80px] border-[#f6f5fa] absolute bottom-0 w-full left-0"></div>
+      </SectionWrapper>
+
     </div>
   );
 };

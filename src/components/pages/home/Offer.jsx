@@ -8,31 +8,39 @@ import { IoIosCheckmark } from "react-icons/io";
 const Offer = () => {
   return (
     <SectionWrapper>
-      <div className="grid lg:grid-cols-2 gap-x-20 text-myDark">
-        <div className="bg-[url('/assets/images/home/offer-bg.png')] bg-cover bg-center bg-no-repeat md:h-[450px] h-[300px] relative">
+      <div className="py-24 overflow-x-hidden grid lg:grid-cols-2 gap-x-20 gap-y-16 text-myDark">
+        <div 
+        data-aos="fade-right"
+        data-aos-duration="800"
+        
+        data-aos-once="true"
+        className="bg-[url('/assets/images/home/offer-bg.png')] bg-cover bg-center bg-no-repeat md:h-[450px] h-[300px] relative">
           <Image
-            className="shadow-2xl rounded-2xl absolute top-12 max-md:hidden block"
+            className="shadow-2xl rounded-2xl absolute top-12 max-md:hidden block animate-leftRight"
             src="/assets/images/home/offer1.jpg"
             width={250}
             height={250}
             quality={100}
             alt="Offer"
+            layout="fixed" 
           />
           <Image
-            className="shadow-2xl rounded-2xl absolute md:top-24 top-6 lg:right-0 md:right-[230px]"
+            className="shadow-2xl rounded-2xl absolute md:top-24 top-6 lg:right-0 md:right-[230px] animate-zoomInOut"
             src="/assets/images/home/offer2.jpg"
             width={350}
             height={350}
             quality={100}
             alt="Offer"
+           
           />
           <Image
-            className="shadow-2xl rounded-2xl absolute bottom-0 lg:right-[60px] right-[200px] max-md:hidden block"
+            className="shadow-2xl rounded-2xl absolute bottom-0 lg:right-[60px] right-[200px] max-md:hidden block animate-updown"
             src="/assets/images/home/offer3.jpg"
             width={210}
             height={210}
             quality={100}
             alt="Offer"
+            layout="fixed" 
           />
           <Image
             className="rounded-2xl absolute -bottom-12 left-0 z-10 max-md:hidden block"
@@ -43,7 +51,12 @@ const Offer = () => {
             alt="Offer"
           />
         </div>
-        <div className="max-lg:mt-12">
+        <div
+         data-aos="fade-left"
+         data-aos-duration="800"
+         
+         data-aos-once="true"
+        className="max-lg:mt-12">
           <button className="bg-[#7472ee1c] px-4 py-1 flex items-center justify-center rounded-full text-sm text-myBlue font-medium cursor-text">
             OVER 150K+ CLIENT
           </button>
@@ -76,7 +89,7 @@ const Offer = () => {
               </div>
             </div>
           </div>
-          <div className="md:mt-12 mt-8">
+          <div className="md:mt-12 mt-8 w-fit ">
             <BlueBtn>About Us</BlueBtn>
           </div>
         </div>
