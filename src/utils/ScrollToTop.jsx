@@ -38,7 +38,7 @@ const ScrollToTop = () => {
         <button
           id="topButton"
          
-          className={`fixed bottom-4 left-4 flex items-center justify-center p-2 bg-myBlue text-white rounded-full hover:bg-puple-800 focus:outline-none transition-all duration-500 ${showButton ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+          className={`fixed bottom-4 left-4 flex items-center justify-center p-2 bg-myBlue text-white rounded-full hover:bg-puple-800 focus:outline-none transition-all duration-500   border ${showButton ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
           onClick={scrollToTop}
           style={{ opacity: showButton ? 1 : 0, transform: `translateY(${showButton ? '0' : '10px'})` }}
         >
