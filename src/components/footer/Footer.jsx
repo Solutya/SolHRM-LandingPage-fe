@@ -72,6 +72,7 @@ useIsomorphicLayoutEffect(() => {
       },
       scaleX: 0.95,
       borderRadius: "30px",
+      zIndex:10,
       transformOrigin: "center center",
       ease: "none",
     });
@@ -195,7 +196,7 @@ useIsomorphicLayoutEffect(() => {
               {footerData.dataTwo.map((item, i) => (
                 <Link key={i} href={item.path}>
                   <p
-                    key={i}
+                 
                     className="transition duration-200 hover:text-white hover:translate-x-1"
                   >
                     {item.title}
@@ -213,8 +214,8 @@ useIsomorphicLayoutEffect(() => {
             <h3 className="font-bold text-lg capitalize pb-6">Contact Us</h3>
             <div className="text-gray-500 flex flex-col gap-4 font-semibold">
               {footerData.dataThree.map((item, i) => (
-                <div className="flex gap-4">
-                  <p key={i}>{item.icon}</p>
+                <div  key={i} className="flex gap-4">
+                  <p>{item.icon}</p>
                   <p className="transition duration-200 text-white hover:translate-x-1">
                     {item.title}
                   </p>
@@ -226,10 +227,7 @@ useIsomorphicLayoutEffect(() => {
         <hr className=" border-[#cfcfcf2a]" />
         {/* Footer bottom */}
         <div 
-        data-aos="fade-up"
-        data-aos-duration="1000"
-        data-aos-delay="150"
-        data-aos-once="true" 
+      
         className="flex justify-between items-center text-xs md:text-base pb-4 flex-wrap gap-6">
           <p className="">
             Copyright &copy; {currentYear}

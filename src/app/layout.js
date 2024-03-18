@@ -3,6 +3,9 @@ import "./globals.css";
 import { UtilsProvider } from "@/context/utilsProvider";
 import Footer from "@/components/footer/Footer";
 import { AOSinitFile } from "@/utils/AOSinitFile";
+import ScrollToTop from "@/utils/ScrollToTop";
+import NavBar from "@/components/pages/home/NavBar";
+import FbMessenger from "@/utils/FbMessenger";
 
 const plus = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
@@ -22,10 +25,14 @@ const RootLayout = ({ children }) => {
           sizes="<generated>"
         />
       </head>
-      <AOSinitFile/>
+      <AOSinitFile />
       <body className={plus.className}>
+        {/* <NavBar/> */}
+        <ScrollToTop />
         <UtilsProvider>{children}</UtilsProvider>
+        
         <Footer />
+        <FbMessenger />
       </body>
     </html>
   );

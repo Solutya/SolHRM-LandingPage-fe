@@ -74,12 +74,14 @@ const PriceTabCards = () => {
               <div
                 className={` ${item.cls} bg-white rounded-3xl px-[30px] py-[25px] md:px-[60px] md:py-[50px] lg:px-[35px] lg:w-[320px] lg:py-[28px] space-y-4 h-full flex flex-col justify-between 2xl:w-72`}
               >
-                <div className="">
+                <div className="w-fit ">
                   <Image
-                    src={item.img}
+                    src={item?.img}
                     alt="plan logo"
                     width={55}
                     height={60}
+                    className="w-auto h-auto"
+
                   />
                 </div>
                 <div className="space-y-2 pb-6 border-b-[1px] ">

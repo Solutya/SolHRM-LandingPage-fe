@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
-import React, { useEffect, useRef, useState } from "react";
+import { Link as RLink, animateScroll as scroll } from 'react-scroll';
+import React, { useState } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import NavBar from "./NavBar";
 import Image from "next/image";
@@ -12,24 +13,31 @@ import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import HeroUnderline from "./HeroUnderline";
 import { CiMail } from "react-icons/ci";
 import BlueBtn from "@/components/btn's/BlueBtn";
-import { motion } from "framer-motion";
+import { motion, useIsomorphicLayoutEffect } from "framer-motion";
 import gsap from "gsap";
+
 
 const Hero = () => {
   const [isOpen, setIsOpen] = useState(false);
-  let hero_bg = useRef(null);
+  // bg scaling on scrolling
 
-  useEffect(() => {
-      gsap.from(hero_bg.current, {
-          opacity: 0,
-          scale: 1.2,
-          duration: 1.5
+  useIsomorphicLayoutEffect(() => {
+    gsap.set(".gsap-bg", { scaleX: 1.0 });
+    let mm = gsap.matchMedia();
+    mm.add("(min-width:1400px)", () => {
+      gsap.to(".gsap-bg", {
+        scrollTrigger: {
+          trigger: ".gsap-bg",
+          scrub: 0.02,
+          start: "top top",
+          end: "bottom ",
+        },
+        scaleX: 1.1,
+        borderRadius: "30px",
+        transformOrigin: "center center",
+        ease: "none",
       });
-      gsap.to(hero_bg.current, {
-          opacity: 1,
-          scale: 1,
-          duration: 1.5
-      })
+    });
   }, []);
   return (
     <div className="lg:px-[3%] relative overflow-hidden">
@@ -71,7 +79,7 @@ const Hero = () => {
         // data-aos-duration="500"
         // data-aos-once="true"
         // useRef={hero_bg}
-        className="lg:bg-[url('/assets/images/home/hero-bg.png')] bg-[url('/assets/images/home/hero-bg-max-lg.png')] bg-cover bg-center bg-no-repeat lg:rounded-[35px] lg:h-[900px] md:h-[650px] sm:h-[80vh] h-[90vh] "
+        className="lg:bg-[url('/assets/images/home/hero-bg.png')] bg-[url('/assets/images/home/hero-bg-max-lg.png')] bg-cover bg-center bg-no-repeat lg:rounded-[35px] lg:h-[900px] md:h-[650px] sm:h-[80vh] h-[90vh] gsap-bg"
       >
         <NavBar isOpen={isOpen} setIsOpen={setIsOpen} />
         
@@ -106,14 +114,16 @@ const Hero = () => {
                 />
                 <div className="flex flex-col">
                   {navData.map((item, index) => (
-                    <Link
+
+                 
+                    <RLink
                       className={`border-low-myDark py-[15px] font-medium flex items-center justify-between group ${
                         item?.path === "/contact" ? "" : "border-b"
                       }`}
-                      href={item?.path}
+                      to={item?.path}
                       key={index}
                     >
-                      <span className="group-hover:text-[#FFA8B8]">
+                      <span className="group-hover:text-myBlue">
                         {item?.title}
                       </span>
                       {item?.path === "/contact" ? (
@@ -123,7 +133,7 @@ const Hero = () => {
                           <LuPlus />
                         </div>
                       )}
-                    </Link>
+                    </RLink>
                   ))}
                 </div>
                 <div className="text-center mt-[70px]">
