@@ -75,11 +75,11 @@ const Hero = () => {
         </div>
       </div>
       <div
-        data-aos="zoom-out"
-        data-aos-duration="1000"
-        data-aos-once="true"
+        // data-aos="zoom-out"
+        // data-aos-duration="1000"
+        // data-aos-once="true"
         // useRef={hero_bg}
-        className="lg:bg-[url('/assets/images/home/hero-bg.png')] bg-[url('/assets/images/home/hero-bg-max-lg.png')] bg-cover bg-center bg-no-repeat lg:rounded-[35px] lg:h-[900px] md:h-[650px] sm:h-[80vh] h-[90vh] gsap-bg"
+        className="lg:bg-[url('/assets/images/home/hero-bg.png')] saturate-[1.25] bg-[url('/assets/images/home/hero-bg-max-lg.png')] bg-cover bg-center bg-no-repeat lg:rounded-[35px] lg:h-[900px] md:h-[650px] sm:h-[80vh] h-[90vh] gsap-bg relative"
       >
         <NavBar isOpen={isOpen} setIsOpen={setIsOpen} />
         
@@ -230,6 +230,29 @@ const Hero = () => {
           className="text-sm md:mt-5 max-md:pt-24 text-gray-500">
             We are not going to save your data
           </p>
+        </div>
+        {/* animated images */}
+        <div className="hidden xl:block absolute bottom-0 xl:left-[10px] 2xl:left-[10%] z-10">
+        <Image
+            className="animate-updown"
+            src="/assets/images/home/hero-shape-1.png"
+            width={119}
+            height={116}
+            quality={100}
+            alt="animated hero image 1"
+            
+          />
+        </div>
+        <div className="hidden  xl:block absolute bottom-10 xl:right-[10px] 2xl:right-[10%] z-10">
+        <Image
+            className="animate-updown"
+            src="/assets/images/home/hero-shape-2.png"
+            width={140}
+            height={140}
+            quality={100}
+            alt="animated hero image 1"
+            
+          />
         </div>
       </div>
     </div>

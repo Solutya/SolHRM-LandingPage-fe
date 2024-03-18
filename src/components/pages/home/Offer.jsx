@@ -10,14 +10,14 @@ const Offer = () => {
     <div className="py-24">
 
     <SectionWrapper>
-      <div className="text-myDark  grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-16 overflow-x-hidden ">
+      <div className="text-myDark  grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-20  overflow-x-hidden md:py-10 items-center justify-center lg:pl-10 lg:pb-16 lg:pt-0">
         <div
-        // data-aos="fade-right"
-        // data-aos-duration="800"
-        // data-aos-once="true"
-        className=" relative bg-center bg-no-repeat mx-5 sm:ml-10">
+        data-aos="fade-right"
+        data-aos-duration="800"
+        data-aos-once="true"
+        className="relative   sm:ml-10 lg:ml-0 overflow-visible lg:p-6">
           <Image
-            className="w-full sm:w-[80%] md:w-[70%] lg:w-full mx-auto pt-[200px] sm:pt-10 z-50"
+            className="w-full sm:w-[80%] md:w-[70%] lg:w-full  mx-auto pt-[200px] sm:pt-10 z-50 float-left "
             src="/assets/images/home/offer-bg.png"
             width={525}
             height={482}
