@@ -75,11 +75,11 @@ const Hero = () => {
         </div>
       </div>
       <div
-        data-aos="zoom-out"
-        data-aos-duration="1000"
-        data-aos-once="true"
+        // data-aos="zoom-out"
+        // data-aos-duration="1000"
+        // data-aos-once="true"
         // useRef={hero_bg}
-        className="lg:bg-[url('/assets/images/home/hero-bg.png')] bg-[url('/assets/images/home/hero-bg-max-lg.png')] bg-cover bg-center bg-no-repeat lg:rounded-[35px] lg:h-[900px] md:h-[650px] sm:h-[80vh] h-[90vh] gsap-bg"
+        className="lg:bg-[url('/assets/images/home/hero-bg.png')] saturate-[1.25] bg-[url('/assets/images/home/hero-bg-max-lg.png')] bg-cover bg-center bg-no-repeat lg:rounded-[35px] lg:h-[900px] md:h-[650px] sm:h-[80vh] h-[90vh] gsap-bg"
       >
         <NavBar isOpen={isOpen} setIsOpen={setIsOpen} />
         

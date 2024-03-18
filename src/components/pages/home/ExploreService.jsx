@@ -59,21 +59,21 @@ const ExploreService = () => {
         data-aos="fade-up"
         data-aos-duration="1400"
         data-aos-once="true" 
-        className="bg-[url('/assets/images/service/sv-bg.jpg')] rounded-3xl p-16 pb-0 z-20 md:w-fit relative w-full mx-auto bg-cover">
-          <div className="text-white">
+        className="bg-[url('/assets/images/service/sv-bg.jpg')] rounded-3xl  pb-0 z-20 md:w-[338px] relative w-full mx-auto bg-cover border   max-w-96  hover:shadow-gray-300  transition duration-300 group overflow-hidden">
+          <div className="text-white p-10 space-y-4">
             <h2 className="font-bold  text-[30px]">
               Data Analysis Tools & Methods
             </h2>
-            <p className="text-primary-2">
+            <p className="text-primary-2 pb-4">
               Lorem Ipsum is simply dummy text of the printing
             </p>
-            <Link href="">
+            <Link href="" >
               <button className="p-2 px-6 font-semibold bg-orange-400  rounded-3xl">
                 Work With Us
               </button>
             </Link>
           </div>
-          <div className="z-10 w-fit ">
+          <div className=" overflow-hidden">
             <Image
               data-aos="fade-left"
               data-aos-duration="1400"
@@ -82,7 +82,7 @@ const ExploreService = () => {
               alt="demo"
               width={240}
               height={100}
-              className="w-auto float-right mt-10 -mb-2 end-0 pt-4 pb-[3px]"
+              className="w-full ml-20 -mb-10"
             ></Image>
           </div>
         </div>
