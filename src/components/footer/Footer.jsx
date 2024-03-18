@@ -173,7 +173,7 @@ useIsomorphicLayoutEffect(() => {
              data-aos-once="true" 
           >
             <h3 className="font-bold text-lg capitalize pb-6">What we do</h3>
-            <div className="text-gray-500 flex flex-col gap-4 font-semibold">
+            <div className="text-[#f5f5fa99] flex flex-col gap-4 font-[500]">
               {footerData.dataOne.map((item, i) => (
                 <Link
                 key={i}
@@ -192,7 +192,7 @@ useIsomorphicLayoutEffect(() => {
           data-aos-once="true" 
           >
             <h3 className="font-bold text-lg capitalize pb-6">Other Pages</h3>
-            <div className="text-gray-500 flex flex-col gap-4 font-semibold">
+            <div className="text-[#f5f5fa99] flex flex-col gap-4 font-[500]">
               {footerData.dataTwo.map((item, i) => (
                 <Link key={i} href={item.path}>
                   <p

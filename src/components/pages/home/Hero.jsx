@@ -21,24 +21,24 @@ const Hero = () => {
   const [isOpen, setIsOpen] = useState(false);
   // bg scaling on scrolling
 
-  useIsomorphicLayoutEffect(() => {
-    gsap.set(".gsap-bg", { scaleX: 1.0 });
-    let mm = gsap.matchMedia();
-    mm.add("(min-width:1400px)", () => {
-      gsap.to(".gsap-bg", {
-        scrollTrigger: {
-          trigger: ".gsap-bg",
-          scrub: 0.02,
-          start: "top top",
-          end: "bottom ",
-        },
-        scaleX: 1.1,
-        borderRadius: "30px",
-        transformOrigin: "center center",
-        ease: "none",
-      });
-    });
-  }, []);
+  // useIsomorphicLayoutEffect(() => {
+  //   gsap.set(".gsap-bg", { scaleX: 1.0 });
+  //   let mm = gsap.matchMedia();
+  //   mm.add("(min-width:1400px)", () => {
+  //     gsap.to(".gsap-bg", {
+  //       scrollTrigger: {
+  //         trigger: ".gsap-bg",
+  //         scrub: 0.02,
+  //         start: "top top",
+  //         end: "bottom ",
+  //       },
+  //       scaleX: 1.1,
+  //       borderRadius: "30px",
+  //       transformOrigin: "center center",
+  //       ease: "none",
+  //     });
+  //   });
+  // }, []);
   return (
     <div className="lg:px-[3%] relative overflow-hidden">
       <div className="max-w-[1170px] mx-auto lg:px-10 sm:px-[15%] px-[10%] bg-white max-md:hidden">
