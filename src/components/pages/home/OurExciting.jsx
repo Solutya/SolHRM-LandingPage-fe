@@ -22,7 +22,7 @@ const OurExciting = () => {
             subTitle="More than 15,000 companies trust and choose Itech"
           />
         </div>
-        <div className="mt-12 grid lg:grid-cols-3 md:grid-cols-2 gap-6 pb-6">
+        <div className="mt-12 grid lg:grid-cols-3 md:grid-cols-2 gap-6">
           {OurExcitingData.map((item, index) => (
             <div
             data-aos="fade-up"
