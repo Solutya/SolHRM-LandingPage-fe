@@ -84,7 +84,7 @@ const Hero = () => {
         <NavBar isOpen={isOpen} setIsOpen={setIsOpen} />
         
         <div
-          className={`z-[1000] transition-all duration-1000 ${
+          className={`z-[1000] transition-all duration-1000  ${
             isOpen
               ? "fixed h-[100vh] right-0 top-0 bottom-0"
               : "absolute top-0 bottom-0 -right-[120%]"
@@ -105,8 +105,8 @@ const Hero = () => {
                   <HiOutlineXMark />
                 </div>
                 <Image
-                  className="mx-auto"
-                  src="/assets/images/home/logo-white.png"
+                  className="mx-auto pb-10"
+                  src="/assets/images/logo/solhrmForDark.png"
                   width={140}
                   height={30}
                   quality={100}
