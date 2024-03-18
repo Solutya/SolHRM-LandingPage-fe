@@ -10,7 +10,7 @@ import CircleBtn from "@/components/btn's/CircleBtn";
 
 const OurExciting = () => {
   return (
-    <div className="py-24 lg:mt-10 mt-6 bg-[url('/assets/images/home/exciting-bg.png')] bg-cover bg-center lg:h-[750px] md:h-[1100px] h-[1200px]">
+    <div className="py-24 lg:mt-10 mt-6 bg-[url('/assets/images/home/exciting-bg.png')] bg-contain bg-bottom bg-no-repeat lg:h-[750px] md:h-[1100px] h-[1200px]">
       <SectionWrapper>
         <div
         data-aos="fade-up"
@@ -22,7 +22,7 @@ const OurExciting = () => {
             subTitle="More than 15,000 companies trust and choose Itech"
           />
         </div>
-        <div className="mt-12 grid lg:grid-cols-3 md:grid-cols-2 gap-6">
+        <div className="mt-12 grid lg:grid-cols-3 md:grid-cols-2 gap-6 pb-6">
           {OurExcitingData.map((item, index) => (
             <div
             data-aos="fade-up"

@@ -22,8 +22,11 @@ const setting = {
   centeredSlides: true,
   spaceBetween: 30,
   breakpoints: {
-    1200: {
+    1308:{
       slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 1.5,
     },
     992: {
       slidesPerView: 1,
