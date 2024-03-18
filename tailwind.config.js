@@ -34,7 +34,7 @@ module.exports = {
             transform: 'translateY(0)',
           },
           '50%': {
-            transform: 'translateY(-20px)', // Adjust this value as per your requirement
+            transform: 'translateY(-40px)', // Adjust this value as per your requirement
           },
         },
         zoomInOut: {
