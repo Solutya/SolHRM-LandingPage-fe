@@ -7,6 +7,8 @@ import { IoIosCheckmark } from "react-icons/io";
 
 const Offer = () => {
   return (
+    <div className="py-24">
+
     <SectionWrapper>
       <div className="text-myDark  grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-16 ">
         <div
@@ -15,7 +17,7 @@ const Offer = () => {
         // data-aos-once="true"
         className=" relative bg-center bg-no-repeat ">
           <Image
-            className="w-full sm:w-[80%] lg:w-full mx-auto pt-[200px] sm:pt-10"
+            className="w-full sm:w-[80%] md:w-[50%] lg:w-full mx-auto pt-[200px] sm:pt-10"
             src="/assets/images/home/offer-bg.png"
             width={525}
             height={482}
@@ -24,7 +26,7 @@ const Offer = () => {
             priority={true}
           />
            <Image
-            className="hidden drop-shadow-2xl sm:block absolute bottom-0 left-0 "
+            className="hidden drop-shadow-2xl sm:block absolute bottom-0 left-0 z-10"
             src="/assets/images/home/offer4.png"
             width={150}
             height={170}
@@ -69,13 +71,10 @@ const Offer = () => {
             OVER 150K+ CLIENT
           </button>
           <div className="mt-6">
-            <h1 className="lg:text-[50px] text-[40px] leading-none font-bold">
+            <h1 className="lg:text-[50px] text-[33px] leading-none font-bold">
               We Offer Real Time Data Solutions
             </h1>
-            <p className="text-gray-500 md:text-xl  md:mt-6 mt-4">
-              Excepteur sint occaecat cupidatat officia non proident sunt in
-              culpa qui deserunt.!
-            </p>
+           
             <div className="flex flex-col gap-6 xl:mt-8 mt-5">
               <div className="flex items-center gap-3 font-medium">
                 <div className="w-5 h-5 flex items-center justify-center text-white bg-myPink rounded-full text-xl">
@@ -103,6 +102,7 @@ const Offer = () => {
         </div>
       </div>
     </SectionWrapper>
+    </div>
   );
 };
 

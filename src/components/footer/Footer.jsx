@@ -110,6 +110,7 @@ useIsomorphicLayoutEffect(() => {
             <input
               className="w-full  h-16 rounded-full px-16 text-myDark"
               type="email"
+              placeholder="Business email here..."
               
             />
             <CiMail className="absolute md:top-[35%] top-6 text-xl md:left-7 left-6 text-black" />
