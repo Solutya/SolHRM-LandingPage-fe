@@ -8,7 +8,7 @@ const FbMessenger = () => {
 // console.log(fbAppId,fbPageId)
   return (
     <FacebookProvider appId="441531811346225" chatSupport>
-      <CustomChat pageId="120272619751630" minimized={false} />
+      <CustomChat pageId="120272619751630" minimized={true} />
     </FacebookProvider>
   );
 };

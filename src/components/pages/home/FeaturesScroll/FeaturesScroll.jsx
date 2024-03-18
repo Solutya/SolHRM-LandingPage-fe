@@ -52,7 +52,7 @@ const FeatursScrollSection = () => {
               <div className="features-section-shadow"></div>
               <div className="bg-gray-200 p-7 w-full h-full rounded-[20px] border-white border-[6px] grid grid-cols-12 row-span-12 lg:gap-6 gap-3">
                 <Image
-                  className="col-span-8 row-span-8 w-auto"
+                  className="col-span-8 row-span-8 "
                   src={item?.img1}
                   width={550}
                   height={300}
@@ -60,7 +60,7 @@ const FeatursScrollSection = () => {
                   alt="Features"
                 />
                 <Image
-                  className="col-span-4 row-span-12 w-auto"
+                  className="col-span-4 row-span-12"
                   src={item?.img2}
                   width={254}
                   height={200}
@@ -69,7 +69,7 @@ const FeatursScrollSection = () => {
                 />
                 <div className="col-span-8 row-span-4 flex gap-6 lg:h-[145px] md:h-[120px] w-auto">
                   <Image
-                    className="h-full w-auto"
+                    className="h-full "
                     src={item?.img3}
                     width={150}
                     height={80}
@@ -77,7 +77,7 @@ const FeatursScrollSection = () => {
                     alt="Features"
                   />
                   <Image
-                    className="h-full w-auto"
+                    className="h-full w-full object-cover "
                     src={item?.img4}
                     width={440}
                     height={300}
