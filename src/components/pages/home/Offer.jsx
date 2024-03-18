@@ -10,14 +10,14 @@ const Offer = () => {
     <div className="py-24">
 
     <SectionWrapper>
-      <div className="text-myDark  grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-16 ">
+      <div className="text-myDark  grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-16 overflow-x-hidden ">
         <div
         // data-aos="fade-right"
         // data-aos-duration="800"
         // data-aos-once="true"
-        className=" relative bg-center bg-no-repeat ">
+        className=" relative bg-center bg-no-repeat mx-5 sm:ml-10">
           <Image
-            className="w-full sm:w-[80%] md:w-[50%] lg:w-full mx-auto pt-[200px] sm:pt-10"
+            className="w-full sm:w-[80%] md:w-[70%] lg:w-full mx-auto pt-[200px] sm:pt-10 z-50"
             src="/assets/images/home/offer-bg.png"
             width={525}
             height={482}
@@ -26,7 +26,7 @@ const Offer = () => {
             priority={true}
           />
            <Image
-            className="hidden drop-shadow-2xl sm:block absolute bottom-0 left-0 z-10"
+            className="hidden sm:block absolute bottom-0 left-0 z-10"
             src="/assets/images/home/offer4.png"
             width={150}
             height={170}
@@ -66,7 +66,7 @@ const Offer = () => {
          data-aos="fade-left"
          data-aos-duration="800"
          data-aos-once="true"
-        className="max-lg:mt-12 flex-1">
+        className="max-lg:mt-12 flex-1 overflow-x-hidden">
           <button className="bg-[#7472ee1c] px-4 py-1 flex items-center justify-center rounded-full text-sm text-myBlue font-medium cursor-text">
             OVER 150K+ CLIENT
           </button>
