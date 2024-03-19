@@ -18,7 +18,7 @@ const ExploreService = () => {
        data-aos-once="true"
       className="text-center ">
         <HeaderTitle
-          title={"Explore Our Data Services"}
+          title={"Explore Our SOLHRM Capacities"}
           subTitle={"More than 15,000 companies trust and choose Itech"}
         />
       </div>
@@ -29,7 +29,7 @@ const ExploreService = () => {
           data-aos-duration={800 + i*200}       
           data-aos-once="true"
           key={i} className="">
-            <div className="border rounded-3xl  md:w-fit relative w-full max-w-96 mx-auto p-10 hover:shadow-2xl hover:shadow-gray-300  transition duration-300 group">
+            <div className="border rounded-3xl  md:w-fit relative w-full max-w-96 mx-auto p-10 hover:shadow-2xl hover:shadow-gray-300  transition duration-300 group ">
               <div className="mb-6">
                 <Image
                   src={item.icon.src}

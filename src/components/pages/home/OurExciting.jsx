@@ -10,7 +10,7 @@ import CircleBtn from "@/components/btn's/CircleBtn";
 
 const OurExciting = () => {
   return (
-    <div className="py-24 lg:mt-10 mt-6 bg-[url('/assets/images/home/exciting-bg.png')] bg-contain bg-bottom bg-no-repeat lg:h-[750px] md:h-[1100px] h-[1200px]">
+    <div className="py-24 lg:mt-10 mt-6 bg-[url('/assets/images/home/exciting-bg.png')] bg-contain bg-bottom bg-no-repeat lg:h-[750px] md:h-[1100px] xl:h-[900px] ">
       <SectionWrapper>
         <div
         data-aos="fade-up"

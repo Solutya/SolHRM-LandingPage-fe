@@ -26,7 +26,7 @@ const FeatursScrollSection = () => {
         scrollTrigger: {
           trigger: triggerRef.current,
           start: "top top",
-          end: "1000 top",
+          end: "800 top",
           scrub: 0.6,
           pin: true,
         },
@@ -42,7 +42,7 @@ const FeatursScrollSection = () => {
       <div ref={triggerRef}>
         <div
           ref={sectionRef}
-          className="h-[100vh] w-[400vw] flex flex-row items-center relative"
+          className="h-[85vh] w-[400vw] flex flex-row items-center relative"
         >
           {FeaturesScrollData.map((item, index) => (
             <div
@@ -69,7 +69,7 @@ const FeatursScrollSection = () => {
                 />
                 <div className="col-span-8 row-span-4 flex gap-6 lg:h-[145px] md:h-[120px] w-auto">
                   <Image
-                    className="h-full "
+                    className="h-full object-cover"
                     src={item?.img3}
                     width={150}
                     height={80}

@@ -81,8 +81,55 @@ const Hero = () => {
         // data-aos-duration="1000"
         // data-aos-once="true"
         // useRef={hero_bg}
-        className="lg:bg-[url('/assets/images/home/hero-bg.png')] bg-[url('/assets/images/home/hero-bg-max-lg.png')] bg-cover xl:bg-contain bg-no-repeat lg:rounded-[35px] lg:h-[900px] md:h-[650px] sm:h-[80vh] h-[90vh] gsap-bg relative"
+
+//linear-gradient(180.21deg,#fff9f9 -64.58%,hsla(0,0%,100%,.1) 115.31%),linear-gradient(90deg,#ffc368,#d569e1 50%,#4164e1)
+
+        className="  bg-cover   bg-no-repeat lg:rounded-[35px] lg:h-[900px] md:h-[650px] sm:h-[80vh] h-[90vh] min-h-[700px] gsap-bg relative bg-gradient-to-r from-[#ffc36879] via-[#d569e185] to-[#4164e18a] "
       >
+         <div class="absolute lg:hidden lg:mx-auto lg:-inset-x-[3%] -bottom-0 -inset-x-16 transform ">
+         <Image
+                  className="mx-auto lg:hidden "
+                  src="/assets/images/home/hero-frame.png"
+                  width={1920}
+                  height={30}
+                  quality={100}
+                  alt="Logo"
+                />
+
+         </div>
+         <div class="absolute lg:w-fit lg:mx-auto lg:-inset-x-[3.3%] -bottom-0 -inset-x-16 transform ">
+         <Image
+                  className="mx-auto "
+                  src="/assets/images/home/hero-frame-lg.png"
+                  width={1920}
+                  height={30}
+                  quality={100}
+                  alt="Logo"
+                />
+
+         </div>
+         <div class="absolute top-2/3 z-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full  bg-cover">
+         <Image
+                  className=" opacity-70"
+                  src="/assets/images/home/hero-line-shape.png"
+                  width={1920}
+                  height={800}
+                  quality={100}
+                  alt="Logo"
+                />
+
+         </div>
+         <div class="absolute  top-10  transform left-0    bg-contain ">
+         <Image
+                  className="mx-auto opacity-50"
+                  src="/assets/images/home/hero-line-shape-2.png"
+                  width={1920}
+                  height={30}
+                  quality={100}
+                  alt="Logo"
+                />
+
+         </div>
         <NavBar isOpen={isOpen} setIsOpen={setIsOpen} />
         
         <div
@@ -170,20 +217,28 @@ const Hero = () => {
                   </div>
                   <h5 className="font-bold text-2xl mt-14">we are here</h5>
                   <p className="text-gray-400 mt-4 font-semibold">
-                    uttara-12, Dhaka <br /> Bangladesh
+                  Imagine Osman Center, Sonargaon Janapath Road, Sector# 12, Uttara, Dhaka-1230, Bangladesh
                   </p>
-                  <div className="flex items-center justify-center gap-4 mt-10">
+                  <div className="flex items-center justify-center gap-4 mt-10 pb-10">
                     <div className="p-4 text-xl rounded-xl flex items-center justify-center bg-white text-myBlue hover:text-white hover:bg-myBlue">
+                    <Link href={"https://twitter.com/SolutyaI"} target="__blank">
                       <FaXTwitter />
+                      </Link>
                     </div>
                     <div className="p-4 text-xl rounded-xl flex items-center justify-center bg-white text-myBlue hover:text-white hover:bg-myBlue">
+                    <Link href={"https://www.instagram.com/solutyapvtltd/"} target="__blank">
                       <FaInstagram />
+                      </Link>
                     </div>
                     <div className="p-4 text-xl rounded-xl flex items-center justify-center bg-white text-myBlue hover:text-white hover:bg-myBlue">
+                      <Link href={"https://www.facebook.com/Solutya"} target="__blank">
                       <FaFacebookF />
+                      </Link>
                     </div>
                     <div className="p-4 text-xl rounded-xl flex items-center justify-center bg-white text-myBlue hover:text-white hover:bg-myBlue">
+                    <Link href={"https://www.linkedin.com/company/solutya"} target="__blank">
                       <FaLinkedinIn />
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -193,17 +248,17 @@ const Hero = () => {
         </div>
 
         {/* hero section */}
-        <div className="lg:mt-20 md:mt-12 mt-8 text-center">
+        <div className="lg:mt-20 md:mt-12 mt-8 text-center z-20">
           <h1
-            // data-aos="fade-up"
-            // data-aos-duration="800"
-            // data-aos-delay="100"
-            // data-aos-once="true"
-            className="text-myDark xl:text-[80px] md:text-[50px] text-[36px] leading-tight font-bold"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="100"
+            data-aos-once="true"
+            className="text-myDark 2xl:text-[70px] lg:text-[60px] md:text-[50px] text-[36px] leading-tight font-bold capitalize"
           >
-            The Leading Customer <br /> Data Platform
+            Connecting Minds, Empowering <br />   <span className="text-myBlue">HR</span> journey with <span className="text-myBlue">SOLHRM</span> 
           </h1>
-          <div className="mt-4">
+          <div className="mt-4 hidden md:block">
             <HeroUnderline />
           </div>
           <div 
@@ -232,7 +287,7 @@ const Hero = () => {
           </p>
         </div>
         {/* animated images */}
-        <div className="hidden xl:block absolute bottom-0 xl:left-[10px] 2xl:left-[10%] z-10">
+        <div className="hidden xl:block absolute bottom-20 xl:left-[10px] 2xl:left-[10%] z-10">
         <Image
             className="animate-updown"
             src="/assets/images/home/hero-shape-1.png"
@@ -243,7 +298,7 @@ const Hero = () => {
             
           />
         </div>
-        <div className="hidden  xl:block absolute bottom-10 xl:right-[10px] 2xl:right-[10%] z-10">
+        <div className="hidden  xl:block absolute bottom-14 xl:right-[10px] 2xl:right-[10%] z-10">
         <Image
             className="animate-updownReverse"
             src="/assets/images/home/hero-shape-2.png"
