@@ -13,6 +13,8 @@ import { IoIosArrowDropupCircle } from "react-icons/io";
 import footerData from "@/data/footerData";
 import { motion, useAnimation, useIsomorphicLayoutEffect } from "framer-motion";
 import { gsap } from "gsap";
+import SectionWrapper from "@/components/wrapper's/SectionWrapper";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const [isOpen, setIsOpen] = useState(false);
@@ -86,7 +88,10 @@ useIsomorphicLayoutEffect(() => {
       // animate={controls}
       className="lg:rounded-3xl lg:mb-10  bg-myDark tp-gsap-bg px-[2%] "
     >
-      <div className="text-white space-y-10  mt-10 lg:mt-20 xl:w-[1180px] mx-auto p-[1%] pt-[50px] px-[6%] md:px-6 ">
+      <SectionWrapper>
+
+
+      <div className="text-white space-y-10  mt-10 lg:mt-20  mx-auto p-[1%] pt-[50px] px-[6%] md:px-0 tp-gsap-bg">
         {/* Footer top */}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-0 items-center  ">
           <div>
@@ -110,7 +115,7 @@ useIsomorphicLayoutEffect(() => {
             <input
               className="w-full  h-16 rounded-full px-16 text-myDark"
               type="email"
-              placeholder="Business email here..."
+             
               
             />
             <CiMail className="absolute md:top-[35%] top-6 text-xl md:left-7 left-6 text-black" />
@@ -275,6 +280,7 @@ useIsomorphicLayoutEffect(() => {
           </div>
         </div>
       </div>
+      </SectionWrapper>
     </footer>
   );
 };

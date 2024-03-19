@@ -81,7 +81,7 @@ const Hero = () => {
         // data-aos-duration="1000"
         // data-aos-once="true"
         // useRef={hero_bg}
-        className="lg:bg-[url('/assets/images/home/hero-bg.png')] bg-[url('/assets/images/home/hero-bg-max-lg.png')] bg-cover xl:bg-contain bg-no-repeat lg:rounded-[35px] lg:h-[900px] md:h-[650px] sm:h-[80vh] h-[90vh] gsap-bg relative"
+        className="lg:bg-[url('/assets/images/home/hero-bg.png')] bg-[url('/assets/images/home/hero-bg-max-lg.png')] bg-cover   bg-no-repeat lg:rounded-[35px] lg:h-[900px] md:h-[650px] sm:h-[80vh] h-[90vh] gsap-bg relative"
       >
         <NavBar isOpen={isOpen} setIsOpen={setIsOpen} />
         
@@ -199,9 +199,9 @@ const Hero = () => {
             // data-aos-duration="800"
             // data-aos-delay="100"
             // data-aos-once="true"
-            className="text-myDark xl:text-[80px] md:text-[50px] text-[36px] leading-tight font-bold"
+            className="text-myDark 2xl:text-[70px] lg:text-[60px] md:text-[50px] text-[36px] leading-tight font-bold capitalize"
           >
-            The Leading Customer <br /> Data Platform
+            Connecting Minds, Empowering <br />   <span className="text-myBlue">HR</span> journey with <span className="text-myBlue">SOLHRM</span> 
           </h1>
           <div className="mt-4">
             <HeroUnderline />

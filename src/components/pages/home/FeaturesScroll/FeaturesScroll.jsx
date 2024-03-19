@@ -69,7 +69,7 @@ const FeatursScrollSection = () => {
                 />
                 <div className="col-span-8 row-span-4 flex gap-6 lg:h-[145px] md:h-[120px] w-auto">
                   <Image
-                    className="h-full "
+                    className="h-full object-cover"
                     src={item?.img3}
                     width={150}
                     height={80}

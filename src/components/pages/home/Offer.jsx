@@ -15,7 +15,7 @@ const Offer = () => {
         data-aos="fade-right"
         data-aos-duration="800"
         data-aos-once="true"
-        className="relative   sm:ml-10 lg:ml-0 overflow-visible lg:p-6">
+        className="relative sm:ml-10 lg:ml-0 overflow-visible lg:p-6">
           <Image
             className="w-full sm:w-[80%] md:w-[70%] lg:w-full  mx-auto pt-[200px] sm:pt-10 z-50 float-left "
             src="/assets/images/home/offer-bg.png"
@@ -71,8 +71,8 @@ const Offer = () => {
             OVER 150K+ CLIENT
           </button>
           <div className="mt-6">
-            <h1 className="lg:text-[50px] text-[33px] leading-none font-bold">
-              We Offer Real Time Data Solutions
+            <h1 className="lg:text-[40px] text-[33px] leading-none font-bold capitalize">
+              Empower your HR operations with Real-Time Data Insights
             </h1>
            
             <div className="flex flex-col gap-6 xl:mt-8 mt-5">
@@ -80,7 +80,7 @@ const Offer = () => {
                 <div className="w-5 h-5 flex items-center justify-center text-white bg-myPink rounded-full text-xl">
                   <IoIosCheckmark />
                 </div>
-                Various analysis options.
+                Versatile analysis options.
               </div>
               <div className="flex items-center gap-3 font-medium">
                 <div className="w-5 h-5 flex items-center justify-center text-white bg-myPink rounded-full text-xl">
@@ -92,7 +92,7 @@ const Offer = () => {
                 <div className="w-5 h-5 flex items-center justify-center text-white bg-myPink rounded-full text-xl">
                   <IoIosCheckmark />
                 </div>
-                Big data analysis.
+                Gain actionable intelligence.
               </div>
             </div>
           </div>

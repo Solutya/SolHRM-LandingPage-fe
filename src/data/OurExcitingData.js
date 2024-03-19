@@ -5,17 +5,18 @@ import img3 from "../../public/assets/images/home/exciting3.png";
 export const OurExcitingData = [
   {
     image: img1,
-    title: "A Unified View of The Customer",
+    title: "Employee Database Management",
     path: "/customer",
   },
   {
     image: img2,
-    title: "Industry Leading Procedures",
+    title: "Time and Attendance Management",
     path: "/industry",
   },
+  
   {
     image: img3,
-    title: "Collaboration Across All Areas",
+    title: "Performance Management",
     path: "/collaboration",
   },
 ];
