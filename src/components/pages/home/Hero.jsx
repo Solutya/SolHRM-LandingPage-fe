@@ -250,10 +250,10 @@ const Hero = () => {
         {/* hero section */}
         <div className="lg:mt-20 md:mt-12 mt-8 text-center z-20">
           <h1
-            // data-aos="fade-up"
-            // data-aos-duration="800"
-            // data-aos-delay="100"
-            // data-aos-once="true"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="100"
+            data-aos-once="true"
             className="text-myDark 2xl:text-[70px] lg:text-[60px] md:text-[50px] text-[36px] leading-tight font-bold capitalize"
           >
             Connecting Minds, Empowering <br />   <span className="text-myBlue">HR</span> journey with <span className="text-myBlue">SOLHRM</span> 

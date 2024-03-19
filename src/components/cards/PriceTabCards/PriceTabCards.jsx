@@ -78,9 +78,9 @@ const PriceTabCards = () => {
           .filter((item) => item.category === currentTab)
           .map((item, i) => (
             <div
-              // data-aos="fade-up"
-              // data-aos-duration="500"
-              // data-aos-once="false"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-once="false"
               key={i}
               className={` mb-30 w-full md:w-fit max-w-80 mx-auto h-full `}
               onMouseEnter={() => handleCardHover(item.id)}
