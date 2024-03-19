@@ -16,7 +16,7 @@ const tp_setting = {
   speed: 1000,
   autoplaySpeed: 3000,
   infinite: true,
-
+  pauseOnHover: true,
   arrows: false,
   fade: false,
 };
@@ -25,6 +25,7 @@ const brands_setting = {
   slidesToShow: 5,
   slidesToScroll: 1,
   dots: false,
+  pauseOnHover: true,
   arrows: false,
   focusOnSelect: true,
   centerPadding: "0",
