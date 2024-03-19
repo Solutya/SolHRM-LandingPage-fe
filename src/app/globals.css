@@ -149,3 +149,24 @@ margin-bottom:-25%;
 
 
 
+/* card hover or click bg change */
+
+.active-card{
+    background: #6865ff ;
+    color:white;
+}
+.active-card p{
+    color:white;
+    opacity: 90%;
+}
+.active-card span{
+    color:white;
+}
+.active-card a{
+    color:#6865ff;
+    border: white;
+    background: white;
+}
+.price-active-btn{
+  border: 2px solid white;
+}

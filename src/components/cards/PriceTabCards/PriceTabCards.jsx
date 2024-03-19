@@ -12,6 +12,19 @@ const PriceTabCards = () => {
   const handleTab = (selectedTab) => {
     setCurrentTab(selectedTab);
   };
+
+  // card hover effect
+
+  const [activeCard, setActiveCard] = useState(1);
+
+  const handleCardHover = (index) => {
+    setActiveCard(index);
+  };
+
+  const handleCardLeave = (index) => {
+    setActiveCard(index); // Reset the active card state to 0 when leaving any card
+  };
+
   return (
     <div className="py-20 w-fit mx-auto">
       {/* TAB SWITCHING SECTION */}
@@ -65,23 +78,25 @@ const PriceTabCards = () => {
           .filter((item) => item.category === currentTab)
           .map((item, i) => (
             <div
-            data-aos="fade-up"
-            data-aos-duration="500" 
-            data-aos-once="false"
+              // data-aos="fade-up"
+              // data-aos-duration="500"
+              // data-aos-once="false"
               key={i}
-              className=" mb-30 w-full md:w-fit max-w-80 mx-auto h-full"
+              className={` mb-30 w-full md:w-fit max-w-80 mx-auto h-full `}
+              onMouseEnter={() => handleCardHover(item.id)}
+              onMouseLeave={() => handleCardLeave(item.id)}
             >
               <div
-                className={` ${item.cls} bg-white rounded-3xl px-[30px] py-[25px] md:px-[60px] md:py-[50px] lg:px-[35px] lg:w-[320px] lg:py-[28px] space-y-4 h-full flex flex-col justify-between 2xl:w-72`}
+                className={` ${item.cls} ${
+                  activeCard === item.id ? "active-card rounded-3xl" : ""} bg-white rounded-3xl px-[30px] py-[25px] md:px-[60px] md:py-[50px] lg:px-[35px] lg:w-[320px] lg:py-[28px] space-y-4 h-fit flex flex-col justify-between 2xl:w-72 transition duration-500 `}
               >
                 <div className="w-fit ">
                   <Image
                     src={item?.img}
                     alt="plan logo"
-                    width={55}
+                    width={60}
                     height={60}
-                    className="w-auto h-auto"
-
+                    className="w-[60px] h-[60px] object-contain"
                   />
                 </div>
                 <div className="space-y-2 pb-6 border-b-[1px] ">
@@ -91,10 +106,7 @@ const PriceTabCards = () => {
                 <div className="py-4">
                   <ul className="space-y-4">
                     {item.price_feature?.map((list, i) => (
-                      <li
-                        key={i}
-                        className={`${list.cls} flex  gap-4`}
-                      >
+                      <li key={i} className={`${list.cls} flex  gap-4`}>
                         <span className="inline-flex text-myBlue mt-1">
                           {list.icon}
                         </span>
@@ -106,7 +118,11 @@ const PriceTabCards = () => {
                   </ul>
                 </div>
                 {/* Purchase button */}
-                <div className="relative  mx-auto text-center rounded-full p-3 bg-[#5956e914] font-semibold text-sm w-full">
+                <div
+                  className={`relative  mx-auto text-center rounded-full p-3 bg-[#5956e914] font-semibold text-sm w-full ${
+                    activeCard === item.id ? "price-active-btn" : ""
+                  } `}
+                >
                   {item.price === "" ? (
                     <span className="  text-myBlue  cursor-pointer">
                       Customized
