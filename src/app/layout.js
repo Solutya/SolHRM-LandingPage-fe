@@ -10,8 +10,8 @@ import FbMessenger from "@/utils/FbMessenger";
 const plus = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "SolHRM",
-  description: "Solutya Human Resources Managment",
+  title: "SolHRM - Powering Your HR Journey",
+  description: "Discover the top-rated HRM software solution tailored for businesses in Bangladesh. Streamline your HR processes with our cloud-based HR management system. From payroll and leave management to recruitment and HR analytics, our affordable HR software offers comprehensive solutions for companies in Dhaka and beyond. Request a demo now!",
 };
 
 const RootLayout = ({ children }) => {

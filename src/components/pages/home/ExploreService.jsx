@@ -60,8 +60,8 @@ const ExploreService = () => {
         data-aos-duration="1400"
         data-aos-once="true" 
         className="bg-[url('/assets/images/service/sv-bg.jpg')] rounded-3xl  pb-0 z-20 md:w-[338px] relative w-full mx-auto bg-cover border   max-w-96  hover:shadow-gray-300  transition duration-300 group overflow-hidden">
-          <div className="text-white p-10 space-y-4">
-            <h2 className="font-bold  text-[30px]">
+          <div className="text-white p-10 ">
+            <h2 className="font-bold text-[30px]">
               Data Analysis Tools & Methods
             </h2>
             <p className="text-primary-2 pb-4">

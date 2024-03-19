@@ -17,6 +17,7 @@ const setting = {
   loop: true,
   autoplay: {
     delay: 2500,
+    pauseOnMouseEnter: true,
   },
   slidesPerView: 2,
   centeredSlides: true,
@@ -63,6 +64,7 @@ const ProjectSlider = () => {
         <div className="px-10 xl:px-0">
           <Swiper
             {...setting}
+            
             onSliderMove={handleSlideChange}
             onTransitionEnd={handleTransitionEnd}
             modules={[Navigation, Scrollbar, Autoplay]}

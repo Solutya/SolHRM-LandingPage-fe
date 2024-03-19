@@ -37,6 +37,14 @@ module.exports = {
             transform: 'translateY(-40px)', // Adjust this value as per your requirement
           },
         },
+        updownReverse: {
+          '0%, 100%': {
+            transform: 'translateY(-40px)',
+          },
+          '50%': {
+            transform: 'translateY(0px)', // Adjust this value as per your requirement
+          },
+        },
         zoomInOut: {
           '0%, 100%': {
             transform: 'scale(0.85)',
@@ -49,6 +57,7 @@ module.exports = {
       animation: {
         leftRight: 'leftRight 3s ease-in-out infinite',
         updown: 'updown 4s ease-in-out infinite', 
+        updownReverse: 'updownReverse 4s ease-in-out infinite', 
         zoomInOut: 'zoomInOut 5s ease-in-out infinite', 
       },
     },

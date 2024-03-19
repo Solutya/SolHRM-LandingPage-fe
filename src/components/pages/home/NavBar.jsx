@@ -15,11 +15,12 @@ import { motion } from 'framer-motion';
 const NavBar = ({ isOpen, setIsOpen ,isWhite}) => {
 
   const [isNavFixed, setIsNavFixed] = useState(false);
-
+console.log(isNavFixed)
   useEffect(() => {
     console.log(window.scrollY);
+
     const handleScroll = () => {
-      if (window.scrollY > 200) {
+      if (window.scrollY >= 200) {
         setIsNavFixed(true);
       } else {
         setIsNavFixed(false);

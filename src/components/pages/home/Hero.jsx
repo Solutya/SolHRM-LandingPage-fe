@@ -47,7 +47,9 @@ const Hero = () => {
            initial={{ opacity: 0, y: 10 }}
            animate={{ opacity: 1, y: 0 }}
            transition={{ duration: 0.5 ,delay:0.5}}
-          className="flex items-center gap-1">
+
+          className="flex items-center gap-1"
+          >
             <p className="text-gray-500 text-sm font-medium">
               <span className="text-myDark">Offer</span> is going on till
               Friday, $2.99/mo.{" "}
@@ -79,7 +81,7 @@ const Hero = () => {
         // data-aos-duration="1000"
         // data-aos-once="true"
         // useRef={hero_bg}
-        className="lg:bg-[url('/assets/images/home/hero-bg.png')] saturate-[1.25] bg-[url('/assets/images/home/hero-bg-max-lg.png')] bg-cover bg-center bg-no-repeat lg:rounded-[35px] lg:h-[900px] md:h-[650px] sm:h-[80vh] h-[90vh] gsap-bg relative"
+        className="lg:bg-[url('/assets/images/home/hero-bg.png')] bg-[url('/assets/images/home/hero-bg-max-lg.png')] bg-cover xl:bg-contain bg-no-repeat lg:rounded-[35px] lg:h-[900px] md:h-[650px] sm:h-[80vh] h-[90vh] gsap-bg relative"
       >
         <NavBar isOpen={isOpen} setIsOpen={setIsOpen} />
         
@@ -126,13 +128,11 @@ const Hero = () => {
                       <span className="group-hover:text-myBlue">
                         {item?.title}
                       </span>
-                      {item?.path === "/contact" ? (
-                        ""
-                      ) : (
+                   
                         <div className="w-7 h-7 border border-gray-800 flex items-center justify-center text-xl cursor-pointer">
                           <LuPlus />
                         </div>
-                      )}
+                    
                     </RLink>
                   ))}
                 </div>
@@ -195,11 +195,11 @@ const Hero = () => {
         {/* hero section */}
         <div className="lg:mt-20 md:mt-12 mt-8 text-center">
           <h1
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-delay="100"
-            data-aos-once="true"
-            className="text-myDark lg:text-[80px] md:text-[60px] text-[36px] leading-tight font-bold"
+            // data-aos="fade-up"
+            // data-aos-duration="800"
+            // data-aos-delay="100"
+            // data-aos-once="true"
+            className="text-myDark xl:text-[80px] md:text-[50px] text-[36px] leading-tight font-bold"
           >
             The Leading Customer <br /> Data Platform
           </h1>
@@ -245,7 +245,7 @@ const Hero = () => {
         </div>
         <div className="hidden  xl:block absolute bottom-10 xl:right-[10px] 2xl:right-[10%] z-10">
         <Image
-            className="animate-updown"
+            className="animate-updownReverse"
             src="/assets/images/home/hero-shape-2.png"
             width={140}
             height={140}
