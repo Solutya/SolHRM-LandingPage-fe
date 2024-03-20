@@ -19,79 +19,51 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   const [isOpen, setIsOpen] = useState(false);
 
-  // Footer width scroll animation
-//   const [footerMargin, setFooterMargin] = useState("5%"); // Initial margin values
-//   const controls = useAnimation();
-
-//   useEffect(() => {
-//     const handleScroll = () => {
-//       const isAtBottom =
-//         window.innerHeight + window.scrollY >= document.body.offsetHeight - 300;
-// console.log(isAtBottom)
-//       if (window.innerWidth > 1024) {
-//         // Adjust for large screens only
-
-//         if (!isAtBottom && window.scrollY > 0) {
-//           controls.start({
-//             marginLeft: "0%",
-//             marginRight: "0%",
-//             transition: { duration: 0.8 },
-//           });
-//         } else {
-//           controls.start({
-//             marginLeft: "5%",
-//             marginRight: "5%",
-//             transition: { duration: 0.8 },
-//           });
-//         }
-//       } else {
-//         // For screens less than 1024, remove margins entirely
-//         controls.start({
-//           marginLeft: "0%",
-//           marginRight: "0%",
-//           transition: { duration: 0.5 },
-//         });
-//       }
-//     };
-
-//     window.addEventListener("scroll", handleScroll);
-
-//     return () => {
-//       window.removeEventListener("scroll", handleScroll);
-//     };
-//   }, [controls]);
-
-useIsomorphicLayoutEffect(() => {
-  gsap.set(".tp-gsap-bg", { scale: 1 });
-  let mm = gsap.matchMedia();
-  mm.add("(min-width:1400px)", () => {
-    gsap.to(".tp-gsap-bg", {
-      scrollTrigger: {
-        trigger: ".tp-gsap-bg",
-        scrub: 0.02,
-        start: "top bottom",
-        end: "bottom bottom",
-      },
-      scale: 0.95,
-      borderRadius: "30px",
-      zIndex:10,
-      transformOrigin: "center center",
-      ease: "none",
+  // this transition is for myDark background
+  useIsomorphicLayoutEffect(() => {
+    gsap.set(".tp-gsap-bg", { scale: 0.98 });
+    let mm = gsap.matchMedia();
+    mm.add("(min-width:1400px)", () => {
+      gsap.to(".tp-gsap-bg", {
+        scrollTrigger: {
+          trigger: ".tp-gsap-bg",
+          scrub: 0.02,
+          start: "top bottom",
+          end: "bottom bottom",
+        },
+        scale: 0.95,
+        borderRadius: "30px",
+        zIndex: 10,
+        transformOrigin: "center center",
+        ease: "none",
+      });
     });
-  });
-}, []);
+  }, []);
+
+  // This is for the text designs so that they dont change their scale
+  useIsomorphicLayoutEffect(() => {
+    gsap.set(".tp-gsap-bg2", { scale: 1 });
+    let mm = gsap.matchMedia();
+    mm.add("(min-width:1400px)", () => {
+      gsap.to(".tp-gsap-bg2", {
+        scrollTrigger: {
+          trigger: ".tp-gsap-bg2",
+          scrub: 0.02,
+          start: "top bottom",
+          end: "bottom bottom",
+        },
+        scale: 1,
+        borderRadius: "30px",
+        zIndex: 10,
+        transformOrigin: "center center",
+        ease: "none",
+      });
+    });
+  }, []);
 
   return (
-    <footer
-      // style={{ marginLeft: footerMargin, marginRight: footerMargin }}
-      // initial={{ marginLeft: "5%", marginRight: "5%" }} 
-      // animate={controls}
-      className="lg:rounded-3xl lg:mb-10  bg-myDark tp-gsap-bg px-[2%] md:px-0 "
-    >
-      <SectionWrapper>
-
-
-      <div className="text-white space-y-10  mt-10 lg:mt-20  mx-auto p-[1%] pt-[50px] px-[6%] md:px-0 tp-gsap-bg">
+    <footer className="lg:rounded-3xl lg:mb-10  bg-myDark tp-gsap-bg px-[2%] md:px-0 ">
+      <div className="text-white space-y-10  mt-10 lg:mt-20  mx-auto p-[1%] pt-[50px] px-[6%] md:px-0 tp-gsap-bg2 max-w-[1230px]">
         {/* Footer top */}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-0 items-center  ">
           <div>
@@ -115,8 +87,6 @@ useIsomorphicLayoutEffect(() => {
             <input
               className="w-full  h-16 rounded-full px-16 text-myDark"
               type="email"
-             
-              
             />
             <CiMail className="absolute md:top-[35%] top-6 text-xl md:left-7 left-6 text-black" />
             <div className="absolute md:right-2 top-1 right-2 ">
@@ -127,7 +97,6 @@ useIsomorphicLayoutEffect(() => {
         <hr
           data-aos="fade-up"
           data-aos-duration="800"
-
           data-aos-once="true"
           className="w-[90%] mx-auto border-[#cfcfcf2a]"
         />
@@ -155,17 +124,23 @@ useIsomorphicLayoutEffect(() => {
                   <TiSocialFacebook className="text-xl" />
                 </div>
               </Link>
-              <Link  href={"https://twitter.com/SolutyaI"} target="__blank">
+              <Link href={"https://twitter.com/SolutyaI"} target="__blank">
                 <div className=" p-2  border-[1px] border-opacity-50 rounded-full hover:bg-myBlue hover:border-myBlue transition duration-500 opacity-55 hover:opacity-100 hover:scale-110">
                   <TiSocialTwitter className="text-xl" />
                 </div>
               </Link>
-              <Link href={"https://www.linkedin.com/company/solutya"} target="__blank">
+              <Link
+                href={"https://www.linkedin.com/company/solutya"}
+                target="__blank"
+              >
                 <div className=" p-2  border-[1px] border-opacity-50 rounded-full hover:bg-myBlue hover:border-myBlue transition duration-500 opacity-55 hover:opacity-100 hover:scale-110">
                   <FaLinkedinIn className="text-xl" />
                 </div>
               </Link>
-              <Link href={"https://www.instagram.com/solutyapvtltd/"} target="__blank" >
+              <Link
+                href={"https://www.instagram.com/solutyapvtltd/"}
+                target="__blank"
+              >
                 <div className=" p-2  border-[1px] border-opacity-50 rounded-full hover:bg-myBlue hover:border-myBlue transition duration-500 opacity-55 hover:opacity-100 hover:scale-110">
                   <FaInstagram className="text-xl" />
                 </div>
@@ -173,16 +148,16 @@ useIsomorphicLayoutEffect(() => {
             </div>
           </div>
           <div
-             data-aos="fade-up"
-             data-aos-duration="1000"
-             data-aos-delay="50"
-             data-aos-once="true" 
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="50"
+            data-aos-once="true"
           >
             <h3 className="font-bold text-lg capitalize pb-6">What we do</h3>
             <div className="text-[#f5f5fa99] flex flex-col gap-4 font-[500]">
               {footerData.dataOne.map((item, i) => (
                 <Link
-                key={i}
+                  key={i}
                   href={item.path}
                   className="transition duration-200 hover:text-white hover:translate-x-1"
                 >
@@ -192,19 +167,16 @@ useIsomorphicLayoutEffect(() => {
             </div>
           </div>
           <div
-          data-aos="fade-up"
-          data-aos-duration="1200"
-          data-aos-delay="80"
-          data-aos-once="true" 
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="80"
+            data-aos-once="true"
           >
             <h3 className="font-bold text-lg capitalize pb-6">Other Pages</h3>
             <div className="text-[#f5f5fa99] flex flex-col gap-4 font-[500]">
               {footerData.dataTwo.map((item, i) => (
                 <Link key={i} href={item.path}>
-                  <p
-                 
-                    className="transition duration-200 hover:text-white hover:translate-x-1"
-                  >
+                  <p className="transition duration-200 hover:text-white hover:translate-x-1">
                     {item.title}
                   </p>
                 </Link>
@@ -212,15 +184,15 @@ useIsomorphicLayoutEffect(() => {
             </div>
           </div>
           <div
-          data-aos="fade-up"
-          data-aos-duration="1400"
-          data-aos-delay="120"
-          data-aos-once="true" 
+            data-aos="fade-up"
+            data-aos-duration="1400"
+            data-aos-delay="120"
+            data-aos-once="true"
           >
             <h3 className="font-bold text-lg capitalize pb-6">Contact Us</h3>
             <div className="text-gray-500 flex flex-col gap-4 font-semibold">
               {footerData.dataThree.map((item, i) => (
-                <div  key={i} className="flex gap-4">
+                <div key={i} className="flex gap-4">
                   <p>{item.icon}</p>
                   <p className="transition duration-200 text-white hover:translate-x-1">
                     {item.title}
@@ -232,9 +204,7 @@ useIsomorphicLayoutEffect(() => {
         </div>
         <hr className=" border-[#cfcfcf2a]" />
         {/* Footer bottom */}
-        <div 
-      
-        className="flex justify-between items-center text-xs md:text-base pb-4 flex-wrap gap-6">
+        <div className="flex justify-between items-center text-xs md:text-base pb-4 flex-wrap gap-6">
           <p className="">
             Copyright &copy; {currentYear}
             <Link
@@ -280,7 +250,6 @@ useIsomorphicLayoutEffect(() => {
           </div>
         </div>
       </div>
-      </SectionWrapper>
     </footer>
   );
 };

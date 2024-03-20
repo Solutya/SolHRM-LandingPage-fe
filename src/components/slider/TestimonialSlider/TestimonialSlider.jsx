@@ -126,7 +126,7 @@ const TestimonialSlider = () => {
         asNavFor={slider1}
         ref={(slider) => setSlider2(slider)}
         {...brands_setting}
-        className="md:w-[60%]  mx-auto  pt-20 brand-slider"
+        className="md:w-[62%]  mx-auto  pt-20 brand-slider"
       >
         {testimonial_svg.map((item, i) => (
           <div key={i} className=" mx-auto">
