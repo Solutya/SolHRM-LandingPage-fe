@@ -5,7 +5,7 @@ import "./BlueBtn.css";
 const BlueBtn = ({ component = "", children }) => {
   return (
     <div className="overflow-hidden max-w-[170px] rounded-[37px]  bg-myBlue flex items-center justify-center">
-      <Link
+      <div
         className={`tp-btn-blue tp-btn-hover alt-color-black overflow-hidden ${
           component === "nav" && " max-md:hidden"
         }`}
@@ -13,7 +13,7 @@ const BlueBtn = ({ component = "", children }) => {
       >
         <span className="white-text">{children}</span>
         <b></b>
-      </Link>
+      </div>
     </div>
   );
 };

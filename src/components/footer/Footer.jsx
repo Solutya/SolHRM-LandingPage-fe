@@ -85,7 +85,7 @@ const Footer = () => {
             className="relative :w-[90%]"
           >
             <input
-              className="w-full  h-16 rounded-full px-16 text-myDark"
+              className="w-full  h-16 rounded-full px-16 text-myDark outline-myBlue "
               type="email"
             />
             <CiMail className="absolute md:top-[35%] top-6 text-xl md:left-7 left-6 text-black" />
