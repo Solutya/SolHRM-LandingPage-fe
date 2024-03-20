@@ -6,6 +6,7 @@ import { AOSinitFile } from "@/utils/AOSinitFile";
 import ScrollToTop from "@/utils/ScrollToTop";
 import NavBar from "@/components/pages/home/NavBar";
 import FbMessenger from "@/utils/FbMessenger";
+import { Toaster } from "react-hot-toast";
 
 const plus = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
@@ -31,10 +32,10 @@ const RootLayout = ({ children }) => {
       <body className={plus.className}>
         {/* <NavBar/> */}
         <ScrollToTop />
-        <UtilsProvider>{children}</UtilsProvider>
-        
+        <UtilsProvider>{children}</UtilsProvider> 
         <Footer />
         <FbMessenger />
+        <Toaster/>
       </body>
     </html>
   );

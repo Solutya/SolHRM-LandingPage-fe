@@ -46,7 +46,7 @@ const FAQs = () => {
     } else setIsAccordianClosed(id);
   };
   return (
-    <div className=" px-10 md:px-0 lg:m-[5%] lg:grid  lg:grid-cols-3 xl:grid-cols-2 flex flex-col justify-between items-center xl:w-[1180px] xl:mx-auto ">
+    <div className=" px-10 md:px-0 lg:m-[5%] lg:grid  lg:grid-cols-3 xl:grid-cols-2 flex flex-col justify-center items-center xl:w-[1180px] xl:mx-auto ">
       <div className="space-y-4 bg-yellow- pl-4 md:py-6 py-28 mobile:py-16 relative">
         <p className="uppercase bg-[#f6f5fa] text-myBlue text-sm font-semibold rounded-full p-2 px-4 w-fit ">
           SUPPORT

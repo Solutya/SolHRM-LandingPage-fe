@@ -16,6 +16,7 @@ import BlueBtn from "@/components/btn's/BlueBtn";
 import { motion, useIsomorphicLayoutEffect } from "framer-motion";
 import gsap from "gsap";
 import SideNavbar from "@/components/SideNavbar/SideNavbar";
+import EmailJsForm from "@/components/forms/EmailJsForm";
 
 const Hero = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -130,9 +131,8 @@ const Hero = () => {
           <NavBar isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
         <div>
-          <SideNavbar isOpen={isOpen} setIsOpen={setIsOpen}/>
+          <SideNavbar isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
-       
 
         {/* hero section */}
         <div className="lg:mt-20 md:mt-12 mt-8 text-center z-20">
@@ -150,23 +150,11 @@ const Hero = () => {
           <div className="mt-4 hidden md:block">
             <HeroUnderline />
           </div>
-          <div
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="100"
-            data-aos-once="true"
-            className="md:max-w-[630px] max-w-[500px] md:h-[60px] h-[50px] relative mx-auto md:mt-8 mt-5 max-md:flex flex-col items-center justify-center max-md:px-4"
-          >
-            <input
-              className="w-full h-full rounded-full px-[58px] outline-none"
-              type="email"
-              placeholder="Business email address"
-            />
-            <CiMail className="absolute md:top-[35%] top-[30%] text-xl md:left-7 left-9" />
-            <div className="absolute md:right-2 md:top-[7px] max-md:mt-32">
-              <BlueBtn>Get A Demo</BlueBtn>
-            </div>
+          {/* Email For Demo Section Starts */}
+          <div className="relative z-20">
+            <EmailJsForm />
           </div>
+          {/* Email For Demo Section Ends */}
           <p
             data-aos="fade-up"
             data-aos-duration="800"
