@@ -14,6 +14,7 @@ import footerData from "@/data/footerData";
 import { motion, useAnimation, useIsomorphicLayoutEffect } from "framer-motion";
 import { gsap } from "gsap";
 import SectionWrapper from "@/components/wrapper's/SectionWrapper";
+import EmailJsForm from "../forms/EmailJsForm";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -65,7 +66,7 @@ const Footer = () => {
     <footer className="lg:rounded-3xl lg:mb-10  bg-myDark tp-gsap-bg px-[2%] md:px-0 ">
       <div className="text-white space-y-10  mt-10 lg:mt-20  mx-auto p-[1%] pt-[50px] px-[6%] md:px-0 tp-gsap-bg2 max-w-[1230px]">
         {/* Footer top */}
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-0 items-center  ">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-0 items-center   ">
           <div>
             <h3
               data-aos="fade-up"
@@ -76,8 +77,8 @@ const Footer = () => {
               Get Our Latest's News <br /> & Updates
             </h3>
           </div>
-
-          <div
+          {/* demo email input from starts */}
+          {/* <div
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="100"
@@ -92,7 +93,12 @@ const Footer = () => {
             <div className="absolute md:right-2 top-1 right-2 ">
               <CircleBtn />
             </div>
+          </div> */}
+          <div>
+
+          <EmailJsForm/>
           </div>
+          {/* demo email input from ends */}
         </div>
         <hr
           data-aos="fade-up"

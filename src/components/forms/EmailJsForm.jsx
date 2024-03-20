@@ -46,11 +46,12 @@ const EmailJsForm = () => {
           className="md:max-w-[630px] max-w-[500px] md:h-[60px] h-[50px] relative mx-auto md:mt-8 mt-5 max-md:flex flex-col items-center justify-center max-md:px-4"
         >
           <input
-            className="w-full h-full rounded-full px-[58px] outline-none"
+            className="w-full h-full rounded-full px-[58px] outline-none text-myDark"
             type="email"
+            name="user_email"
             placeholder="Business email address"
           />
-          <CiMail className="absolute md:top-[35%] top-[30%] text-xl md:left-7 left-9" />
+          <CiMail className="absolute md:top-[35%] top-[30%] text-xl md:left-7 left-9 text-gray-500" />
           <div className="absolute md:right-2 md:top-[7px] max-md:mt-32 w-fit">
             <BlueBtn>
               <input
