@@ -60,7 +60,7 @@ const rank_data = [
 
 const MoreSales = () => {
   return (
-    <div className="py-24 overflow-x-hidden lg:m-[5%] lg:grid  lg:grid-cols-3 xl:grid-cols-2 flex flex-col-reverse justify-between xl:w-[1180px] xl:mx-auto ">
+    <div className="py-24 overflow-x-hidden lg:m-[5%] lg:grid  lg:grid-cols-3 xl:grid-cols-2 flex flex-col-reverse items-center 2xl:gap-2 xl:w-[1180px] xl:mx-auto ">
       <div 
        data-aos="fade-right"
        data-aos-duration="1000"
@@ -69,8 +69,8 @@ const MoreSales = () => {
         <p className="uppercase bg-[#f6f5fa] text-myBlue text-sm font-semibold rounded-full p-2 px-4 w-fit ">
           Key Benfits
         </p>
-        <h2 className="text-[33px] md:text-[38px] xl:text-[55px] font-bold">
-          Get more Sales <br /> by Improving <br /> Results
+        <h2 className="text-[33px] md:text-[38px] xl:text-[48px] font-bold">
+        Maximize Efficiency and Drive Performance
         </h2>
         <div className="w-fit pt-3">
           <BlueBtn>Explore More</BlueBtn>
@@ -80,7 +80,7 @@ const MoreSales = () => {
        data-aos="fade-left"
        data-aos-duration="1000"
        data-aos-once="true"
-      className="relative h-[600px] md:h-auto lg:col-span-2 xl:col-span-1 lg:ml-20 px-2 ">
+      className="relative h-[600px] md:h-auto lg:col-span-2 xl:col-span-1 lg:ml-20 px-2 2xl:ml-0">
         <div className="mx-auto w-fit py-4">
           <Image src={bg_right_img} alt="bg-right-img" ></Image>
         </div>

@@ -15,11 +15,11 @@ export const service_data =[
     },
     {
         id: 2,
-        icon: img_2,
-        img: img_2,
-        title: "Leave Management",
-        description: <>Manage employee leave requests, approvals and balances with ease</>,
-        delay: ".6s",
+        icon: img_5,
+        img: img_5,
+        title: "Task Management",
+        description: <>Assign tasks, set deadlines, and track progress to ensure efficient task completion</>,
+        delay: ".9s",
     },
     {
         id: 3,
@@ -39,11 +39,11 @@ export const service_data =[
     },
     {
         id: 5,
-        icon: img_5,
-        img: img_5,
-        title: "Task Management",
-        description: <>Assign tasks, set deadlines, and track progress to ensure efficient task completion</>,
-        delay: ".9s",
+        icon: img_2,
+        img: img_2,
+        title: "Leave Management",
+        description: <>Manage employee leave requests, approvals and balances with ease</>,
+        delay: ".6s",
     },
 
 

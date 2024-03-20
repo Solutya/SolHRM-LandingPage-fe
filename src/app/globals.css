@@ -5,17 +5,16 @@
 html {
   --scroll-behavior: smooth !important;
   scroll-behavior: smooth !important;
-
 }
 
-#topButton{
+#topButton {
   z-index: 9999;
   bottom: 35px;
-  right:27px;
+  right: 27px;
 }
-.arrowUp{
-  left:10px;
-  top:9px
+.arrowUp {
+  left: 10px;
+  top: 9px;
 }
 
 /* scroll bar */
@@ -55,48 +54,46 @@ html {
   color: white;
   background: #6865ff;
 }
-.one{
+.one {
   /* background-color: #6865ff; */
   background-image: linear-gradient(#8583ff, #6865ff);
   color: white;
   z-index: 10;
 }
-.two{
-z-index: 7;
-margin-right: -3%;
-margin-left: -3%;
-margin-bottom:-12%;
+.two {
+  z-index: 7;
+  margin-right: -3%;
+  margin-left: -3%;
+  margin-bottom: -12%;
 }
-.three{
+.three {
   z-index: 9;
- 
-margin-right: -3%;
-margin-bottom:-25%;
+
+  margin-right: -3%;
+  margin-bottom: -25%;
 }
-.four{
+.four {
   z-index: 8;
   right: 0;
 }
-.slick-list .slick-slide{
- padding: 0 20px;
- margin-bottom: 10px;
+.slick-list .slick-slide {
+  padding: 0 20px;
+  margin-bottom: 10px;
 }
-.brand-slider .slick-slide{
-    opacity: .5;
+.brand-slider .slick-slide {
+  opacity: 0.5;
 }
-.brand-slider .slick-current{
-    opacity: 1;
+.brand-slider .slick-current {
+  opacity: 1;
 }
-.inactive span{
+.inactive span {
   color: rgba(128, 128, 128, 0.5);
 }
 
 /* line dash animation */
-.price-shape-line{
-  
+.price-shape-line {
   -webkit-animation: lineDash 90s linear infinite;
   animation: lineDash 90s linear infinite;
-
 }
 @keyframes lineDash {
   0% {
@@ -108,13 +105,13 @@ margin-bottom:-25%;
 }
 
 /* Icon styles */
-.checkIcon{
+.checkIcon {
   font-size: 24px;
   width: fit-content;
   color: #6865ff;
   margin: 0 auto;
 }
-.closeIcon{
+.closeIcon {
   font-size: 24px;
   width: fit-content;
   color: gray;
@@ -147,26 +144,25 @@ margin-bottom:-25%;
   }
 }
 
-
-
 /* card hover or click bg change */
 
-.active-card{
-    background: #6865ff ;
-    color:white;
+.active-card {
+  /* background: #6865ff ; */
+  background-image: linear-gradient(to top right, #6865ff,#6865ffc0, #3f8ed4);
+  color: white;
 }
-.active-card p{
-    color:white;
-    opacity: 90%;
+.active-card p {
+  color: white;
+  opacity: 90%;
 }
-.active-card span{
-    color:white;
+.active-card span {
+  color: white;
 }
-.active-card a{
-    color:#6865ff;
-    border: white;
-    background: white;
+.active-card a {
+  color: #6865ff;
+  border: white;
+  background: white;
 }
-.price-active-btn{
+.price-active-btn {
   border: 2px solid white;
 }

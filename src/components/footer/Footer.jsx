@@ -62,7 +62,7 @@ const Footer = () => {
 //   }, [controls]);
 
 useIsomorphicLayoutEffect(() => {
-  gsap.set(".tp-gsap-bg", { scaleX: 1 });
+  gsap.set(".tp-gsap-bg", { scale: 1 });
   let mm = gsap.matchMedia();
   mm.add("(min-width:1400px)", () => {
     gsap.to(".tp-gsap-bg", {
@@ -72,7 +72,7 @@ useIsomorphicLayoutEffect(() => {
         start: "top bottom",
         end: "bottom bottom",
       },
-      scaleX: 0.95,
+      scale: 0.95,
       borderRadius: "30px",
       zIndex:10,
       transformOrigin: "center center",
@@ -86,7 +86,7 @@ useIsomorphicLayoutEffect(() => {
       // style={{ marginLeft: footerMargin, marginRight: footerMargin }}
       // initial={{ marginLeft: "5%", marginRight: "5%" }} 
       // animate={controls}
-      className="lg:rounded-3xl lg:mb-10  bg-myDark tp-gsap-bg px-[2%] "
+      className="lg:rounded-3xl lg:mb-10  bg-myDark tp-gsap-bg px-[2%] md:px-0 "
     >
       <SectionWrapper>
 
@@ -150,22 +150,22 @@ useIsomorphicLayoutEffect(() => {
               specialized in data analysis.
             </p>
             <div className="flex gap-2">
-              <Link href="">
+              <Link href={"https://www.facebook.com/Solutya"} target="__blank">
                 <div className=" p-2  border-[1px] border-opacity-50 rounded-full hover:bg-myBlue hover:border-myBlue transition duration-500 opacity-55 hover:opacity-100 hover:scale-110">
                   <TiSocialFacebook className="text-xl" />
                 </div>
               </Link>
-              <Link href="">
+              <Link  href={"https://twitter.com/SolutyaI"} target="__blank">
                 <div className=" p-2  border-[1px] border-opacity-50 rounded-full hover:bg-myBlue hover:border-myBlue transition duration-500 opacity-55 hover:opacity-100 hover:scale-110">
                   <TiSocialTwitter className="text-xl" />
                 </div>
               </Link>
-              <Link href="">
+              <Link href={"https://www.linkedin.com/company/solutya"} target="__blank">
                 <div className=" p-2  border-[1px] border-opacity-50 rounded-full hover:bg-myBlue hover:border-myBlue transition duration-500 opacity-55 hover:opacity-100 hover:scale-110">
                   <FaLinkedinIn className="text-xl" />
                 </div>
               </Link>
-              <Link href="">
+              <Link href={"https://www.instagram.com/solutyapvtltd/"} target="__blank" >
                 <div className=" p-2  border-[1px] border-opacity-50 rounded-full hover:bg-myBlue hover:border-myBlue transition duration-500 opacity-55 hover:opacity-100 hover:scale-110">
                   <FaInstagram className="text-xl" />
                 </div>

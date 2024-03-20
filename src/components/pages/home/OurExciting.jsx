@@ -19,7 +19,7 @@ const OurExciting = () => {
         className="text-center">
           <HeaderTitle
             title="Our Exciting Features"
-            subTitle="More than 15,000 companies trust and choose Itech"
+            subTitle="Join the HRM revolution with our feature-packed system"
           />
         </div>
         <div className="mt-12 grid lg:grid-cols-3 md:grid-cols-2 gap-6">

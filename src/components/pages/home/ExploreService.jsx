@@ -19,7 +19,7 @@ const ExploreService = () => {
       className="text-center ">
         <HeaderTitle
           title={"Explore Our SOLHRM Capacities"}
-          subTitle={"More than 15,000 companies trust and choose Itech"}
+          subTitle={"Join the growing community of HR Innovation"}
         />
       </div>
       <div className="mt-12 grid lg:grid-cols-3 md:grid-cols-2 gap-6">
@@ -80,9 +80,9 @@ const ExploreService = () => {
               data-aos-once="true"
               src={"/assets/images/service/sv-dashbord.png"}
               alt="demo"
-              width={240}
-              height={100}
-              className="w-full ml-20 -mb-10"
+              width={320}
+              height={120}
+              className="w-full ml-16 -mb-10"
             ></Image>
           </div>
         </div>
