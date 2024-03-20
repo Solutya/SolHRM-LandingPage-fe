@@ -73,7 +73,7 @@ const PriceTabCards = () => {
 
       {/* PRICE CARD SECTION */}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  2xl:grid-cols-4 gap-6 2xl:gap-2 xl:w-fit xl:mx-auto 2xl:w-[1160px] pt-10 items-center justify-center ">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  2xl:grid-cols-4 gap-6 2xl:gap-2 xl:w-fit xl:mx-auto 2xl:w-[1180px] pt-10 items-center justify-center ">
         {price_data
           .filter((item) => item.category === currentTab)
           .map((item, i) => (
