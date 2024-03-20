@@ -15,7 +15,7 @@ const PriceTabCards = () => {
 
   // card hover effect
 
-  const [activeCard, setActiveCard] = useState(1);
+  const [activeCard, setActiveCard] = useState(2);
 
   const handleCardHover = (index) => {
     setActiveCard(index);
@@ -73,7 +73,7 @@ const PriceTabCards = () => {
 
       {/* PRICE CARD SECTION */}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  2xl:grid-cols-4 gap-6 xl:w-fit xl:mx-auto 2xl:w-[1160px] pt-10 items-center justify-center ">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  2xl:grid-cols-4 gap-6 2xl:gap-2 xl:w-fit xl:mx-auto 2xl:w-[1160px] pt-10 items-center justify-center ">
         {price_data
           .filter((item) => item.category === currentTab)
           .map((item, i) => (
@@ -88,7 +88,7 @@ const PriceTabCards = () => {
             >
               <div
                 className={` ${item.cls} ${
-                  activeCard === item.id ? "active-card rounded-3xl" : ""} bg-white rounded-3xl px-[30px] py-[25px] md:px-[60px] md:py-[50px] lg:px-[35px] lg:w-[320px] lg:py-[28px] space-y-4 h-fit flex flex-col justify-between 2xl:w-72 transition duration-500 `}
+                  activeCard === item.id ? "active-card rounded-3xl" : ""} bg-white rounded-3xl px-[30px] py-[25px] md:px-[60px] md:py-[50px] lg:px-[35px] lg:w-[320px] lg:py-[28px] space-y-4 h-fit flex flex-col justify-between 2xl:w-[280px] 2xl:h-full  transition duration-500 2xl:gap-0  hover:scale-105`}
               >
                 <div className="w-fit ">
                   <Image

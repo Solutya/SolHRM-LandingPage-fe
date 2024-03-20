@@ -10,7 +10,7 @@ const RecentWork = () => {
              data-aos-duration="1000"
              data-aos-once="true"
             className='md:px-[10%] w-fit text-wrap xl:w-[54%] lg:w-[66%]  pb-10'>
-                <HeaderTitle title={`Check Some Of Our Recent Work.`}/>
+                <HeaderTitle title={`Check Solutya’s Recent Work`}/>
             </div>
             <div  data-aos="fade-up"
              data-aos-duration="1000"

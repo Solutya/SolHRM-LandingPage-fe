@@ -39,12 +39,12 @@ console.log(isNavFixed)
 
       className={`${
         isNavFixed
-          ? "fixed top-0 left-0 right-0 z-50 bg-white border-b transition-all duration-300 "
-          : ""
-      } ${!isNavFixed && isWhite ? "text-white":""}`}
+          ? "fixed top-0 left-0 right-0  bg-white border-b transition-all duration-300 "
+          : " z-[1000] relative "
+      } ${!isNavFixed && isWhite ? "text-white z-[1000]":"z-[1000]"}`}
     >
-      <div className="max-w-[1170px] mx-auto xl:px-0 lg:px-10 sm:px-[15%] px-[6%]  max-md:bg-white w-full">
-        <div className="flex items-center justify-between py-5 font-medium text-dark">
+      <div className="max-w-[1170px] mx-auto xl:px-0 lg:px-10 sm:px-[15%] px-[6%]  max-md:bg-white w-full ">
+        <div className="flex items-center justify-between  py-5 font-medium text-dark">
           <div className="flex items-center xl:gap-16 lg:gap-6 sm:gap-9 gap-0">
             {/* Logo change on isWhite props */}
             <Link href="/">
@@ -55,14 +55,14 @@ console.log(isNavFixed)
                 height={60}
                 quality={100}
                 alt="Logo"
-                className="w-32"
+                className="w-32 "
               /> :  <Image
               src="/assets/images/logo/solhrm.png"
               width={160}
               height={60}
               quality={100}
               alt="Logo"
-              className="w-32"
+              className="w-32 "
             />
               }
              
@@ -72,7 +72,7 @@ console.log(isNavFixed)
                 
                  
                 <RLink
-                  className={`hover:text-[#6865FF] lg:block hidden cursor-pointer ${isWhite? "lg:hidden":""}`}
+                  className={`hover:text-[#6865FF] lg:block hidden cursor-pointer  ${isWhite? "lg:hidden":""}`}
                   to={`${item?.path}`}
                   key={index}
                   duration={1500}
