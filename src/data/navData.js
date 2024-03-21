@@ -1,19 +1,16 @@
 const navData = [
  
   {
-    title: "Features",
+    title: "Factors",
     path: "features",
   },
+  
   {
-    title: "Offers",
-    path: "offers",
-  },
-  {
-    title: "Services",
+    title: "Features",
     path: "services",
   },
   {
-    title: "Works",
+    title: "Projects",
     path: "works",
   },
   {
@@ -25,7 +22,7 @@ const navData = [
     path: "sales",
   },
   {
-    title: "Price",
+    title: "Pricing",
     path: "price",
   },
 ];

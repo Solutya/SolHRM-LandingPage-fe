@@ -39,6 +39,7 @@ const price_data = [
     img: pric_img_1,
     title: "Standard Plan",
     description: <b>Up To 25 Employees</b>,
+    paymentLink: "https://shop.bkash.com/solutya-pvt-ltdrm54988/pay/bdt4000/oUm4cl",
     cls: "",
     price: "4000",
     price_feature: [
@@ -70,6 +71,7 @@ const price_data = [
     img: pric_img_2,
     title: "Gold Plan",
     description: <b>Up To 50 Employees</b>,
+    paymentLink: "https://shop.bkash.com/solutya-pvt-ltdrm54988/pay/bdt7000/Rfddxp",
     cls: "active",
     price: "7000",
     price_feature: [
@@ -101,6 +103,7 @@ const price_data = [
     img: pric_img_3,
     title: "Custom Plan",
     description:<b>100+ Employees</b>,
+    paymentLink: "",
     fullDescription: "A TAILORED PRICE PLANNING FOR BUSINESS WITH CUSTOMIZED REQUIREMENTS",
     cls: "",
     price: "",
@@ -133,6 +136,7 @@ const price_data = [
     img: pric_img_4,
     title: "Add Ons",
     description: <b>GET THE ULTIMATE EXCLUSIVEADD ONS</b>,
+    paymentLink: "",
     cls: "",
     price: "",
     price_feature: [
@@ -160,6 +164,7 @@ const price_data = [
     img: pric_img_1,
     title: "Standard Plan",
     description: <b>Up To 25 Employees</b>,
+    paymentLink: "https://shop.bkash.com/solutya-pvt-ltdrm54988/pay/bdt45000/UCnGzv",
     cls: "",
     price: "45000",
     price_feature: [
@@ -191,6 +196,7 @@ const price_data = [
     img: pric_img_2,
     title: "Gold Plan",
     description: <b>Up To 50 Employees</b>,
+    paymentLink: "https://shop.bkash.com/solutya-pvt-ltdrm54988/pay/bdt83640/d5HwMn",
     cls: "active",
     price: "82000",
     price_feature: [
@@ -222,6 +228,7 @@ const price_data = [
     img: pric_img_3,
     title: "Custom Plan",
     description: <b>100+ Employees</b>,
+    paymentLink: "",
     fullDescription: "A TAILORED PRICE PLANNING FOR BUSINESS WITH CUSTOMIZED REQUIREMENTS",
     cls: "",
     price: "",
@@ -254,6 +261,7 @@ const price_data = [
     img: pric_img_4,
     title: "Add Ons",
     description: <b>GET THE ULTIMATE EXCLUSIVEADD ONS</b>,
+    paymentLink: "",
     cls: "",
     price: "",
     price_feature: [

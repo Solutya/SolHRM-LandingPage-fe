@@ -60,11 +60,11 @@ const PricePlanTable1 = ({ currentTab }) => {
                           </>
                         )}
                         <Link
-                          href=""
+                          href={item.paymentLink}
                           className="bg-myDark text-white 
                         w-fit rounded-full  top-0 py-3 left-0  transition px-6 text-xs  duration-300 hover:bg-myBlue hover:shadow-xl shadow-md font-semibold cursor-pointer"
                         >
-                          Get Now
+                          Buy Now
                           {/* <GoArrowRight className="inline text-xl ml-2 " /> */}
                         </Link>
                       </div>

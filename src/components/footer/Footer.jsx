@@ -64,15 +64,15 @@ const Footer = () => {
 
   return (
     <footer className="lg:rounded-3xl lg:mb-10  bg-myDark tp-gsap-bg px-[2%] md:px-0 ">
-      <div className="text-white space-y-10  mt-10 lg:mt-20  mx-auto p-[1%] pt-[50px] px-[6%] md:px-0 tp-gsap-bg2 max-w-[1230px]">
+      <div className="text-white space-y-10  mt-10 lg:mt-20  mx-auto p-[1%] pt-[50px] px-[6%] xl:px-0 tp-gsap-bg2 max-w-[1230px]">
         {/* Footer top */}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-0 items-center   ">
           <div>
             <h3
-              data-aos="fade-up"
-              data-aos-duration="600"
-              data-aos-once="true"
-              className="text-xl"
+              // data-aos="fade-up"
+              // data-aos-duration="600"
+              // data-aos-once="true"
+              className="text-xl text-center md:text-left mt-[32px]"
             >
               Get Our Latest's News <br /> & Updates
             </h3>

@@ -100,7 +100,7 @@ const PriceTabCards = () => {
                   />
                 </div>
                 <div className="space-y-2 pb-6 border-b-[1px] ">
-                  <h4 className="text-[22px] font-bold">{item.title}</h4>
+                  <h4 className="text-[22px] font-bold">{item.title} <span className="text-[14px]">/ {item.category}</span></h4>
                   <p className="text-sm text-gray-500">{item.description}</p>
                 </div>
                 <div className="py-4">
