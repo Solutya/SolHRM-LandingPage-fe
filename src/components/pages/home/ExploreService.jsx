@@ -18,7 +18,7 @@ const ExploreService = () => {
           className="text-center "
         >
           <HeaderTitle
-            title={"Explore Our SOLHRM Capacities"}
+            title={"Explore Our SOLHRM Features"}
             subTitle={"Join the growing community of HR Innovation"}
           />
         </div>
@@ -61,18 +61,18 @@ const ExploreService = () => {
             data-aos="fade-up"
             data-aos-duration="1400"
             data-aos-once="true"
-            className="bg-[url('/assets/images/service/sv-bg.jpg')] rounded-3xl  pb-0 z-20 md:w-[338px] relative w-full mx-auto bg-cover border   max-w-96  hover:shadow-gray-300  transition duration-300 group overflow-hidden"
+            className="bg-[url('/assets/images/service/sv-bg.jpg')] rounded-3xl  pb-0 z-20 md:w-[338px] relative w-full mx-auto bg-cover border md:w-fit   max-w-96  hover:shadow-gray-300  transition duration-300 group overflow-hidden"
           >
             <div className="text-white p-10 ">
               <h2 className="font-bold text-[30px]">
-                Data Analysis Tools & Methods
+                User Friendly HR Dashboard
               </h2>
               <p className="text-primary-2 pb-4">
-                Lorem Ipsum is simply dummy text of the printing
+                Manage all you dashboard features in simple ui 
               </p>
-              <Link href="">
+              <Link href="/price">
                 <button className="p-2 px-6 font-semibold bg-orange-400  rounded-3xl">
-                  Work With Us
+                  Buy Now
                 </button>
               </Link>
             </div>

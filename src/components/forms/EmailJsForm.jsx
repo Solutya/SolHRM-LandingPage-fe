@@ -13,8 +13,8 @@ const EmailJsForm = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_o8oghys", "template_uz4alz8", form.current, {
-        publicKey: "aHuzn2Ukm2q2xilou",
+      .sendForm("SolHRM", "template_28neu3k", form.current, {
+        publicKey: "iUdL_30qtZCU2lb1l",
       })
       .then(
         () => {
@@ -49,6 +49,7 @@ const EmailJsForm = () => {
             className="w-full h-full rounded-full px-[58px] outline-none text-myDark"
             type="email"
             name="user_email"
+            required
             placeholder="Business email address"
           />
           <CiMail className="absolute md:top-[35%] top-[30%] text-xl md:left-7 left-9 text-gray-500" />

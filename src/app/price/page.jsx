@@ -6,6 +6,7 @@ import FAQs from "@/components/pages/prices/FAQs";
 import TrustedBrands from "@/components/pages/prices/TrustedBrands";
 import ComparePlanTable from "@/components/tables/ComparePlanTable";
 import PricePlanTable1 from "@/components/tables/PricePlanTable1";
+import SectionWrapper from "@/components/wrapper's/SectionWrapper";
 import React, { useState } from "react";
 
 const Price = () => {
@@ -26,8 +27,10 @@ const Price = () => {
           <SideNavbar isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
         {/* Navbar Components Ends */}
+
         {/* Price Banner Section Starts */}
-        <div className=" min-h-[60vh] grid grid-cols-1 md:grid-cols-2 justify-between items-center p-10  mx-auto w-[80%]">
+        <SectionWrapper>
+        <div className=" min-h-[60vh] grid grid-cols-1 md:grid-cols-2 justify-between items-center py-10 ">
           <div
             data-aos="fade-up"
             data-aos-duration="1000"
@@ -91,6 +94,7 @@ const Price = () => {
           </div>
           {/* TAB SWITCHING SECTION ENDS*/}
         </div>
+        </SectionWrapper>
         {/* Price Banner Section Ends */}
       </div>
 
@@ -106,9 +110,6 @@ const Price = () => {
       </div>
       <div>
         <FAQs />
-      </div>
-      <div>
-        <EmailJsForm/>
       </div>
     </div>
   );

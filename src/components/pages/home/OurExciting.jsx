@@ -18,7 +18,7 @@ const OurExciting = () => {
         data-aos-once="true"
         className="text-center">
           <HeaderTitle
-            title="Our Exciting Features"
+            title="Our Exciting Factors"
             subTitle="Join the HRM revolution with our feature-packed system"
           />
         </div>
