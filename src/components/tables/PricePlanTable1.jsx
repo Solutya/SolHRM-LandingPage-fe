@@ -4,18 +4,20 @@ import Link from "next/link";
 import React from "react";
 import { GoArrowRight } from "react-icons/go";
 import paymentIco from "../../../public/assets/images/price/price-4.1.png";
+import SectionWrapper from "../wrapper's/SectionWrapper";
 const PricePlanTable1 = ({ currentTab }) => {
   return (
     <>
-      <div className="overflow-x-auto rounded-3xl border border-gray-200 w-[80%] mx-auto pt-10  md:-mt-14 lg:-mt-24  bg-white pr-6">
+    <SectionWrapper>
+      <div className="overflow-x-auto rounded-3xl border border-gray-200 mx-auto pt-10  md:-mt-14 lg:-mt-24  bg-white pr-6">
         <table className="min-w-full divide-y-2 divide-gray-200 bg-white text-sm text-center ">
           <thead className="text-left pt-24">
             <tr>
-              <th className="whitespace-nowrap px-4 py-4 font-medium text-gray-900 max-w-56 text-wrap ">
+              <th className="whitespace-nowrap px-4 py-4 font-medium text-gray-900  text-wrap bg-blue-200 ">
                 <div className="p-6">
                   <Image src={paymentIco} alt='payment icons'></Image>
                   <p className=" pt-2">
-                    You pay $59.00/mo today Renews April 2024 For $69.00/mo
+                    You pay ৳4,000/mo today Renews April 2024 For ৳5,000/mo
                   </p>
                 </div>
               </th>
@@ -168,6 +170,7 @@ const PricePlanTable1 = ({ currentTab }) => {
           </tbody>
         </table>
       </div>
+      </SectionWrapper>
     </>
   );
 };

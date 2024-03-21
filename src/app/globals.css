@@ -147,7 +147,7 @@ html {
 
 .active-card {
   /* background: #6865ff ; */
-  background-image: linear-gradient(to top right, #6865ff,#6865ff,#6865ffdd);
+  background-image: linear-gradient(to top right, #6865ff,#524ffff1);
   color: white;
 }
 .active-card p {

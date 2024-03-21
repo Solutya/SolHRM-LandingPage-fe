@@ -1,6 +1,7 @@
 "use client";
 import SideNavbar from "@/components/SideNavbar/SideNavbar";
 import EmailJsForm from "@/components/forms/EmailJsForm";
+import EmailModal from "@/components/modals/EmailModal";
 import NavBar from "@/components/pages/home/NavBar";
 import FAQs from "@/components/pages/prices/FAQs";
 import TrustedBrands from "@/components/pages/prices/TrustedBrands";
@@ -30,7 +31,7 @@ const Price = () => {
 
         {/* Price Banner Section Starts */}
         <SectionWrapper>
-        <div className=" min-h-[60vh] grid grid-cols-1 md:grid-cols-2 justify-between items-center py-10 ">
+        <div className=" md:min-h-[60vh] my-auto flex flex-col gap-6 md:justify-between items-center py-10">
           <div
             data-aos="fade-up"
             data-aos-duration="1000"
@@ -44,11 +45,11 @@ const Price = () => {
           </div>
           {/* TAB SWITCHING SECTION STARTS*/}
           <div
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="50"
-            data-aos-once="true"
-            className="rounded-full relative uppercase w-fit mx-auto grid grid-cols-2 text-center shadow-md bg-white p-1 h-fit "
+            // data-aos="fade-up"
+            // data-aos-duration="1000"
+            // data-aos-delay="50"
+            // data-aos-once="true"
+            className="rounded-full relative uppercase w-fit mr-[8%] grid grid-cols-2 text-center shadow-md bg-white p-1 h-fit"
           >
             <span
               className={`font-black text-[14px] p-3 rounded-full cursor-pointer z-20 ${
@@ -110,6 +111,9 @@ const Price = () => {
       </div>
       <div>
         <FAQs />
+      </div>
+      <div>
+        <EmailModal/>
       </div>
     </div>
   );
