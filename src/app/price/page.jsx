@@ -21,7 +21,7 @@ const Price = () => {
       <div className="bg-[#600ee4] bg-[url('/assets/images/price/price-shape-1.png'),_url('/assets/images/price/price-shape-1.png')]  bg-[bottom_center,_bottom_right] ">
         {/* Navbar Components Start */}
         <div className="overflow-hidden relative">
-          <NavBar isOpen={isOpen} setIsOpen={setIsOpen} isWhite={true} />\
+          <NavBar isOpen={isOpen} setIsOpen={setIsOpen} isWhite={true} />
         </div>
         <div>
           <SideNavbar isOpen={isOpen} setIsOpen={setIsOpen} />
