@@ -26,7 +26,7 @@ const FeatursScrollSection = () => {
         scrollTrigger: {
           trigger: triggerRef.current,
           start: "top top",
-          end: "800 top",
+          end: "1000 top",
           scrub: 0.6,
           pin: true,
         },
@@ -46,7 +46,7 @@ const FeatursScrollSection = () => {
         >
           {FeaturesScrollData.map((item, index) => (
             <div
-              className="bg-white lg:h-[500px] h-[400px] w-[690px] lg:w-[900px] mx-auto flex items-center justify-center relative rounded-[20px] border"
+              className="bg-white lg:h-[500px] h-[400px] w-[690px] lg:w-[900px] mx-auto flex items-center justify-center relative rounded-[20px] border z-50"
               key={index}
             >
               <div className="features-section-shadow"></div>

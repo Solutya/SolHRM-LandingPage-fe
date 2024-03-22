@@ -5,8 +5,9 @@ import toast from "react-hot-toast";
 import { CiMail } from "react-icons/ci";
 import "../btn's/BlueBtn.css";
 import BlueBtn from "../btn's/BlueBtn";
+import CircleBtn from "../btn's/CircleBtn";
 
-const EmailJsForm = () => {
+const EmailJsForm = ({isFooter}) => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -29,7 +30,7 @@ const EmailJsForm = () => {
       );
   };
   return (
-    <SectionWrapper>
+
       <form ref={form} onSubmit={sendEmail} className="">
         {/* <label>Name</label>
         <input type="text" name="user_name" />
@@ -46,25 +47,38 @@ const EmailJsForm = () => {
           className="md:max-w-[630px] max-w-[500px] md:h-[60px] h-[50px] relative mx-auto md:mt-8 mt-5 max-md:flex flex-col items-center justify-center max-md:px-4"
         >
           <input
-            className="w-full h-full rounded-full px-[58px] outline-none text-myDark"
+            className="w-full h-full rounded-full px-[58px] py-[30px] outline-none text-myDark"
             type="email"
             name="user_email"
             required
             placeholder="Business email address"
           />
           <CiMail className="absolute md:top-[35%] top-[30%] text-xl md:left-7 left-9 text-gray-500" />
-          <div className="absolute md:right-2 md:top-[7px] max-md:mt-32 w-fit">
-            <BlueBtn>
+          {
+            isFooter? <div className="absolute right-6 top-0 md:right-2 md:top-[3px] w-fit">
+            <CircleBtn isFooter={true}>
               <input
                 type="submit"
-                value="Get a Demo"
-                className="text-white cursor-pointer"
+                value="send"
+                className="cursor-pointer"
               />
-            </BlueBtn>
+            </CircleBtn>
           </div>
+          :
+          <div className="absolute md:right-2 md:top-[7px] max-md:mt-32 w-fit">
+          <BlueBtn>
+            <input
+              type="submit"
+              value="Get a Demo"
+              className="text-white cursor-pointer"
+            />
+          </BlueBtn>
+        </div>
+          }
+        
         </div>
       </form>
-    </SectionWrapper>
+
   );
 };
 

@@ -40,20 +40,30 @@ const NavBar = ({ isOpen, setIsOpen, isWhite }) => {
           : " z-[1000] relative transition duration-300  "
       } ${!isNavFixed && isWhite ? "text-white z-[1000]" : "z-[1000]"}`}
     >
-      <div className="max-w-[1180px] mx-auto xl:px-0 lg:px-10 sm:px-[15%] px-[6%]  max-md:bg-white w-full ">
+      <div className="max-w-[1180px] mx-auto xl:px-4 lg:px-[6%]  sm:px-[6%]  px-[10%]  max-md:bg-white w-full ">
         <div className="flex items-center justify-between  py-5 font-medium text-dark">
           <div className="flex items-center xl:gap-16 lg:gap-6 sm:gap-9 gap-0">
             {/* Logo change on isWhite props */}
             <Link href="/">
               {!isNavFixed && isWhite ? (
+                <>
                 <Image
                   src="/assets/images/logo/solhrmForDark.png"
                   width={160}
                   height={60}
                   quality={100}
                   alt="Logo"
-                  className="w-32 "
+                  className="w-32 hidden md:block"
                 />
+                <Image
+                  src="/assets/images/logo/solhrm.png"
+                  width={160}
+                  height={60}
+                  quality={100}
+                  alt="Logo"
+                  className="w-32 md:hidden"
+                />
+                </>
               ) : (
                 <Image
                   src="/assets/images/logo/solhrm.png"

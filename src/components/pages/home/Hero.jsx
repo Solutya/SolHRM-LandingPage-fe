@@ -166,9 +166,9 @@ const Hero = () => {
           </p>
         </div>
         {/* animated images */}
-        <div className="hidden xl:block absolute bottom-20 xl:left-[10px] 2xl:left-[10%] z-10">
+        <div className="hidden xl:block z-0 absolute bottom-20 xl:left-[10px] 2xl:left-[10%] ">
           <Image
-            className="animate-updown"
+            className="animate-updown -z-10"
             src="/assets/images/home/hero-shape-1.png"
             width={119}
             height={116}
@@ -176,7 +176,7 @@ const Hero = () => {
             alt="animated hero image 1"
           />
         </div>
-        <div className="hidden  xl:block absolute bottom-14 xl:right-[10px] 2xl:right-[10%] z-10">
+        <div className="hidden z-0  xl:block absolute bottom-14 xl:right-[10px] 2xl:right-[10%] ">
           <Image
             className="animate-updownReverse"
             src="/assets/images/home/hero-shape-2.png"

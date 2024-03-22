@@ -70,7 +70,7 @@ const MoreSales = () => {
        data-aos="fade-right"
        data-aos-duration="1000"
        data-aos-once="true"
-      className="space-y-4  pl-4 md:py-6 py-28 mobile:py-16">
+      className="space-y-4   md:py-0 py-28 mobile:py-16">
         <p className="uppercase bg-[#f6f5fa] text-myBlue text-sm font-semibold rounded-full p-2 px-4 w-fit overflow-hidden ">
           Key Benfits
         </p>

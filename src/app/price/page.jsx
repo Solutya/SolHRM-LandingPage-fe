@@ -31,7 +31,7 @@ const Price = () => {
 
         {/* Price Banner Section Starts */}
         <SectionWrapper>
-        <div className=" md:min-h-[60vh] my-auto flex flex-col gap-6 md:justify-between items-center py-10">
+        <div className=" md:min-h-[60vh] my-auto flex flex-col md:flex-row gap-6 md:justify-between items-center py-10">
           <div
             data-aos="fade-up"
             data-aos-duration="1000"

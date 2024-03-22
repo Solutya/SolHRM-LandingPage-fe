@@ -95,8 +95,8 @@ const Footer = () => {
             </div>
           </div> */}
           <div>
-
-          <EmailJsForm/>
+            
+          <EmailJsForm isFooter={true}/>
           </div>
           {/* demo email input from ends */}
         </div>

@@ -43,7 +43,7 @@ const Offer = () => {
             alt="Offer"
           />
           <Image
-            className="animate-zoomInOut absolute shadow-2xl rounded-3xl top-[50%] sm:top-32  sm:left-[120px]"
+            className="animate-zoomInOut absolute shadow-2xl rounded-3xl top-[50%] sm:top-32 w-[80%] mx-auto inset-0 sm:w-[360px] sm:inset-auto  sm:left-[120px]"
             src="/assets/images/home/offer2.jpg"
             width={365}
             height={265}

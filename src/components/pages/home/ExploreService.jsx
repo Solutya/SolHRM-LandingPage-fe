@@ -22,14 +22,14 @@ const ExploreService = () => {
             subTitle={"Join the growing community of HR Innovation"}
           />
         </div>
-        <div className="mt-12 grid lg:grid-cols-3 md:grid-cols-2 gap-6">
+        <div className="mt-12 grid lg:grid-cols-3 md:grid-cols-2 gap-6 parent">
           {myData?.map((item, i) => (
             <div
               data-aos="fade-up"
               data-aos-duration={800 + i * 200}
               data-aos-once="true"
               key={i}
-              className=""
+              className=" last:bg-red-500"
             >
               <div className="border rounded-3xl  md:w-fit relative w-full max-w-96 mx-auto p-10 hover:shadow-2xl hover:shadow-gray-300  transition duration-300 group ">
                 <div className="mb-6">
@@ -42,7 +42,7 @@ const ExploreService = () => {
                   ></Image>
                 </div>
                 <div className="">
-                  <span className="font-bold text-[22px] pb-[5px] hover:text-amber-500 transition duration-500 cursor-pointer text-wrap">
+                  <span className="font-bold text-[20px] pb-[5px] hover:text-amber-500 transition duration-500 cursor-pointer text-wrap">
                     {item.title}
                   </span>
                   <h3 className="py-[7px] mb-[16px] font-[400] text-primary-2 text-[16px]">
@@ -71,7 +71,7 @@ const ExploreService = () => {
                 Manage all you dashboard features in simple ui 
               </p>
               <Link href="/price">
-                <button className="p-2 px-6 font-semibold bg-orange-400  rounded-3xl">
+                <button className="p-2 px-6 font-semibold bg-orange-400  rounded-3xl transition duration-500 hover:bg-orange-500 hover:scale-105">
                   Buy Now
                 </button>
               </Link>
