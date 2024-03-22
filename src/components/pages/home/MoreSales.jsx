@@ -67,11 +67,11 @@ const MoreSales = () => {
       <SectionWrapper>
       
       <div 
-      //  data-aos="fade-right"
-      //  data-aos-duration="1000"
-      //  data-aos-once="true"
-      className="space-y-4  pl-4 md:py-6 py-28 mobile:py-16">
-        <p className="uppercase bg-[#f6f5fa] text-myBlue text-sm font-semibold rounded-full p-2 px-4 w-fit ">
+       data-aos="fade-right"
+       data-aos-duration="1000"
+       data-aos-once="true"
+      className="space-y-4   md:py-0 py-28 mobile:py-16">
+        <p className="uppercase bg-[#f6f5fa] text-myBlue text-sm font-semibold rounded-full p-2 px-4 w-fit overflow-hidden ">
           Key Benfits
         </p>
         <h2 className="text-[33px] md:text-[38px] xl:text-[48px] font-bold">
@@ -86,9 +86,16 @@ const MoreSales = () => {
        data-aos="fade-left"
        data-aos-duration="1000"
        data-aos-once="true"
-      className="relative h-[600px] md:h-auto lg:col-span-2 xl:col-span-1 lg:ml-20 px-2 2xl:ml-0">
-        <div className="mx-auto w-fit py-4">
+      className="relative h-[600px] md:h-auto lg:col-span-2 xl:col-span-1 lg:ml-20 px-2 2xl:ml-0  ">
+        <div className="mx-auto w-fit py-4 -rotate-12">
           <Image src={bg_right_img} alt="bg-right-img" ></Image>
+        </div>
+        <div
+         data-aos="zoom-in"
+         data-aos-duration="400"
+         data-aos-once="false"
+        className="absolute -bottom-10 left-[35%] w-[20%]">
+        <Image src={'/assets/images/rank/circles.png'} alt="bg-circles" width={300} height={300} ></Image>
         </div>
         <div className="absolute top-0 mx-auto inset-x-0  w-full h-[80%] py-4 flex flex-wrap lg:flex-nowrap justify-center items-center text-center md:px-0   2xl:w-[82%] px-4 gap-2 sm:gap-0 ">
           {rank_data.map((item, i) => (

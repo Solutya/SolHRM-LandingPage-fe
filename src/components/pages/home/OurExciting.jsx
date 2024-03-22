@@ -16,7 +16,7 @@ const OurExciting = () => {
         data-aos="fade-up"
         data-aos-duration="1000"
         data-aos-once="true"
-        className="text-center">
+        className="text-center ">
           <HeaderTitle
             title="Our Exciting Factors"
             subTitle="Join the HRM revolution with our feature-packed system"

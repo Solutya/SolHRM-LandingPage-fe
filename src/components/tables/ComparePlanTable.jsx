@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react';
 import { compareTabledData } from "@/data/compare-table-data";
 import price_data from "@/data/price-data";
 import Link from "next/link";
@@ -18,9 +19,9 @@ const ComparePlanTable = () => {
             one for yourself."
         />
       </div>
-      <div className="overflow-x-auto rounded-t-3xl border border-gray-200 w-[80%] mx-auto pt-10 my-10  bg-white ">
-        <table className="min-w-full divide-y-2 divide-gray-200 bg-white text-sm text-center ">
-          <thead className="text-left pt-24">
+      <div className="overflow-x-auto rounded-t-3xl border border-gray-200 w-[80%] mx-auto  my-10  bg-[#f1f2f6] ">
+        <table className="min-w-full divide-y-2 divide-gray-200  text-sm text-center ">
+          <thead className="text-left sticky top-0 bg-[#f1f2f6] z-10">
             <tr>
               <th className="whitespace-nowrap px-4 py-4 font-medium text-gray-900 max-w-56 text-wrap ">
                 <div className="p-6 text-xl font-bold">
@@ -61,7 +62,7 @@ const ComparePlanTable = () => {
 
           <tbody className="divide-y divide-gray-200">
             {compareTabledData.map((item, i) => (
-              <tr key={i} className="odd:bg-slate-100 text-md ">
+              <tr key={i} className="odd:bg-white text-md ">
                 <td className="whitespace-nowrap px-4 py-6  text-gray-900  ">
                   {item.feature_title}
                 </td>

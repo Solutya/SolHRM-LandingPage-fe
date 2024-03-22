@@ -95,17 +95,18 @@ const Footer = () => {
             </div>
           </div> */}
           <div>
-
-          <EmailJsForm/>
+            
+          <EmailJsForm isFooter={true}/>
           </div>
           {/* demo email input from ends */}
         </div>
-        <hr
+        
+         <div 
           data-aos="fade-up"
           data-aos-duration="800"
           data-aos-once="true"
-          className="w-[90%] mx-auto border-[#cfcfcf2a]"
-        />
+         className=" inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-300 to-transparent opacity-75"></div>
+
         {/* Footer middle */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between xl:space-x-4 xl:space-y-0 space-y-10">
           <div

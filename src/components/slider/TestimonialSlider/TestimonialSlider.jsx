@@ -32,13 +32,19 @@ const brands_setting = {
   centerMode: true,
   responsive: [
     {
-      breakpoint: 1200,
+      breakpoint: 1400,
       settings: {
         slidesToShow: 4,
       },
     },
     {
-      breakpoint: 992,
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+      },
+    },
+    {
+      breakpoint: 1024,
       settings: {
         slidesToShow: 3,
       },
@@ -79,13 +85,13 @@ const TestimonialSlider = () => {
         // ref={sliderRef}
         ref={(slider) => setSlider1(slider)}
         {...tp_setting}
-        className="rounded-3xl lg:w-[90%] xl:w-[65%] 2xl:w-[50%] mx-auto mainSlick "
+        className="rounded-3xl sm:w-[510px] md:w-[690px] lg:w-[90%] xl:w-[65%] 2xl:w-[50%] mx-auto mainSlick "
         data-wow-duration=".9s"
         data-wow-delay=".5s"
       >
         {testimonial_data.slice(0, 12).map((item, i) => (
           <div key={i} className="h-full   ">
-            <div className="flex flex-col lg:flex-row h-full w-full shadow-md rounded-3xl ">
+            <div className="flex flex-col lg:flex-row h-full w-full shadow-xl rounded-3xl mb-10">
               <div className="lg:w-[65%] h-auto">
                 <div className="bg-myBlue text-white h-full p-6 md:p-10 rounded-3xl  rounded-br-none shadow-md 2xl:p-16">
                   <div className="">
@@ -126,7 +132,7 @@ const TestimonialSlider = () => {
         asNavFor={slider1}
         ref={(slider) => setSlider2(slider)}
         {...brands_setting}
-        className="md:w-[62%]  mx-auto  pt-20 brand-slider"
+        className="md:w-[60%] xl:w-[50%]  mx-auto  pt-10 brand-slider mt-10"
       >
         {testimonial_svg.map((item, i) => (
           <div key={i} className=" mx-auto">
