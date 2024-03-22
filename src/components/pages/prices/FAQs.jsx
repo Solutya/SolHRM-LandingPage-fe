@@ -1,8 +1,10 @@
+"use client"
 import React, { useState } from "react";
 import HeaderTitle from "../../headerTitle/HeaderTitle";
 import BlueBtn from "@/components/btn's/BlueBtn";
 import { GoNoEntry, GoPlusCircle } from "react-icons/go";
 import Image from "next/image";
+import SectionWrapper from "@/components/wrapper's/SectionWrapper";
 
 const FAQs = () => {
   const accordianDataset = [
@@ -46,8 +48,9 @@ const FAQs = () => {
     } else setIsAccordianClosed(id);
   };
   return (
-    <div className=" px-10 md:px-0 lg:m-[5%] lg:grid  lg:grid-cols-3 xl:grid-cols-2 flex flex-col justify-center items-center xl:w-[1180px] xl:mx-auto ">
-      <div className="space-y-4 bg-yellow- pl-4 md:py-6 py-28 mobile:py-16 relative">
+    <SectionWrapper>
+    <div className="flex flex-col lg:flex-row">
+      <div className="space-y-4 bg-yellow- pl-4 md:py-6 py-28 mobile:py-16 relative flex-1">
         <p className="uppercase bg-[#f6f5fa] text-myBlue text-sm font-semibold rounded-full p-2 px-4 w-fit ">
           SUPPORT
         </p>
@@ -67,14 +70,14 @@ const FAQs = () => {
 
           <BlueBtn>Get In Touch</BlueBtn>
           </div>
-          <Image src={'/assets/images/faq/faq-1.png'} alt="faq-bg" width={210} height={240} className="absolute top-0 right-10 " />
+          <Image src={'/assets/images/faq/faq-1.png'} alt="faq-bg" width={210} height={240} className="absolute hidden lg:block top-0 right-10 " />
         </div>
       
         
       </div>
-      <div className="relative  h-[600px] md:h-auto lg:col-span-2 xl:col-span-1 lg:ml-20 ">
+      <div className="relative  h-[600px] md:h-auto lg:col-span-2 xl:col-span-1 lg:ml-20 flex-1 ">
         {/* Faqs starts */}
-        <div className="mb-[58px]">
+        <div className="mb-[58px] ">
           {accordianDataset.map((accordian, index) => (
             <div className="mt-[15px] rounded-xl   px-6 py-2 " key={accordian.id}>
               <div
@@ -98,10 +101,10 @@ const FAQs = () => {
               </div>
               <hr />
               <div
-                className={`w-full overflow-hidden transition-max-height duration-1000 ease-in-out ${
+                className={`w-full overflow-hidden transition-max-height  duration-500 ease-in-out ${
                   isAccordianClosed === accordian.id
-                    ? "max-h-[1000px] shadow-xl p-4 rounded-xl "
-                    : " max-h-0"
+                    ? "max-h-[1000px] px-10 shadow-xl p-4 rounded-xl "
+                    : " max-h-0 px-10"
                 }`}
               >
                 <div className="mt-[15px]">{accordian.accordianContent}</div>
@@ -112,6 +115,7 @@ const FAQs = () => {
         </div>
       </div>
     </div>
+    </SectionWrapper>
   );
 };
 
