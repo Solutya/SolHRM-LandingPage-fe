@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 //  PROPS: 3 Props are  provide (isOpen, setIsOpen mandatory) , isWhite is for other pages where background is darker.
 const NavBar = ({ isOpen, setIsOpen, isWhite }) => {
   const [isNavFixed, setIsNavFixed] = useState(false);
-  console.log(isNavFixed);
+  // console.log(isNavFixed);
   useEffect(() => {
     console.log(window.scrollY);
 
@@ -75,7 +75,7 @@ const NavBar = ({ isOpen, setIsOpen, isWhite }) => {
                 />
               )}
             </Link>
-            <div className="flex items-center xl:gap-8 gap-7 lg:text-[15px]">
+            <div className="flex items-center xl:gap-8 gap-7 lg:text-[15px] ml-6">
               {navData.map((item, index) => (
                 <RLink
                   className={`hover:text-[#6865FF] lg:block hidden cursor-pointer  ${
@@ -83,6 +83,9 @@ const NavBar = ({ isOpen, setIsOpen, isWhite }) => {
                   }`}
                   to={`${item?.path}`}
                   key={index}
+                  spy={true}
+                  activeClass="active-link"
+                  offset={-50}
                   duration={1500}
                 >
                   {item.title}
@@ -91,8 +94,8 @@ const NavBar = ({ isOpen, setIsOpen, isWhite }) => {
             </div>
           </div>
           <div className="flex items-center xl:gap-7 gap-4">
-            <BiSearch className="text-2xl cursor-pointer max-md:hidden" />
-            <div className="w-[1px] h-[27px] bg-myDark max-lg:hidden"></div>
+            {/* <BiSearch className="text-2xl cursor-pointer max-md:hidden" />
+            <div className="w-[1px] h-[27px] bg-myDark max-lg:hidden"></div> */}
             <div className="lg:block hidden">
               <Link
                 href="#"

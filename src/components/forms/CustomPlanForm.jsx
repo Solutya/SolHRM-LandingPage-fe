@@ -7,20 +7,20 @@ import "../btn's/BlueBtn.css";
 import BlueBtn from "../btn's/BlueBtn";
 
 const CustomPlanForm = () => {
-  const form = useRef();
+  const form2 = useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = (e) => {``
     e.preventDefault();
-
+    console.log("RUNNING")
     emailjs
-      .sendForm("SolHRM", "template_28sneu3k", form.current, {
-        publicKey: "iUdL_30qtZCU2lbs1l",
+      .sendForm("service_o8oghys", "template_3a8r92i", form2.current, {
+        publicKey: "aHuzn2Ukm2q2xilou",
       })
       .then(
         () => {
           toast.success("Your email has been sent!");
-          if (form.current) {
-            form.current.reset();
+          if (form2.current) {
+            form2.current.reset();
           }
         },
         (error) => {
@@ -30,17 +30,27 @@ const CustomPlanForm = () => {
   };
   return (
     <form
-      ref={form}
+      ref={form2}
       onSubmit={sendEmail}
       className="pb-10 h-[60vh] overflow-y-scroll"
     >
-      <div className="text-center ">
-        <h2 className="text-xl font-semibold text-myBlue">
-          Request Your Custom Plan
-        </h2>
-        <p className="pt-2 opacity-70">Let us know what you exactly want!</p>
-      </div>
+     
       <div className=" md:mt-8 mt-5 flex flex-col items-center justify-center px-4 border py-4 mx-3 gap-4 rounded-2xl">
+      <div className="w-[90%] space-y-2">
+          <label
+            htmlFor="user_email"
+            className="text-left text-myBlue font-semibold text-[14px]"
+          >
+            Your Email
+          </label>
+          <input
+            className="w-full h-full rounded-full px-[28px] outline-myBlue text-myDark border py-2"
+            type="email"
+            name="user_email"
+            required
+            placeholder="Business email address"
+          />
+        </div>
         <div className="w-[90%] space-y-2">
           <label
             htmlFor="user_name"
@@ -58,33 +68,47 @@ const CustomPlanForm = () => {
         </div>
         <div className="w-[90%] space-y-2">
           <label
-            htmlFor="user_email"
+            htmlFor="user_phone"
             className="text-left text-myBlue font-semibold text-[14px]"
           >
-            Your Email
+            Your Phone Number
           </label>
           <input
             className="w-full h-full rounded-full px-[28px] outline-myBlue text-myDark border py-2"
-            type="email"
-            name="user_email"
+            type="number"
+            name="user_phone"
             required
-            placeholder="Business email address"
+            placeholder="Phone Number"
           />
         </div>
-
         <div className="w-[90%] space-y-2">
           <label
-            htmlFor="user_message"
+            htmlFor="user_company"
             className="text-left text-myBlue font-semibold text-[14px]"
           >
-            Your Message
+            Company Name
+          </label>
+          <input
+            className="w-full h-full rounded-full px-[28px] outline-myBlue text-myDark border py-2"
+            type="text"
+            name="user_company"
+            required
+            placeholder="Company Name"
+          />
+        </div>
+        <div className="w-[90%] space-y-2">
+          <label
+            htmlFor="user_requirements"
+            className="text-left text-myBlue font-semibold text-[14px]"
+          >
+            Your Requirements
           </label>
           <textarea
             className="w-full h-full rounded-lg px-[28px] outline-myBlue text-myDark border py-2"
             rows="3"
-            name="user_message"
+            name="user_requirements"
             required
-            placeholder="Your message..."
+            placeholder="Your requirements..."
           />
         </div>
 
@@ -130,16 +154,16 @@ const CustomPlanForm = () => {
             <option value="yearly">Yearly</option>
           </select>
         </div>
-
         <div className=" w-fit">
           <BlueBtn>
-            <input
+          <input
               type="submit"
               value="Send your Plan"
               className="text-white cursor-pointer "
             />
           </BlueBtn>
         </div>
+        
       </div>
     </form>
   );

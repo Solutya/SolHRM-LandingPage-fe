@@ -6,6 +6,8 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
+import WhiteBtn from "@/components/btn's/WhiteBtn";
+import BlueBtn from "../btn's/BlueBtn";
 const SideNavbar = ({ isOpen, setIsOpen }) => {
   return (
     <div
@@ -43,6 +45,7 @@ const SideNavbar = ({ isOpen, setIsOpen }) => {
                   className={`border-low-myDark py-[15px] font-medium flex items-center justify-between group ${
                     item?.path === "/contact" ? "" : "border-b"
                   }`}
+                  activeClass="active-link"
                   to={item?.path}
                   key={index}
                 >
@@ -56,6 +59,12 @@ const SideNavbar = ({ isOpen, setIsOpen }) => {
                 </RLink>
               ))}
             </div>
+            <div className="w-fit pt-10 mx-auto">
+              <Link href='https://demo.hrm.solutya.com/' target='__blank' className="px-8 py-3 rounded-full bg-white text-myDark hover:text-white hover:bg-myBlue transition duration-500 font-semibold">
+              
+              View Demo
+              </Link>
+        </div>
             <div className="text-center mt-[70px]">
               <h5 className="font-bold text-2xl">Instagram</h5>
               <div className="grid grid-cols-4 gap-3 mt-5">
@@ -124,7 +133,7 @@ const SideNavbar = ({ isOpen, setIsOpen }) => {
                   />
                 </svg>
                 <p className="text-gray-400  font-semibold">
-                  +880 9611-656-145
+                +880 1329-65-9900-(09)
                 </p>
               </div>
               <div className="flex items-center justify-center gap-4 mt-10 pb-10">

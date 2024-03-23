@@ -19,7 +19,7 @@ const Price = () => {
   };
   return (
     <div className="pb-20 relative  ">
-      <div className="bg-[#600ee4] bg-[url('/assets/images/price/price-shape-1.png'),_url('/assets/images/price/price-shape-1.png')]  bg-[bottom_center,_bottom_right] ">
+      <div className="bg-[#600ee4]  bg-[url('/assets/images/price/price-shape-1.png'),_url('/assets/images/price/price-shape-1.png')]  bg-[bottom_center,_bottom_right]">
         {/* Navbar Components Start */}
         <div className="overflow-hidden relative">
           <NavBar isOpen={isOpen} setIsOpen={setIsOpen} isWhite={true} />
@@ -31,7 +31,7 @@ const Price = () => {
 
         {/* Price Banner Section Starts */}
         <SectionWrapper>
-        <div className=" md:min-h-[60vh] my-auto flex flex-col md:flex-row gap-6 md:justify-between items-center py-10">
+        <div className=" md:min-h-[60vh] my-auto flex flex-col md:flex-row gap-6 md:justify-between items-center py-10 ">
           <div
             data-aos="fade-up"
             data-aos-duration="1000"
@@ -113,7 +113,7 @@ const Price = () => {
         <FAQs />
       </div>
       <div>
-        <EmailModal/>
+        <EmailModal modalTitle="Customize"/>
       </div>
     </div>
   );

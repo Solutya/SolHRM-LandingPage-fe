@@ -77,9 +77,9 @@ const MoreSales = () => {
         <h2 className="text-[33px] md:text-[38px] xl:text-[48px] font-bold">
         Maximize Efficiency and Drive Performance
         </h2>
-        <div className="w-fit pt-3">
+        {/* <div className="w-fit pt-3">
           <BlueBtn>Explore More</BlueBtn>
-        </div>
+        </div> */}
       </div>
       </SectionWrapper>
       <div  

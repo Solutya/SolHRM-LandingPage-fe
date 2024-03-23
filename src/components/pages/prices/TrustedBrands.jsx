@@ -15,13 +15,13 @@ const TrustedBrands = () => {
         </div>
         <div className="flex flex-wrap gap-6 justify-center items-center ">
           {brandData.map((item) => (
-            <div key={item.id} className="shadow-xl rounded-lg w-[173px]">
+            <div key={item.id} className="shadow-xl rounded-lg w-[173px] hover:scale-110 transition duration-200">
               <Image
                 src={item.img_1}
                 alt="brands"
                 width={173}
                 height={100}
-                className="w-full"
+                className="w-full "
               ></Image>
             </div>
           ))}
