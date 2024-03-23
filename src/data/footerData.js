@@ -1,22 +1,23 @@
 const footerData = {
   dataOne: [
-    { title: "Business", path: "" },
-    { title: "Technology", path: "" },
-    {
-      title: "Online Marketing",
-      path: "",
-    },
-    { title: "Advertising Strategy", path: "" },
-    { title: "Strategy", path: "" },
-    { title: "Development", path: "" },
+   
+    { title: "Strategy & Research", path: "https://solutya.com/services" },
+    { title: "Web Developement", path: "" },
+    { title: "ERP Solution", path: "" },
+    { title: "Digital Marketing", path: "" },
+    { title: "App Developement", path: "" },
+    { title: "24/7 Services", path: "" },
   ],
   dataTwo: [
-    { title: "About", path: "" },
-    { title: "Services", path: "" },
-    { title: "How It Works", path: "" },
-    { title: "Pricing Plan", path: "" },
-    { title: "Blog", path: "" },
-    { title: "Contact", path: "" },
+    { title: "Portfolio", path: "https://solutya.com/portfolio" },
+    { title: "Career", path: "https://solutya.com/career" },
+    {
+      title: "Privacy Policy",
+      path: "https://solutya.com/privacy-policy",
+    },
+    { title: "Terms & Conditions", path: "https://solutya.com/terms-and-conditions" },
+    { title: "Support", path: "https://solutya.com/contact-us" },
+   
   ],
   dataThree: [
     {

@@ -22,7 +22,7 @@ const Footer = () => {
 
   // this transition is for myDark background
   useIsomorphicLayoutEffect(() => {
-    gsap.set(".tp-gsap-bg", { scale: 0.98 });
+    gsap.set(".tp-gsap-bg", { scale: 1.0 });
     let mm = gsap.matchMedia();
     mm.add("(min-width:1400px)", () => {
       gsap.to(".tp-gsap-bg", {
@@ -69,9 +69,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-0 items-center   ">
           <div>
             <h3
-              // data-aos="fade-up"
-              // data-aos-duration="600"
-              // data-aos-once="true"
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-once="true"
               className="text-xl text-center md:text-left mt-[32px]"
             >
               Get Our Latest's News <br /> & Updates
@@ -96,7 +96,7 @@ const Footer = () => {
           </div> */}
           <div>
             
-          <EmailJsForm isFooter={true}/>
+          <EmailJsForm />
           </div>
           {/* demo email input from ends */}
         </div>
@@ -160,7 +160,7 @@ const Footer = () => {
             data-aos-delay="50"
             data-aos-once="true"
           >
-            <h3 className="font-bold text-lg capitalize pb-6">What we do</h3>
+            <h3 className="font-bold text-lg capitalize pb-6">Our Services</h3>
             <div className="text-[#f5f5fa99] flex flex-col gap-4 font-[500]">
               {footerData.dataOne.map((item, i) => (
                 <Link
@@ -179,7 +179,7 @@ const Footer = () => {
             data-aos-delay="80"
             data-aos-once="true"
           >
-            <h3 className="font-bold text-lg capitalize pb-6">Other Pages</h3>
+            <h3 className="font-bold text-lg capitalize pb-6">Other Links</h3>
             <div className="text-[#f5f5fa99] flex flex-col gap-4 font-[500]">
               {footerData.dataTwo.map((item, i) => (
                 <Link key={i} href={item.path}>

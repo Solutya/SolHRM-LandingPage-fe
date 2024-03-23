@@ -4,7 +4,7 @@ import CustomPlanForm from '../forms/CustomPlanForm';
 import { FaCross } from 'react-icons/fa';
 import { IoClose } from 'react-icons/io5';
 
-const EmailModal = () => {
+const EmailModal = ({modalTitle}) => {
   const [modalOpen, setModalOpen] = useState(false);
 
   // Function to open the modal
@@ -26,17 +26,18 @@ const EmailModal = () => {
 
   return (
     <div>
-      <h2>Modal Example</h2>
 
       {/* Trigger/Open The Modal */}
       {/* Trigger/Open The Modal */}
-      <button onClick={openModal} className="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">
-        Open Modal
+      <button onClick={openModal} className="">
+        {
+          modalTitle? modalTitle : "open modal"
+        }
       </button>
 
       {/* The Modal */}
       <div
-        className={`fixed z-10 inset-0 overflow-y-auto  ${modalOpen ? 'block' : 'hidden'}`}
+        className={`fixed z-40 inset-0 overflow-y-auto  ${modalOpen ? 'block' : 'hidden'}`}
         onClick={handleCloseOutside}
       >
         {/* Modal content */}
@@ -45,7 +46,7 @@ const EmailModal = () => {
           <div className="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
             {/* Background overlay */}
             <div className="fixed inset-0 transition-opacity" aria-hidden="true">
-              <div className="absolute inset-0 bg-gray-500 opacity-75"></div>
+              <div className="absolute inset-0 bg-black opacity-75 z-40"></div>
             </div>
 
             {/* Modal panel */}
@@ -57,6 +58,9 @@ const EmailModal = () => {
                 </button>
               </div>
               <div>
+                <div>
+                  <h3 className="text-myBlue text-xl font-semibold text-center">Please Fill In the form </h3>
+                </div>
                 <CustomPlanForm/>
               </div>
             </div>

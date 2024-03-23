@@ -17,6 +17,12 @@ html {
   top: 9px;
 }
 
+/* React scroll nav tab active */
+.active-link{
+  color: #6865ff;
+  font-weight:600;
+}
+
 /* scroll bar */
 
 /* width */

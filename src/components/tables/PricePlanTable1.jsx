@@ -4,6 +4,7 @@ import Link from "next/link";
 import React from "react";
 import { GoArrowRight } from "react-icons/go";
 import paymentIco from "../../../public/assets/images/price/price-4.1.png";
+import EmailModal from "../modals/EmailModal";
 const PricePlanTable1 = ({ currentTab }) => {
   return (
     <>
@@ -38,7 +39,7 @@ const PricePlanTable1 = ({ currentTab }) => {
                         {/* <p className="text-sm text-gray-500">{item.description}</p> */}
                       </div>
                       {/* Purchase button */}
-                      <div className="flex flex-col items-center justify-center gap-4 w-fit z-20">
+                      <div className="flex flex-col items-center justify-center gap-4 w-fit ">
                         {item.price === "" ? (
                           <>
                           <span className="  text-myBlue   text-2xl font-bold">
@@ -59,14 +60,26 @@ const PricePlanTable1 = ({ currentTab }) => {
                           </span>
                           </>
                         )}
-                        <Link
-                          href={item.paymentLink}
-                          className="bg-myDark text-white 
-                        w-fit rounded-full  top-0 py-3 left-0  transition px-6 text-xs  duration-300 hover:bg-myBlue hover:shadow-xl shadow-md font-semibold cursor-pointer"
-                        >
-                          Buy Now
-                          {/* <GoArrowRight className="inline text-xl ml-2 " /> */}
-                        </Link>
+                        {
+                          item.cls === "custom-plan"?
+                    
+                         <div className="bg-myDark text-white 
+                         w-fit rounded-full  top-0 py-3 left-0  transition px-6 text-xs  duration-300 hover:bg-myBlue hover:shadow-xl shadow-md font-semibold cursor-pointer">
+
+                           <EmailModal modalTitle="Buy Now"/>
+                         </div>
+                         
+             
+                        :
+                         <Link
+                         href={item.paymentLink}
+                         className="bg-myDark text-white 
+                       w-fit rounded-full  top-0 py-3 left-0  transition px-6 text-xs  duration-300 hover:bg-myBlue hover:shadow-xl shadow-md font-semibold cursor-pointer"
+                       >
+                         Buy Now
+                         {/* <GoArrowRight className="inline text-xl ml-2 " /> */}
+                       </Link>                        }
+                       
                       </div>
                     </div>
                   </th>

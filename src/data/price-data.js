@@ -105,7 +105,7 @@ const price_data = [
     description:<b>100+ Employees</b>,
     paymentLink: "",
     fullDescription: "A TAILORED PRICE PLANNING FOR BUSINESS WITH CUSTOMIZED REQUIREMENTS",
-    cls: "",
+    cls: "custom-plan",
     price: "",
     price_feature: [
       {
@@ -230,7 +230,7 @@ const price_data = [
     description: <b>100+ Employees</b>,
     paymentLink: "",
     fullDescription: "A TAILORED PRICE PLANNING FOR BUSINESS WITH CUSTOMIZED REQUIREMENTS",
-    cls: "",
+    cls: "custom-plan",
     price: "",
     price_feature: [
       {
