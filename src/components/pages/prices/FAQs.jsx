@@ -49,8 +49,8 @@ const FAQs = () => {
   };
   return (
     <SectionWrapper>
-    <div className="flex flex-col lg:flex-row justify-center items-center">
-      <div className="space-y-4 bg-yellow- pl-4 md:py-6 py-28 mobile:py-16 relative flex-1">
+    <div className="flex flex-col lg:flex-row justify-center lg:items-center">
+      <div className="space-y-4 bg-yellow- md:pl-4 md:py-6 py-28 mobile:py-16 relative flex-1">
         <p className="uppercase bg-[#f6f5fa] text-myBlue text-sm font-semibold rounded-full p-2 px-4 w-fit ">
           SUPPORT
         </p>
@@ -79,7 +79,7 @@ const FAQs = () => {
         {/* Faqs starts */}
         <div className="mb-[58px] ">
           {accordianDataset.map((accordian, index) => (
-            <div className="mt-[15px] rounded-xl   px-6 py-2 " key={accordian.id}>
+            <div className="mt-[15px] rounded-xl   md:px-6 py-2 " key={accordian.id}>
               <div
                 className=" flex justify-between pb-2 cursor-pointer"
                 onClick={() => setTheAccordianToOpen(accordian.id)}
