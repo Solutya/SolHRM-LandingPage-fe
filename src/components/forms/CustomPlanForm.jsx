@@ -13,8 +13,8 @@ const CustomPlanForm = () => {
     e.preventDefault();
     console.log("RUNNING")
     emailjs
-      .sendForm("service_o8oghys", "template_3a8r92i", form2.current, {
-        publicKey: "aHuzn2Ukm2q2xilou",
+      .sendForm("SolHRM", "template_cxz25un", form.current, {
+        publicKey: "iUdL_30qtZCU2lb1l",
       })
       .then(
         () => {

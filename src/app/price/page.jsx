@@ -112,9 +112,6 @@ const Price = () => {
       <div>
         <FAQs />
       </div>
-      <div>
-        <EmailModal modalTitle="Customize"/>
-      </div>
     </div>
   );
 };
