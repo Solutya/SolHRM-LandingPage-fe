@@ -9,7 +9,7 @@ import { FaInstagram } from "react-icons/fa6";
 import Link from "next/link";
 import { IoIosArrowDropupCircle } from "react-icons/io";
 import footerData from "@/data/footerData";
-import {  useIsomorphicLayoutEffect } from "framer-motion";
+// import {  useIsomorphicLayoutEffect } from "framer-motion";
 import { gsap } from "gsap";
 import SectionWrapper from "@/components/wrapper's/SectionWrapper";
 import EmailJsForm from "../forms/EmailJsForm";
