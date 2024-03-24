@@ -84,8 +84,8 @@ const ProjectSlider = () => {
                 
                 <div className="pb-20">
                 <div className="rounded-3xl flex  items-center flex-col md:flex-row bg-white transition duration-300 hover:shadow-xl w-full">
-                    <div className="h-[100%]  md:w-fit w-[100%]  ">
-                    <Link href={item?.live_link} target="__blank" className="h-full">
+                    <div className="h-[100%] md:w-fit w-[100%]  ">
+                    <Link href={item?.live_link} target="__blank" className="h-full ">
                       <Image
                         src={item.img_1.src}
                         alt="theme-pure"

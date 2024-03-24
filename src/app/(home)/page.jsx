@@ -16,7 +16,7 @@ const HomePage = () => {
   
   return (
     <div className="">
-      {/* <div>
+      <div>
       <Hero />
       </div>
       <div className="2xl:-mt-[480px] -mt-[380px] hidden lg:block">
@@ -31,11 +31,11 @@ const HomePage = () => {
       </div>
       <div id="services">
         <ExploreService />
-      </div> */}
+      </div>
       <div id="works">
         <RecentWork />
       </div>
-      {/* <div id="clients">
+      <div id="clients">
         <TestimonialArea />
       </div>
       <div id="sales">
@@ -43,7 +43,7 @@ const HomePage = () => {
       </div>
       <div id="price">
         <PriceArea />
-      </div> */}
+      </div>
      
     </div>
   );
