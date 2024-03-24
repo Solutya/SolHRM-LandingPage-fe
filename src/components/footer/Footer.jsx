@@ -1,17 +1,15 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import CircleBtn from "../btn's/CircleBtn";
-import { CiMail } from "react-icons/ci";
+
 import Image from "next/image";
 import { TiSocialFacebook } from "react-icons/ti";
 import { TiSocialTwitter } from "react-icons/ti";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import Link from "next/link";
-import { IoMailOutline } from "react-icons/io5";
 import { IoIosArrowDropupCircle } from "react-icons/io";
 import footerData from "@/data/footerData";
-import { motion, useAnimation, useIsomorphicLayoutEffect } from "framer-motion";
+import {  useIsomorphicLayoutEffect } from "framer-motion";
 import { gsap } from "gsap";
 import SectionWrapper from "@/components/wrapper's/SectionWrapper";
 import EmailJsForm from "../forms/EmailJsForm";
@@ -21,7 +19,7 @@ const Footer = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   // this transition is for myDark background
-  useIsomorphicLayoutEffect(() => {
+  useEffect(() => {
     gsap.set(".tp-gsap-bg", { scale: 1.0 });
     let mm = gsap.matchMedia();
     mm.add("(min-width:1400px)", () => {
@@ -42,7 +40,7 @@ const Footer = () => {
   }, []);
 
   // This is for the text designs so that they dont change their scale
-  useIsomorphicLayoutEffect(() => {
+  useEffect(() => {
     gsap.set(".tp-gsap-bg2", { scale: 1 });
     let mm = gsap.matchMedia();
     mm.add("(min-width:1400px)", () => {

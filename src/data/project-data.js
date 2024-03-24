@@ -55,7 +55,7 @@ export const  project_data = [
         img_2: project_brand_4,
         title: "BellissimoLimos",
         description: <>Bellissimolimos - Black car service
-        Bellissimolimos Car Service was built on the standards of exceptional service, reliability, and reasonable rates - all while keeping the client’s safety </>,
+        It was built on the standards of exceptional service, reliability, and reasonable rates - all while keeping the client’s safety </>,
         client_name: "Anthropy Salim",
         live_link:"https://bellissimolimos.com",
         rating: 4.5,

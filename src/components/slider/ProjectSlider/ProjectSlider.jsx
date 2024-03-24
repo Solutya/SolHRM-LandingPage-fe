@@ -29,7 +29,7 @@ const setting = {
   centeredSlides: true,
   spaceBetween: 30,
   breakpoints: {
-    1308:{
+    1506:{
       slidesPerView: 2,
     },
     1200: {
@@ -91,7 +91,7 @@ const ProjectSlider = () => {
                         alt="theme-pure"
                         width={297}
                         height={450}
-                        className="rounded-ss-3xl md:rounded-es-3xl rounded-se-3xl md:rounded-se-none h-[100%]  w-full md:object-cover "
+                        className="rounded-ss-3xl md:rounded-es-3xl rounded-se-3xl md:rounded-se-none h-[100%]  w-full md:object-cover md:h-full  md:w-96 lg:w-80"
                       />
                       </Link>
                     </div>
@@ -105,7 +105,7 @@ const ProjectSlider = () => {
                           alt="theme-pure"
                           width={100}
                           height={30}
-                          className="mb-7 w-20 lg:w-28 "
+                          className="mb-7 w-20 lg:max-w-24 "
                         />
                       </div>
                       <div className="">
