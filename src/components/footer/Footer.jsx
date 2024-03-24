@@ -64,9 +64,9 @@ const Footer = () => {
 
   return (
     <footer className="lg:rounded-3xl lg:mb-10  bg-myDark tp-gsap-bg px-[2%] md:px-0 ">
-      <div className="text-white space-y-10  mt-10 lg:mt-20  mx-auto p-[1%] pt-[50px] px-[6%] xl:px-0 tp-gsap-bg2 max-w-[1230px]">
+      <div className="text-white space-y-10  mt-10 lg:mt-20  mx-auto p-[1%] pt-[50px] px-[6%] xl:px-0 tp-gsap-bg2 max-w-[1230px]  ">
         {/* Footer top */}
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-0 items-center   ">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-0 items-center  pb-10 md:pb-0">
           <div>
             <h3
               data-aos="fade-up"
@@ -94,18 +94,19 @@ const Footer = () => {
               <CircleBtn />
             </div>
           </div> */}
-          <div>
+          <div >
             
           <EmailJsForm />
           </div>
           {/* demo email input from ends */}
         </div>
         
+        {/* Horizontal faded line div */}
          <div 
           data-aos="fade-up"
           data-aos-duration="800"
           data-aos-once="true"
-         className=" inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-300 to-transparent opacity-75"></div>
+         className=" inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-55 "></div>
 
         {/* Footer middle */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between xl:space-x-4 xl:space-y-0 space-y-10">
