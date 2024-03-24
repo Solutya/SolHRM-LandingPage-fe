@@ -3,8 +3,8 @@ import { project_data } from "@/data/project-data";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-// import Swiper from "swiper";
-// import { Autoplay, Navigation, Scrollbar } from 'swiper';
+import { Rating ,ThinStar} from '@smastrom/react-rating'
+import '@smastrom/react-rating/style.css'
 import { Autoplay, Navigation, Scrollbar } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -13,12 +13,18 @@ import "swiper/css";
 import "swiper/css/scrollbar";
 import "./ProjectSlider.css";
 import CircleBtn from "../../btn's/CircleBtn";
+
+const myStyles = {
+  itemShapes: ThinStar,
+  activeFillColor: '#ffb700',
+  inactiveFillColor: '#fbf1a9'
+}
 const setting = {
   loop: true,
-  autoplay: {
-    delay: 2500,
-    pauseOnMouseEnter: true,
-  },
+  // autoplay: {
+  //   delay: 2500,
+  //   pauseOnMouseEnter: true,
+  // },
   slidesPerView: 2,
   centeredSlides: true,
   spaceBetween: 30,
@@ -77,15 +83,15 @@ const ProjectSlider = () => {
                 
                 
                 <div className="pb-20">
-                  <div className="rounded-3xl flex  items-center flex-col md:flex-row bg-white transition duration-300 hover:shadow-xl w-full">
+                <div className="rounded-3xl flex  items-center flex-col md:flex-row bg-white transition duration-300 hover:shadow-xl w-full">
                     <div className="h-[100%]  md:w-fit w-[100%]  ">
-                    <Link href={item?.live_link} target="__blank">
+                    <Link href={item?.live_link} target="__blank" className="h-full">
                       <Image
                         src={item.img_1.src}
                         alt="theme-pure"
                         width={297}
                         height={450}
-                        className="rounded-ss-3xl md:rounded-es-3xl rounded-se-3xl md:rounded-se-none h-[100%] object-cover w-full md:w-80 "
+                        className="rounded-ss-3xl md:rounded-es-3xl rounded-se-3xl md:rounded-se-none h-[100%]  w-full md:object-cover "
                       />
                       </Link>
                     </div>
@@ -120,10 +126,12 @@ const ProjectSlider = () => {
                         </div>
                         <div className="">
                           <span className="text-[14px]">Ratings</span>
-                          <h4 className="font-[500]">
-                            {item.rating}
+                          <div className=" text-sm">
                             
-                          </h4>
+                            <Rating style={{ maxWidth: 100 }} value={item.rating} 
+                           itemStyles={myStyles}
+                            readOnly  />
+                          </div>
                         </div>
                         <div className="">
                           <Link href={item?.live_link} target="__blank">

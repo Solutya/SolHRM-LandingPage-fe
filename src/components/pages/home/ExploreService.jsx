@@ -26,7 +26,7 @@ const ExploreService = () => {
           {myData?.map((item, i) => (
             <div
               data-aos="fade-up"
-              data-aos-duration={800 + i * 200}
+              data-aos-duration={`${1000 + (i * 200) }`}
               data-aos-once="true"
               key={i}
               className=" last:bg-red-500"
@@ -59,7 +59,7 @@ const ExploreService = () => {
           ))}
           <div
             data-aos="fade-up"
-            data-aos-duration="1400"
+            data-aos-duration="2400"
             data-aos-once="true"
             className="bg-[url('/assets/images/service/sv-bg.jpg')] rounded-3xl  pb-0 z-20 md:w-[338px] relative w-full mx-auto bg-cover border md:w-fit   max-w-96  hover:shadow-gray-300  transition duration-300 group overflow-hidden"
           >
@@ -79,13 +79,14 @@ const ExploreService = () => {
             <div className=" overflow-hidden">
               <Image
                 data-aos="fade-left"
+                data-aos-delay="200"
                 data-aos-duration="1400"
-                data-aos-once="true"
+                data-aos-once="false"
                 src={"/assets/images/service/sv-dashbord.png"}
                 alt="demo"
                 width={320}
                 height={120}
-                className="w-full ml-16 -mb-10"
+                className="w-full h-full ml-16 -mb-10"
               ></Image>
             </div>
           </div>

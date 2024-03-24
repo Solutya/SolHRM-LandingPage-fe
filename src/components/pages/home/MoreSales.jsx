@@ -86,7 +86,7 @@ const MoreSales = () => {
        data-aos="fade-left"
        data-aos-duration="1000"
        data-aos-once="true"
-      className="relative h-[600px] md:h-auto lg:col-span-2 xl:col-span-1 lg:ml-20 px-2 2xl:ml-0  ">
+      className="relative h-[600px] md:h-auto lg:col-span-2 xl:col-span-1 lg:ml-20 px-2 xl:ml-0  ">
         <div className="mx-auto w-fit py-4 -rotate-12">
           <Image src={bg_right_img} alt="bg-right-img" ></Image>
         </div>

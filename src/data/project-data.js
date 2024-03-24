@@ -1,15 +1,17 @@
 
 import project_img_1 from "../../public/assets/images/project/project-img-2.jpg";
-import project_brand_1 from "../../public/assets/images/project/project-brand-1.png";
+import project_brand_1 from "../../public/assets/images/project/rangdhanu.png";
 
 import project_img_2 from "../../public/assets/images/project/project-img-1.jpg";
-import project_brand_2 from "../../public/assets/images/project/project-brand-2.png";
+import project_brand_2 from "../../public/assets/images/project/raianarian.png";
 
 import project_img_3 from "../../public/assets/images/project/project-img-3.jpg";
-import project_brand_3 from "../../public/assets/images/project/project-brand-4.png";
+import project_brand_3 from "../../public/assets/images/project/solsoft.png";
 
 import project_img_4 from "../../public/assets/images/project/project-img-4.jpg";
-import project_brand_4 from "../../public/assets/images/project/project-brand-2.png";
+import project_brand_4 from "../../public/assets/images/project/bellissimolimos.png";
+import project_img_5 from "../../public/assets/images/project/project-img-4.jpg";
+import project_brand_5 from "../../public/assets/images/project/suntrustbd.png";
 
 
 export const  project_data = [
@@ -29,13 +31,10 @@ export const  project_data = [
         id: 2,
         img_1: project_img_2,
         img_2: project_brand_2,
-        title: "Makinft",
-        description: <>Largest Online
-        market to Sell & Buy NFT Collections.
-        NFT Marketplace Explore, Collect or Sell
-        Create Explore Sell & Earn</>,
+        title: "Raianarian",
+        description: <>Raian Arian International as a distinguished agency specializing in recruiting skilled manpower within the region of Bangladesh</>,
         client_name: "Anthropy Phillip",
-        live_link:"https://makinft-html.netlify.app/home-1",
+        live_link:"https://raianarian.com",
         rating: 5,
         delay: ".5s"
     },
@@ -59,6 +58,17 @@ export const  project_data = [
         Bellissimolimos Car Service was built on the standards of exceptional service, reliability, and reasonable rates - all while keeping the client’s safety </>,
         client_name: "Anthropy Salim",
         live_link:"https://bellissimolimos.com",
+        rating: 4.5,
+        delay: ".9s"
+    },
+    {
+        id: 5,
+        img_1: project_img_5,
+        img_2: project_brand_5,
+        title: "SunTrust BD",
+        description: <>Suntrust Ltd. Is A Global Human Hair Distribution Company, Which Completely Focuses On Making Human Hair Extensions </>,
+        client_name: "Anthropy Salim",
+        live_link:"https://suntrustbd.com",
         rating: 4.5,
         delay: ".9s"
     }
