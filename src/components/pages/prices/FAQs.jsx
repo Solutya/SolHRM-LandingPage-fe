@@ -5,6 +5,7 @@ import BlueBtn from "@/components/btn's/BlueBtn";
 import { GoNoEntry, GoPlusCircle } from "react-icons/go";
 import Image from "next/image";
 import SectionWrapper from "@/components/wrapper's/SectionWrapper";
+import Link from "next/link";
 
 const FAQs = () => {
   const accordianDataset = [
@@ -67,8 +68,9 @@ const FAQs = () => {
         />
         <div className="pt-3 relative w-full ">
           <div className="w-fit">
-
-          <BlueBtn>Get In Touch</BlueBtn>
+          <Link href={"contact"}>
+          <BlueBtn>Contact Us</BlueBtn>
+          </Link>
           </div>
           <Image src={'/assets/images/faq/faq-1.png'} alt="faq-bg" width={210} height={240} className="absolute hidden lg:block top-0 right-10 " />
         </div>

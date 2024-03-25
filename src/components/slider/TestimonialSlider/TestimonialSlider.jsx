@@ -103,7 +103,7 @@ const TestimonialSlider = () => {
                     <Image src={item?.img} alt="brand-logo" className="py-4" />
                   </div>
                   <div className="text-left md:text-[24px] font-semibold  ">
-                    <p>{item.description} </p>
+                    <p className="line-clamp-3">{item.description} </p>
                   </div>
                   <div className="flex flex-col text-left pt-10 gap-1 ">
                     <span className="font-bold">{item.name}</span>

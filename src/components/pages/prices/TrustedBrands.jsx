@@ -21,7 +21,7 @@ const TrustedBrands = () => {
                 alt="brands"
                 width={173}
                 height={100}
-                className="w-full "
+                className="w-full h-[100px] "
               ></Image>
             </div>
           ))}

@@ -60,7 +60,7 @@ const SideNavbar = ({ isOpen, setIsOpen }) => {
               ))}
             </div>
             <div className="w-fit pt-10 mx-auto">
-              <Link href='https://demo.hrm.solutya.com/' target='__blank' className="px-8 py-3 rounded-full bg-white text-myDark hover:text-white hover:bg-myBlue transition duration-500 font-semibold">
+              <Link href='https://demo.hrm.solutya.com/' target='_blank' className="px-8 py-3 rounded-full bg-white text-myDark hover:text-white hover:bg-myBlue transition duration-500 font-semibold">
               
               View Demo
               </Link>
@@ -137,14 +137,14 @@ const SideNavbar = ({ isOpen, setIsOpen }) => {
                 </p>
               </div>
               <div className="flex items-center justify-center gap-4 mt-10 pb-10">
-                <Link href={"https://twitter.com/SolutyaI"} target="__blank">
+                <Link href={"https://twitter.com/SolutyaI"} target="_blank">
                   <div className="p-4 text-xl rounded-xl flex items-center justify-center bg-white text-myBlue hover:text-white hover:bg-myBlue transition duration-300">
                     <FaXTwitter />
                   </div>
                 </Link>
                 <Link
                   href={"https://www.instagram.com/solutyapvtltd/"}
-                  target="__blank"
+                  target="_blank"
                 >
                   <div className="p-4 text-xl rounded-xl flex items-center justify-center bg-white text-myBlue hover:text-white hover:bg-myBlue transition duration-300">
                     <FaInstagram />
@@ -152,7 +152,7 @@ const SideNavbar = ({ isOpen, setIsOpen }) => {
                 </Link>
                 <Link
                   href={"https://www.facebook.com/Solutya"}
-                  target="__blank"
+                  target="_blank"
                 >
                   <div className="p-4 text-xl rounded-xl flex items-center justify-center bg-white text-myBlue hover:text-white hover:bg-myBlue transition duration-300">
                     <FaFacebookF />
@@ -160,7 +160,7 @@ const SideNavbar = ({ isOpen, setIsOpen }) => {
                 </Link>
                 <Link
                   href={"https://www.linkedin.com/company/solutya"}
-                  target="__blank"
+                  target="_blank"
                 >
                   <div className="p-4 text-xl rounded-xl flex items-center justify-center bg-white text-myBlue hover:text-white hover:bg-myBlue transition duration-300">
                     <FaLinkedinIn />
