@@ -9,6 +9,11 @@ import testimonial_svg from "@/data/testimonial_svg";
 import Link from "next/link";
 import Image from "next/image";
 import { MdArrowForward } from "react-icons/md";
+import { Rating ,ThinStar} from '@smastrom/react-rating'
+import '@smastrom/react-rating/style.css'
+
+
+
 const tp_setting = {
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -85,11 +90,11 @@ const TestimonialSlider = () => {
         // ref={sliderRef}
         ref={(slider) => setSlider1(slider)}
         {...tp_setting}
-        className="rounded-3xl sm:w-[510px] md:w-[690px] lg:w-[90%] xl:w-[65%] 2xl:w-[50%] mx-auto mainSlick "
+        className="rounded-3xl sm:w-[510px] md:w-[690px] lg:w-[90%] xl:w-[65%] 2xl:w-[50%] mx-auto mainSlick h-full "
         data-wow-duration=".9s"
         data-wow-delay=".5s"
       >
-        {testimonial_data.slice(0, 12).map((item, i) => (
+        {testimonial_data.map((item, i) => (
           <div key={i} className="h-full   ">
             <div className="flex flex-col lg:flex-row h-full w-full shadow-xl rounded-3xl mb-10">
               <div className="lg:w-[65%] h-auto">
@@ -107,20 +112,27 @@ const TestimonialSlider = () => {
                 </div>
               </div>
               <div className="lg:w-[35%] gap-6 md:gap-0 p-6 md:p-10 h-auto flex justify-between flex-col">
-                <div className="text-left md:text-[60px] text-5xl font-bold space-y-6">
-                  <span>{item.count}%</span>
+                <div className="text-left md:text-[40px] text-5xl font-bold space-y-6">
+                <p className="">
+                    Rating
+                  </p>   
+                <div className=" text-sm">
+                            <Rating style={{ maxWidth: 150 }} value={item.rating} 
+                          //  itemStyles={myStyles}
+                            readOnly  />
+                          </div>
                   <p className="md:text-[18px] text-base font-medium text-[#5f6368]">
                     {item.sub_des}
                   </p>
                 </div>
                 <div className="pt-4 ">
-                  <Link
+                  {/* <Link
                     href="#"
-                    className="flex items-center text-myBlue font-semibold"
+                    className=" flex items-center text-myBlue font-semibold"
                   >
                     Read Case Study
                     <MdArrowForward className="text-xl" />
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>
