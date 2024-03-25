@@ -21,10 +21,10 @@ const myStyles = {
 }
 const setting = {
   loop: true,
-  // autoplay: {
-  //   delay: 2500,
-  //   pauseOnMouseEnter: true,
-  // },
+  autoplay: {
+    delay: 2500,
+    pauseOnMouseEnter: true,
+  },
   slidesPerView: 2,
   centeredSlides: true,
   spaceBetween: 30,
@@ -89,15 +89,15 @@ const ProjectSlider = () => {
                       <Image
                         src={item.img_1.src}
                         alt="theme-pure"
-                        width={297}
-                        height={450}
+                        width={700}
+                        height={1000}
                         className="rounded-ss-3xl md:rounded-es-3xl rounded-se-3xl md:rounded-se-none h-[100%]  w-full md:object-cover md:h-full  md:w-96 lg:w-80"
                       />
                       </Link>
                     </div>
                     <div
                       className=" flex-1
-                     py-10 px-10 flex flex-col"
+                     py-10 px-10 flex flex-col  "
                     >
                       <div className="">
                         <Image

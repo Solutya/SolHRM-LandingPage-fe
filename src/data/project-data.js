@@ -1,16 +1,16 @@
 
-import project_img_1 from "../../public/assets/images/project/project-img-2.jpg";
+import project_img_1 from "../../public/assets/images/project/rangdhanu-bg.png";
 import project_brand_1 from "../../public/assets/images/project/rangdhanu.png";
 
-import project_img_2 from "../../public/assets/images/project/project-img-1.jpg";
+import project_img_2 from "../../public/assets/images/project/raianarian-bg.png";
 import project_brand_2 from "../../public/assets/images/project/raianarian.png";
 
-import project_img_3 from "../../public/assets/images/project/project-img-3.jpg";
+import project_img_3 from "../../public/assets/images/project/solsoft-bg.png";
 import project_brand_3 from "../../public/assets/images/project/solsoft.png";
 
-import project_img_4 from "../../public/assets/images/project/project-img-4.jpg";
+import project_img_4 from "../../public/assets/images/project/bellissimolimos-bg.png";
 import project_brand_4 from "../../public/assets/images/project/bellissimolimos.png";
-import project_img_5 from "../../public/assets/images/project/project-img-4.jpg";
+import project_img_5 from "../../public/assets/images/project/suntrustbd-bg.png";
 import project_brand_5 from "../../public/assets/images/project/suntrustbd.png";
 
 
