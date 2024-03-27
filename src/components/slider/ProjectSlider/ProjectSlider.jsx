@@ -83,20 +83,20 @@ const ProjectSlider = () => {
                 
                 
                 <div className="pb-20">
-                  <div className="rounded-3xl flex  items-center flex-col md:grid md:grid-cols-12 bg-white transition duration-300 hover:shadow-xl w-full">
-                    <div className="h-[100%]  md:w-fit w-[100%] md:grid-cols-4 ">
+                  <div className="rounded-3xl flex  items-center flex-col md:flex-row bg-white transition duration-300 hover:shadow-xl w-full">
+                    <div className="h-[100%] md:w-96 lg:w-80 w-[100%]  ">
                     <Link href={item?.live_link} target="__blank" className="h-full">
                       <Image
                         src={item.img_1.src}
                         alt="theme-pure"
-                        width={297}
-                        height={450}
+                        width={700}
+                        height={1000}
                         className="rounded-ss-3xl md:rounded-es-3xl rounded-se-3xl md:rounded-se-none h-[100%]  w-full md:object-cover "
                       />
                       </Link>
                     </div>
                     <div className="
-                     flex-1 md:cols-span-8
+                     flex-1
                      py-10 px-10 flex flex-col"
                     >
                       <div className="">
@@ -105,7 +105,7 @@ const ProjectSlider = () => {
                           alt="theme-pure"
                           width={100}
                           height={30}
-                          className="mb-7 w-20 lg:w-28 "
+                          className="mb-7 w-20 lg:max-w-24 "
                         />
                       </div>
                       <div className="">
