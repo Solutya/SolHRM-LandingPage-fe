@@ -114,12 +114,15 @@ const Footer = () => {
             data-aos-once="true"
             className="space-y-4"
           >
+            <Link href={'/'}>
+            
             <Image
               src={"/assets/images/logo/solhrmForDark.png"}
               width={180}
               height={80}
               alt="logo-white-footer"
             />
+            </Link>
             <p className="text-sm leading-relaxed">
               Our highly skilled development teams <br />
               specialized in data analysis.
