@@ -123,7 +123,7 @@ const ProjectSlider = () => {
                         <div className="">
                           <span className="text-[14px]">Company Name</span>
                           <h4 className="font-[500] text-[16px]">
-                          <Link href={item?.live_link} target="__blank" className="transition duration-300 hover:text-myBlue">
+                          <Link href="https://solutya.com" target="__blank" className="transition duration-300 hover:text-myBlue">
                             Solutya Pvt Ltd
                             </Link>
                           </h4>

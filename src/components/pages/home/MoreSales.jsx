@@ -11,6 +11,10 @@ import img_3 from "../../../../public/assets/images/rank/walmart.png";
 import img_4 from "../../../../public/assets/images/rank/shopify.png";
 import Image from "next/image";
 import SectionWrapper from "@/components/wrapper's/SectionWrapper";
+import { HiUsers } from "react-icons/hi2";
+import { LuGanttChartSquare } from "react-icons/lu";
+import { FaBarsStaggered } from "react-icons/fa6";
+import { TbUserStar } from "react-icons/tb";
 
 // rank_data
 const rank_data = [
@@ -20,9 +24,9 @@ const rank_data = [
     clg_2: "tp-rank__cup",
     top_img: top_img_1,
     count: 1,
-    img: img_1,
+    img: <HiUsers />,
     // clg_3: "",
-    domain: "amazon.com",
+    domain: <>Employee <br /> Management</>,
     visitors: "2.4B Visits",
   },
   {
@@ -31,9 +35,10 @@ const rank_data = [
     // clg_2: "",
     // top_img: "",
     count: 2,
-    img: img_2,
+    img: <LuGanttChartSquare />
+    ,
     // clg_3: "",
-    domain: "ebay.com",
+    domain: <>Attendance <br /> Management</>,
     visitors: "700.2M Visits",
   },
   {
@@ -42,9 +47,9 @@ const rank_data = [
     // clg_2: "",
     // top_img: "",
     count: 3,
-    img: img_3,
+    img: <FaBarsStaggered />,
     // clg_3: "",
-    domain: "walmart.com",
+    domain: <>Project <br /> Management</>,
     visitors: "489.6M Visits",
   },
   {
@@ -53,9 +58,9 @@ const rank_data = [
     // clg_2: "",
     // top_img: "",
     count: 4,
-    img: img_4,
+    img: <TbUserStar />,
     // clg_3: "",
-    domain: "shopify.com",
+    domain: <>Clients <br /> Management</>,
     visitors: "386.6M Visits",
   },
 ];
@@ -107,7 +112,8 @@ const MoreSales = () => {
                 {item.top_img && (
                   <div className="absolute -top-6 border-4 border-purple-600 left-1/2 transform -translate-x-1/2 bg-white p-2 rounded-full w-fit ">
                     <span>
-                      <Image src={item.top_img} alt="top-image" />
+                    {item.img}
+
                     </span>
                   </div>
                 )}
@@ -125,7 +131,7 @@ const MoreSales = () => {
                   <Link href="#" className="font-semibold">
                     {item.domain}{" "}
                   </Link>
-                  <span className="text-sm">{item.visitors}</span>
+                  {/* <span className="text-sm">{item.visitors}</span> */}
                 </div>
               </div>
             </div>

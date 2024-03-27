@@ -92,19 +92,19 @@ const Footer = () => {
               <CircleBtn />
             </div>
           </div> */}
-          <div >
-            
-          <EmailJsForm />
+          <div>
+            <EmailJsForm />
           </div>
           {/* demo email input from ends */}
         </div>
-        
+
         {/* Horizontal faded line div */}
-         <div 
+        <div
           data-aos="fade-up"
           data-aos-duration="800"
           data-aos-once="true"
-         className=" inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-55 "></div>
+          className=" inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-55 "
+        ></div>
 
         {/* Footer middle */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between xl:space-x-4 xl:space-y-0 space-y-10">
@@ -114,14 +114,13 @@ const Footer = () => {
             data-aos-once="true"
             className="space-y-4"
           >
-            <Link href={'/'}>
-            
-            <Image
-              src={"/assets/images/logo/solhrmForDark.png"}
-              width={180}
-              height={80}
-              alt="logo-white-footer"
-            />
+            <Link href={"/"}>
+              <Image
+                src={"/assets/images/logo/solhrmForDark.png"}
+                width={180}
+                height={80}
+                alt="logo-white-footer"
+              />
             </Link>
             <p className="text-sm leading-relaxed">
               Our highly skilled development teams <br />

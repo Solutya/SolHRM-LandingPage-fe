@@ -53,7 +53,7 @@ const footerData = {
       ),
     },
     {
-      title: "contact@solhrm.com",
+      title: "contact@solutya.com",
       icon: (
         <svg
           width="18"
