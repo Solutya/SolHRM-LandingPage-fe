@@ -51,11 +51,10 @@ const Hero = () => {
             className="flex items-center gap-1"
           >
             <p className="text-gray-500 text-sm font-medium">
-              <span className="text-myDark">Offer</span> is going on till
-              Friday, $2.99/mo.{" "}
+              <span className="text-myDark">Offer</span> is going on . <span className="font-bold animate-text-color-change animation duration-2000 infinite">Purchase now!</span>
             </p>
             <Link
-              href="#"
+              href="price"
               className="bg-myBlue w-6 h-6 rounded-full flex items-center justify-center text-white text-xl"
             >
               <MdKeyboardArrowRight />
@@ -72,7 +71,7 @@ const Hero = () => {
               href="#"
               className="text-gray-500 hover:text-myPink transition-all duration-300"
             >
-              +806 (000) 888 99
+              +880 9611-656-145
             </Link>
           </motion.p>
         </div>

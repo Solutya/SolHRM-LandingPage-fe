@@ -9,11 +9,11 @@ import BlueBtn from "../btn's/BlueBtn";
 const CustomPlanForm = () => {
   const form2 = useRef();
 
-  const sendEmail = (e) => {``
+  const sendEmail = (e) => {
     e.preventDefault();
     console.log("RUNNING")
     emailjs
-      .sendForm("SolHRM", "template_cxz25un", form.current, {
+      .sendForm("SolHRM", "template_cxz25un", form2.current, {
         publicKey: "iUdL_30qtZCU2lb1l",
       })
       .then(

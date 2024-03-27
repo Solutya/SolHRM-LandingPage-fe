@@ -114,30 +114,33 @@ const Footer = () => {
             data-aos-once="true"
             className="space-y-4"
           >
+            <Link href={'/'}>
+            
             <Image
               src={"/assets/images/logo/solhrmForDark.png"}
               width={180}
               height={80}
               alt="logo-white-footer"
             />
+            </Link>
             <p className="text-sm leading-relaxed">
               Our highly skilled development teams <br />
               specialized in data analysis.
             </p>
             <div className="flex gap-2">
-              <Link href={"https://www.facebook.com/Solutya"} target="__blank">
+              <Link href={"https://www.facebook.com/Solutya"} target="_blank">
                 <div className=" p-2  border-[1px] border-opacity-50 rounded-full hover:bg-myBlue hover:border-myBlue transition duration-500 opacity-55 hover:opacity-100 hover:scale-110">
                   <TiSocialFacebook className="text-xl" />
                 </div>
               </Link>
-              <Link href={"https://twitter.com/SolutyaI"} target="__blank">
+              <Link href={"https://twitter.com/SolutyaI"} target="_blank">
                 <div className=" p-2  border-[1px] border-opacity-50 rounded-full hover:bg-myBlue hover:border-myBlue transition duration-500 opacity-55 hover:opacity-100 hover:scale-110">
                   <TiSocialTwitter className="text-xl" />
                 </div>
               </Link>
               <Link
                 href={"https://www.linkedin.com/company/solutya"}
-                target="__blank"
+                target="_blank"
               >
                 <div className=" p-2  border-[1px] border-opacity-50 rounded-full hover:bg-myBlue hover:border-myBlue transition duration-500 opacity-55 hover:opacity-100 hover:scale-110">
                   <FaLinkedinIn className="text-xl" />
@@ -145,7 +148,7 @@ const Footer = () => {
               </Link>
               <Link
                 href={"https://www.instagram.com/solutyapvtltd/"}
-                target="__blank"
+                target="_blank"
               >
                 <div className=" p-2  border-[1px] border-opacity-50 rounded-full hover:bg-myBlue hover:border-myBlue transition duration-500 opacity-55 hover:opacity-100 hover:scale-110">
                   <FaInstagram className="text-xl" />
@@ -215,7 +218,7 @@ const Footer = () => {
             Copyright &copy; {currentYear}
             <Link
               href={"https://solutya.com/"}
-              target="__blank"
+              target="_blank"
               className="font-bold text-myBlue hover:scale-110"
             >
               {" "}

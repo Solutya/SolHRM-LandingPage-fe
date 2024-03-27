@@ -172,6 +172,20 @@ html {
   border: 2px solid white;
 }
 
+/* Animations */
+@keyframes textColorChange {
+  0% { color: rgb(255, 0, 0); }
+  33% { color: rgb(0, 255, 0); }
+  66% { color: rgb(0, 0, 255); }
+  100% { color: rgb(255, 0, 0); }
+}
+
+@layer utilities {
+  .animate-text-color-change {
+      animation: textColorChange 2s infinite;
+  }
+}
+
 /* media queries */
 
 @media screen and (max-width: 640px) {

@@ -83,21 +83,21 @@ const ProjectSlider = () => {
                 
                 
                 <div className="pb-20">
-                <div className="rounded-3xl flex  items-center flex-col md:flex-row bg-white transition duration-300 hover:shadow-xl w-full">
-                    <div className="h-[100%] md:w-fit w-[100%]  ">
-                    <Link href={item?.live_link} target="__blank" className="h-full ">
+                  <div className="rounded-3xl flex  items-center flex-col md:flex-row bg-white transition duration-300 hover:shadow-xl w-full">
+                    <div className="h-[100%] md:w-96 lg:w-80 w-[100%]  ">
+                    <Link href={item?.live_link} target="__blank" className="h-full">
                       <Image
                         src={item.img_1.src}
                         alt="theme-pure"
                         width={700}
                         height={1000}
-                        className="rounded-ss-3xl md:rounded-es-3xl rounded-se-3xl md:rounded-se-none h-[100%]  w-full md:object-cover md:h-full  md:w-96 lg:w-80"
+                        className="rounded-ss-3xl md:rounded-es-3xl rounded-se-3xl md:rounded-se-none h-[100%]  w-full md:object-cover "
                       />
                       </Link>
                     </div>
-                    <div
-                      className=" flex-1
-                     py-10 px-10 flex flex-col  "
+                    <div className="
+                     flex-1
+                     py-10 px-10 flex flex-col"
                     >
                       <div className="">
                         <Image
@@ -110,7 +110,9 @@ const ProjectSlider = () => {
                       </div>
                       <div className="">
                         <h4 className="text-2xl xl:text-3xl font-bold pb-4">
+                        <Link href="https://solutya.com" target="__blank" className="transition duration-300 hover:text-myBlue" >
                           {item.title}
+                          </Link>
                         </h4>
                         <p className="text-[16px] leading-[1.9] ">
                           {item.description}
@@ -121,7 +123,9 @@ const ProjectSlider = () => {
                         <div className="">
                           <span className="text-[14px]">Company Name</span>
                           <h4 className="font-[500] text-[16px]">
+                          <Link href={item?.live_link} target="__blank" className="transition duration-300 hover:text-myBlue">
                             Solutya Pvt Ltd
+                            </Link>
                           </h4>
                         </div>
                         <div className="">

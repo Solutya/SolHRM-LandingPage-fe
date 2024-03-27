@@ -2,6 +2,7 @@ import BlueBtn from "@/components/btn's/BlueBtn";
 import HeaderTitle from "@/components/headerTitle/HeaderTitle";
 import SectionWrapper from "@/components/wrapper's/SectionWrapper";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { IoIosCheckmark } from "react-icons/io";
 
@@ -97,7 +98,9 @@ const Offer = () => {
             </div>
           </div>
           <div className="md:mt-12 mt-8 w-fit ">
+            <Link href={"https://solutya.com/about-us"} rel="noopener noreferrer" target="_blank" >
             <BlueBtn>About Us</BlueBtn>
+            </Link>
           </div>
         </div>
       </div>
