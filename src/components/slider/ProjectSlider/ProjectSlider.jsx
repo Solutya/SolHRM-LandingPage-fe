@@ -110,7 +110,9 @@ const ProjectSlider = () => {
                       </div>
                       <div className="">
                         <h4 className="text-2xl xl:text-3xl font-bold pb-4">
+                        <Link href="https://solutya.com" target="__blank" className="transition duration-300 hover:text-myBlue" >
                           {item.title}
+                          </Link>
                         </h4>
                         <p className="text-[16px] leading-[1.9] ">
                           {item.description}
@@ -121,7 +123,9 @@ const ProjectSlider = () => {
                         <div className="">
                           <span className="text-[14px]">Company Name</span>
                           <h4 className="font-[500] text-[16px]">
+                          <Link href={item?.live_link} target="__blank" className="transition duration-300 hover:text-myBlue">
                             Solutya Pvt Ltd
+                            </Link>
                           </h4>
                         </div>
                         <div className="">

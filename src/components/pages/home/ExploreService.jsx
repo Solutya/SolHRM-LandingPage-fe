@@ -79,7 +79,7 @@ const ExploreService = () => {
             <div className=" overflow-hidden">
               <Image
                 data-aos="fade-left"
-                data-aos-delay="200"
+                data-aos-delay="300"
                 data-aos-duration="1400"
                 data-aos-once="false"
                 src={"/assets/images/service/sv-dashbord.png"}

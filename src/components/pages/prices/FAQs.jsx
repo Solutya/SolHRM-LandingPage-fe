@@ -15,7 +15,7 @@ const FAQs = () => {
       titleWriting: "Why choose SolHRM?",
       imgsideWriting: "Day 1",
       accordianContent:
-        "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you ",
+        "SolHRM is the best software solution for your office employee management. You can easily get access to all your office data through dashboard. Change customize roles of your employees, assign projects , manage holidays,leaves. You also have a attendance managements and many more! visit demo site on top for an overview ",
     },
     {
       id: "1",
@@ -23,7 +23,7 @@ const FAQs = () => {
       imgsideWriting: "Day  2 - 4",
       titleWriting: "Do I need to change Banks?",
       accordianContent:
-        "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you ",
+        "No. Currently we take Bkash payment system to pay for the package you want. ",
     },
     {
       id: "2",
@@ -31,15 +31,15 @@ const FAQs = () => {
       imgsideWriting: "Day 5",
       titleWriting: "How can i order packages?",
       accordianContent:
-        "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.",
+        "You can go to the prices page and purchase from any of the package through Bkash payments. However if you want our custom package you have to send a package plan through a popup form. Send it to us and we will get in touch with you as soon as possible!",
     },
     {
       id: "3",
 
       imgsideWriting: "Day 5",
-      titleWriting: "How do i offer volume discount?",
+      titleWriting: "How do i offer  discount?",
       accordianContent:
-        "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.",
+        "You can get in touch with us send us your email and our agent will reach to you through email. Then you can discuss about discount and others",
     },
   ];
   const [isAccordianClosed, setIsAccordianClosed] = useState(null);
