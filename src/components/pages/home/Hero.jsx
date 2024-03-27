@@ -51,7 +51,7 @@ const Hero = () => {
             className="flex items-center gap-1"
           >
             <p className="text-gray-500 text-sm font-medium">
-              <span className="text-myDark">Offer</span> is going on . <span class=" font-bold animate-text-color-change animation duration-2000 infinite">Purchase now!</span>
+              <span className="text-myDark">Offer</span> is going on . <span className="font-bold animate-text-color-change animation duration-2000 infinite">Purchase now!</span>
             </p>
             <Link
               href="price"
