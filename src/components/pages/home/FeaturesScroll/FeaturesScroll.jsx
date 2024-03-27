@@ -50,16 +50,16 @@ const FeatursScrollSection = () => {
               key={index}
             >
               <div className="features-section-shadow"></div>
-              <div className="bg-gray-200 p-7 w-full h-full rounded-[20px] border-white border-[6px] grid grid-cols-12 row-span-12 lg:gap-6 gap-3">
+              <div className="bg-gray-200 p-7 w-full h-full rounded-[20px] border-white border-[6px]">
                 <Image
-                  className="col-span-8 row-span-8 "
+                  className="h-full rounded-lg "
                   src={item?.img1}
-                  width={550}
-                  height={300}
+                  width={1918}
+                  height={918}
                   quality={100}
                   alt="Features"
                 />
-                <Image
+                {/* <Image
                   className="col-span-4 row-span-12"
                   src={item?.img2}
                   width={254}
@@ -84,7 +84,7 @@ const FeatursScrollSection = () => {
                     quality={100}
                     alt="Features"
                   />
-                </div>
+                </div> */}
               </div>
             </div>
           ))}
