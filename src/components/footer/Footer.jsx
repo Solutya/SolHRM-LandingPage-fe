@@ -128,12 +128,12 @@ const Footer = () => {
             </p>
             <div className="flex gap-2">
               <Link href={"https://www.facebook.com/Solutya"} target="_blank">
-                <div className=" p-2  border-[1px] border-opacity-50 rounded-full hover:bg-myBlue hover:border-myBlue transition duration-500 opacity-55 hover:opacity-100 hover:scale-110">
+                <div className=" p-2  border-[2px] border-gray-100 border-opacity-50 rounded-full hover:bg-myBlue hover:border-myBlue transition duration-500 opacity-55 hover:opacity-100 hover:scale-110">
                   <TiSocialFacebook className="text-xl" />
                 </div>
               </Link>
               <Link href={"https://twitter.com/SolutyaI"} target="_blank">
-                <div className=" p-2  border-[1px] border-opacity-50 rounded-full hover:bg-myBlue hover:border-myBlue transition duration-500 opacity-55 hover:opacity-100 hover:scale-110">
+                <div className=" p-2  border-[2px] border-gray-100 border-opacity-50 rounded-full hover:bg-myBlue hover:border-myBlue transition duration-500 opacity-55 hover:opacity-100 hover:scale-110">
                   <TiSocialTwitter className="text-xl" />
                 </div>
               </Link>
@@ -141,7 +141,7 @@ const Footer = () => {
                 href={"https://www.linkedin.com/company/solutya"}
                 target="_blank"
               >
-                <div className=" p-2  border-[1px] border-opacity-50 rounded-full hover:bg-myBlue hover:border-myBlue transition duration-500 opacity-55 hover:opacity-100 hover:scale-110">
+                <div className=" p-2  border-[2px] border-gray-100 border-opacity-50 rounded-full hover:bg-myBlue hover:border-myBlue transition duration-500 opacity-55 hover:opacity-100 hover:scale-110">
                   <FaLinkedinIn className="text-xl" />
                 </div>
               </Link>
@@ -149,7 +149,7 @@ const Footer = () => {
                 href={"https://www.instagram.com/solutyapvtltd/"}
                 target="_blank"
               >
-                <div className=" p-2  border-[1px] border-opacity-50 rounded-full hover:bg-myBlue hover:border-myBlue transition duration-500 opacity-55 hover:opacity-100 hover:scale-110">
+                <div className=" p-2  border-[2px] border-gray-100 border-opacity-50 rounded-full hover:bg-myBlue hover:border-myBlue transition duration-500 opacity-55 hover:opacity-100 hover:scale-110">
                   <FaInstagram className="text-xl" />
                 </div>
               </Link>

@@ -13,33 +13,27 @@ const FAQs = () => {
       id: "0",
 
       titleWriting: "Why choose SolHRM?",
-      imgsideWriting: "Day 1",
+    
       accordianContent:
-        "SolHRM is the best software solution for your office employee management. You can easily get access to all your office data through dashboard. Change customize roles of your employees, assign projects , manage holidays,leaves. You also have a attendance managements and many more! visit demo site on top for an overview ",
+        "SolHRM is the optimal software solution for managing your office employees. You can conveniently access all your office data through the dashboard. Customize roles for your employees, assign projects, manage holidays and leaves effortlessly. Additionally, you have attendance management and much more! Visit the demo site at the top for an overview.",
     },
     {
       id: "1",
-
-      imgsideWriting: "Day  2 - 4",
       titleWriting: "Do I need to change Banks?",
       accordianContent:
         "No. Currently we take Bkash payment system to pay for the package you want. ",
     },
     {
       id: "2",
-
-      imgsideWriting: "Day 5",
-      titleWriting: "How can i order packages?",
+      titleWriting: "How can I order packages?",
       accordianContent:
-        "You can go to the prices page and purchase from any of the package through Bkash payments. However if you want our custom package you have to send a package plan through a popup form. Send it to us and we will get in touch with you as soon as possible!",
+        "You can proceed to the prices page and make a purchase from any of the available packages using the Bkash payment method. However, if you're interested in our custom package, please submit your package plan via the popup form. Once received, we'll promptly get in touch with you to discuss further details!",
     },
     {
       id: "3",
-
-      imgsideWriting: "Day 5",
-      titleWriting: "How do i offer  discount?",
+      titleWriting: "How do I get discount?",
       accordianContent:
-        "You can get in touch with us send us your email and our agent will reach to you through email. Then you can discuss about discount and others",
+        "Please provide us with your email address, and one of our agents will contact you promptly via email. From there, you can engage in discussions regarding discounts and any other inquiries you may have.",
     },
   ];
   const [isAccordianClosed, setIsAccordianClosed] = useState(null);
@@ -63,12 +57,12 @@ const FAQs = () => {
               </>
             }
             subTitle={
-              <>The most frequently asked questions from our clents are here</>
+              <>The most frequently asked questions from our clents are shown here</>
             }
           />
           <div className="pt-3 relative w-full ">
             <div className="w-fit">
-              <Link href={"contact"}>
+              <Link href={""}>
                 <BlueBtn>Contact Us</BlueBtn>
               </Link>
             </div>
@@ -110,14 +104,14 @@ const FAQs = () => {
                 </div>
                 <hr />
                 <div
-                  className={`w-full overflow-hidden transition-max-height  duration-500 ease-in-out ${
+                  className={`w-full overflow-hidden transition-max-height  duration-1000 ease-in-out ${
                     isAccordianClosed === accordian.id
                       ? "max-h-[1000px] px-10 shadow-xl p-4 rounded-xl "
-                      : " max-h-0 px-10"
+                      : "max-h-0 px-10"
                   }`}
                 >
                   <div className="mt-[15px]">{accordian.accordianContent}</div>
-                  <div className="mt-[45px] w-full flex xsm:flex-wrap lg:flex-nowrap justify-around items-center"></div>
+                  <div className="mt-[45px] w-full flex sm:flex-wrap lg:flex-nowrap justify-around items-center"></div>
                 </div>
               </div>
             ))}

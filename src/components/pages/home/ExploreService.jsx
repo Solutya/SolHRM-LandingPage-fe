@@ -29,9 +29,9 @@ const ExploreService = () => {
               data-aos-duration={`${1000 + (i * 200) }`}
               data-aos-once="true"
               key={i}
-              className=" last:bg-red-500"
+              className=" h-full"
             >
-              <div className="border rounded-3xl  md:w-fit relative w-full max-w-96 mx-auto p-10 hover:shadow-2xl hover:shadow-gray-300  transition duration-300 group ">
+              <div className={`border rounded-3xl  md:w-fit relative w-full max-w-96 mx-auto p-10 hover:shadow-2xl hover:shadow-gray-300  transition duration-300 group ${(i >= myData.length-2)?"" : " h-full"} flex justify-between flex-col`}>
                 <div className="mb-6">
                   <Image
                     src={item.icon.src}
@@ -48,12 +48,12 @@ const ExploreService = () => {
                   <h3 className="py-[7px] mb-[16px] font-[400] text-primary-2 text-[16px]">
                     <Link href="">{item.description}</Link>
                   </h3>
+                </div>
                   <div className="">
-                    <Link href="#">
+                    <Link href="">
                       <CircleBtn />
                     </Link>
                   </div>
-                </div>
               </div>
             </div>
           ))}
@@ -61,14 +61,14 @@ const ExploreService = () => {
             data-aos="fade-up"
             data-aos-duration="2400"
             data-aos-once="true"
-            className="bg-[url('/assets/images/service/sv-bg.jpg')] rounded-3xl  pb-0 z-20 md:w-[338px] relative w-full mx-auto bg-cover border md:w-fit   max-w-96  hover:shadow-gray-300  transition duration-300 group overflow-hidden"
+            className="bg-[url('/assets/images/service/sv-bg.jpg')] rounded-3xl  pb-0 z-20 md:w-[338px] relative w-full mx-auto bg-cover border  max-w-96  hover:shadow-gray-300 lg:w-fit transition duration-300 group overflow-hidden"
           >
             <div className="text-white p-10 ">
               <h2 className="font-bold text-[30px]">
                 User Friendly HR Dashboard
               </h2>
               <p className="text-primary-2 pb-4">
-                Manage all you dashboard features in simple ui 
+                Manage all you dashboard features in simple UI 
               </p>
               <Link href="/price">
                 <button className="p-2 px-6 font-semibold bg-orange-400  rounded-3xl transition duration-500 hover:bg-orange-500 hover:scale-105">

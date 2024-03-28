@@ -110,7 +110,7 @@ const ProjectSlider = () => {
                       </div>
                       <div className="">
                         <h4 className="text-2xl xl:text-3xl font-bold pb-4">
-                        <Link href="https://solutya.com" target="__blank" className="transition duration-300 hover:text-myBlue" >
+                        <Link href={item?.live_link}  target="__blank" className="transition duration-300 hover:text-myBlue" >
                           {item.title}
                           </Link>
                         </h4>

@@ -26,7 +26,11 @@ const rank_data = [
     count: 1,
     img: <HiUsers />,
     // clg_3: "",
-    domain: <>Employee <br /> Management</>,
+    domain: (
+      <>
+        Employee <br /> Management
+      </>
+    ),
     visitors: "2.4B Visits",
   },
   {
@@ -35,10 +39,13 @@ const rank_data = [
     // clg_2: "",
     // top_img: "",
     count: 2,
-    img: <LuGanttChartSquare />
-    ,
+    img: <LuGanttChartSquare />,
     // clg_3: "",
-    domain: <>Attendance <br /> Management</>,
+    domain: (
+      <>
+        Attendance <br /> Management
+      </>
+    ),
     visitors: "700.2M Visits",
   },
   {
@@ -49,7 +56,11 @@ const rank_data = [
     count: 3,
     img: <FaBarsStaggered />,
     // clg_3: "",
-    domain: <>Project <br /> Management</>,
+    domain: (
+      <>
+        Project <br /> Management
+      </>
+    ),
     visitors: "489.6M Visits",
   },
   {
@@ -60,47 +71,57 @@ const rank_data = [
     count: 4,
     img: <TbUserStar />,
     // clg_3: "",
-    domain: <>Clients <br /> Management</>,
+    domain: (
+      <>
+        Clients <br /> Management
+      </>
+    ),
     visitors: "386.6M Visits",
   },
 ];
 
 const MoreSales = () => {
   return (
- 
     <div className="py-24 overflow-x-hidden lg:m-[2%] lg:grid  lg:grid-cols-3 xl:grid-cols-2 flex flex-col-reverse items-center 2xl:gap-2 xl:w-[1180px] xl:mx-auto ">
       <SectionWrapper>
-      
-      <div 
-       data-aos="fade-right"
-       data-aos-duration="1000"
-       data-aos-once="true"
-      className="space-y-4   md:py-0 py-28 mobile:py-16">
-        <p className="uppercase bg-[#f6f5fa] text-myBlue text-sm font-semibold rounded-full p-2 px-4 w-fit overflow-hidden ">
-          Key Benfits
-        </p>
-        <h2 className="text-[33px] md:text-[38px] xl:text-[48px] font-bold">
-        Maximize Efficiency and Drive Performance
-        </h2>
-        {/* <div className="w-fit pt-3">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          className="space-y-4   md:py-0 py-28 mobile:py-16"
+        >
+          <p className="uppercase bg-[#f6f5fa] text-myBlue text-sm font-semibold rounded-full p-2 px-4 w-fit overflow-hidden ">
+            Key Benfits
+          </p>
+          <h2 className="text-[33px] md:text-[38px] xl:text-[48px] font-bold">
+            Maximize Efficiency and Drive Performance
+          </h2>
+          {/* <div className="w-fit pt-3">
           <BlueBtn>Explore More</BlueBtn>
         </div> */}
-      </div>
+        </div>
       </SectionWrapper>
-      <div  
-       data-aos="fade-left"
-       data-aos-duration="1000"
-       data-aos-once="true"
-      className="relative h-[600px] md:h-auto lg:col-span-2 xl:col-span-1 lg:ml-20 px-2 xl:ml-0  ">
+      <div
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-once="true"
+        className="relative h-[600px] md:h-auto lg:col-span-2 xl:col-span-1 lg:ml-20 px-2 xl:ml-0  "
+      >
         <div className="mx-auto w-fit py-4 -rotate-12">
-          <Image src={bg_right_img} alt="bg-right-img" ></Image>
+          <Image src={bg_right_img} alt="bg-right-img"></Image>
         </div>
         <div
-         data-aos="zoom-in"
-         data-aos-duration="400"
-         data-aos-once="false"
-        className="absolute -bottom-10 left-[35%] w-[20%]">
-        <Image src={'/assets/images/rank/circles.png'} alt="bg-circles" width={300} height={300} ></Image>
+          data-aos="zoom-in"
+          data-aos-duration="400"
+          data-aos-once="false"
+          className="absolute -bottom-10 left-[35%] w-[20%]"
+        >
+          <Image
+            src={"/assets/images/rank/circles.png"}
+            alt="bg-circles"
+            width={300}
+            height={300}
+          ></Image>
         </div>
         <div className="absolute top-0 mx-auto inset-x-0  w-full h-[80%] py-4 flex flex-wrap lg:flex-nowrap justify-center items-center text-center md:px-0   2xl:w-[82%] px-4 gap-2 sm:gap-0 ">
           {rank_data.map((item, i) => (
@@ -112,24 +133,20 @@ const MoreSales = () => {
                 {item.top_img && (
                   <div className="absolute -top-6 border-4 border-purple-600 left-1/2 transform -translate-x-1/2 bg-white p-2 rounded-full w-fit ">
                     <span>
-                    {item.img}
-
+                      <Image src={item.top_img} alt="top-image" />
                     </span>
                   </div>
                 )}
-
                 <div className="pt-5 flex items-center justify-center">
                   <i className="text-2xl text-gray-300 mr-2">#</i>
                   <span className="text-[66px] font-[500]">{item.count}</span>
                 </div>
                 <div className="bg-white rounded-full p-2  mx-auto border ">
-                  <span>
-                    <Image src={item.img} alt="icon" />
-                  </span>
+                  <span className="first:text-myBlue text-lg">{item.img}</span>
                 </div>
                 <div className="flex flex-col">
                   <Link href="#" className="font-semibold">
-                    {item.domain}{" "}
+                    {item.domain}
                   </Link>
                   {/* <span className="text-sm">{item.visitors}</span> */}
                 </div>
@@ -139,7 +156,6 @@ const MoreSales = () => {
         </div>
       </div>
     </div>
- 
   );
 };
 

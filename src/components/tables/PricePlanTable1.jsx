@@ -16,7 +16,7 @@ const PricePlanTable1 = ({ currentTab }) => {
                 <div className="p-6">
                   <Image src={paymentIco} alt='payment icons'></Image>
                   <p className=" pt-2">
-                    You pay $59.00/mo today Renews April 2024 For $69.00/mo
+                    Choose from the best plans available for you today!
                   </p>
                 </div>
               </th>
@@ -34,7 +34,7 @@ const PricePlanTable1 = ({ currentTab }) => {
                       <div className="space-y-2 pb-6 border-b-[1px] mb-4 ">
                         <h4 className=" font-bold text-lg">{item.title}</h4>
                         <p className="text-sm text-gray-500">
-                          Collect more submissions, access most of the features
+                          {item.fullDescription}
                         </p>
                         {/* <p className="text-sm text-gray-500">{item.description}</p> */}
                       </div>
@@ -63,8 +63,7 @@ const PricePlanTable1 = ({ currentTab }) => {
                         {
                           item.cls === "custom-plan"?
                     
-                         <div className="bg-myDark text-white 
-                         w-fit rounded-full  top-0 py-3 left-0  transition px-6 text-xs  duration-300 hover:bg-myBlue hover:shadow-xl shadow-md font-semibold cursor-pointer">
+                         <div className="">
 
                            <EmailModal modalTitle="Buy Now"/>
                          </div>

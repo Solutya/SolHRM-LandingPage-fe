@@ -39,7 +39,10 @@ const price_data = [
     img: pric_img_1,
     title: "Standard Plan",
     description: <b>Up To 25 Employees</b>,
-    paymentLink: "https://shop.bkash.com/solutya-pvt-ltdrm54988/pay/bdt4000/oUm4cl",
+    fullDescription:
+      "Access robust HR features for streamlined processes and increased productivity.",
+    paymentLink:
+      "https://shop.bkash.com/solutya-pvt-ltdrm54988/pay/bdt4000/oUm4cl",
     cls: "",
     price: "4000",
     price_feature: [
@@ -71,7 +74,10 @@ const price_data = [
     img: pric_img_2,
     title: "Gold Plan",
     description: <b>Up To 50 Employees</b>,
-    paymentLink: "https://shop.bkash.com/solutya-pvt-ltdrm54988/pay/bdt7000/Rfddxp",
+    fullDescription:
+      "Upgrade to a comprehensive HR solution for optimized operations.",
+    paymentLink:
+      "https://shop.bkash.com/solutya-pvt-ltdrm54988/pay/bdt7000/Rfddxp",
     cls: "active",
     price: "7000",
     price_feature: [
@@ -102,9 +108,11 @@ const price_data = [
     category: "monthly",
     img: pric_img_3,
     title: "Custom Plan",
-    description:<b>100+ Employees</b>,
+    description: <b>100+ Employees</b>,
+    fullDescription:
+      "Customize your plan to suit your needs, supporting 100+ employees.",
     paymentLink: "",
-    fullDescription: "A TAILORED PRICE PLANNING FOR BUSINESS WITH CUSTOMIZED REQUIREMENTS",
+
     cls: "custom-plan",
     price: "",
     price_feature: [
@@ -135,7 +143,9 @@ const price_data = [
     category: "monthly",
     img: pric_img_4,
     title: "Add Ons",
-    description: <b>GET THE ULTIMATE EXCLUSIVEADD ONS</b>,
+    description: <b>GET THE ULTIMATE EXCLUSIVE ADD ONS</b>,
+    fullDescription:
+      "Expand your capabilities with supplementary features and tools.",
     paymentLink: "",
     cls: "",
     price: "",
@@ -148,7 +158,8 @@ const price_data = [
       {
         list: (
           <>
-            Live Tracking<br /> ৳ 50/Month / Employees.  (UPCOMING) 
+            Live Tracking
+            <br /> ৳ 50/Month / Employees. (UPCOMING)
           </>
         ),
         icon: PriceList,
@@ -164,7 +175,10 @@ const price_data = [
     img: pric_img_1,
     title: "Standard Plan",
     description: <b>Up To 25 Employees</b>,
-    paymentLink: "https://shop.bkash.com/solutya-pvt-ltdrm54988/pay/bdt45000/UCnGzv",
+    fullDescription:
+      "Access robust HR features for streamlined processes and increased productivity.",
+    paymentLink:
+      "https://shop.bkash.com/solutya-pvt-ltdrm54988/pay/bdt45000/UCnGzv",
     cls: "",
     price: "45000",
     price_feature: [
@@ -196,7 +210,10 @@ const price_data = [
     img: pric_img_2,
     title: "Gold Plan",
     description: <b>Up To 50 Employees</b>,
-    paymentLink: "https://shop.bkash.com/solutya-pvt-ltdrm54988/pay/bdt83640/d5HwMn",
+    fullDescription:
+      "Upgrade to a comprehensive HR solution for optimized operations.",
+    paymentLink:
+      "https://shop.bkash.com/solutya-pvt-ltdrm54988/pay/bdt83640/d5HwMn",
     cls: "active",
     price: "82000",
     price_feature: [
@@ -228,8 +245,10 @@ const price_data = [
     img: pric_img_3,
     title: "Custom Plan",
     description: <b>100+ Employees</b>,
+    fullDescription:
+      "Customize your plan to suit your needs, supporting 100+ employees.",
     paymentLink: "",
-    fullDescription: "A TAILORED PRICE PLANNING FOR BUSINESS WITH CUSTOMIZED REQUIREMENTS",
+
     cls: "custom-plan",
     price: "",
     price_feature: [
@@ -260,7 +279,10 @@ const price_data = [
     category: "yearly",
     img: pric_img_4,
     title: "Add Ons",
-    description: <b>GET THE ULTIMATE EXCLUSIVEADD ONS</b>,
+
+    description: <b>GET THE ULTIMATE EXCLUSIVE ADD ONS</b>,
+    fullDescription:
+      "Expand your capabilities with supplementary features and tools.",
     paymentLink: "",
     cls: "",
     price: "",
@@ -273,7 +295,8 @@ const price_data = [
       {
         list: (
           <>
-            Live Tracking<br /> ৳ 50/Month / Employees.  (UPCOMING) 
+            Live Tracking
+            <br /> ৳ 50/Month / Employees. (UPCOMING)
           </>
         ),
         icon: PriceList,

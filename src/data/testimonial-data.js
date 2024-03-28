@@ -5,45 +5,21 @@ import testimonial_img_3 from "../../public/assets/images/testimonial/testi-logo
 import testimonial_img_4 from "../../public/assets/images/testimonial/testi-logo-up-6.png"
 import testimonial_img_5 from "../../public/assets/images/testimonial/testi-logo-up-1.png"
 import testimonial_img_6 from "../../public/assets/images/testimonial/testi-logo-up-5.png"
-import testimonial_img_7 from "../../public/assets/images/testimonial/testi-logo-up-3.png"
-import testimonial_img_8 from "../../public/assets/images/testimonial/testi-logo-up-4.png"
-import testimonial_img_9 from "../../public/assets/images/testimonial/testi-logo-up-5.png"
-import testimonial_img_10 from "../../public/assets/images/testimonial/testi-logo-up-6.png"
-import testimonial_img_11 from "../../public/assets/images/testimonial/testi-logo-up-1.png"
-import testimonial_img_12 from "../../public/assets/images/testimonial/testi-logo-up-5.png"
 
-import author_img_1 from "../../public/assets/images/testimonial/testi-icon-5-4.png"
-import author_img_2 from "../../public/assets/images/testimonial/testi-icon-5-2.png"
-import author_img_3 from "../../public/assets/images/testimonial/testi-icon-5-4.png"
-import author_img_4 from "../../public/assets/images/testimonial/testi-icon-5-3.png"
-import author_img_5 from "../../public/assets/images/testimonial/testi-icon-5-4.png"
-import author_img_6 from "../../public/assets/images/testimonial/testi-icon-5-1.png"
-import author_img_7 from "../../public/assets/images/testimonial/testi-icon-5-4.png"
-import author_img_8 from "../../public/assets/images/testimonial/testi-icon-5-2.png"
-import author_img_9 from "../../public/assets/images/testimonial/testi-icon-5-4.png"
-import author_img_10 from "../../public/assets/images/testimonial/testi-icon-5-3.png"
-import author_img_11 from "../../public/assets/images/testimonial/testi-icon-5-4.png"
-import author_img_12 from "../../public/assets/images/testimonial/testi-icon-5-1.png"
+import brand_img_5 from "../../public/assets/images/brand/logo-malekairinternational.png";
+import brand_img_7 from "../../public/assets/images/brand/logo-suntrust.png";
+import brand_img_9 from "../../public/assets/images/brand/logo-savin.jpg";
+import brand_img_10 from "../../public/assets/images/brand/logo-rangdhanu.png";
+import brand_img_11 from "../../public/assets/images/brand/logo-raianarian.png";
+import brand_img_12 from "../../public/assets/images/brand/logo-sindabad.png";
 
 
-import brand_icon_1 from "../../public/assets/images/testimonial/testi-logo-5-2.png"
-import brand_icon_2 from "../../public/assets/images/testimonial/testi-logo-5-1.png"
-import brand_icon_3 from "../../public/assets/images/testimonial/testi-logo-5-2.png"
-import brand_icon_4 from "../../public/assets/images/testimonial/testi-logo-5-3.png"
-import brand_icon_5 from "../../public/assets/images/testimonial/testi-logo-5-3.png"
-import brand_icon_6 from "../../public/assets/images/testimonial/testi-logo-5-2.png"
-import brand_icon_7 from "../../public/assets/images/testimonial/testi-logo-5-2.png"
-import brand_icon_8 from "../../public/assets/images/testimonial/testi-logo-5-1.png"
-import brand_icon_9 from "../../public/assets/images/testimonial/testi-logo-5-2.png"
-import brand_icon_10 from "../../public/assets/images/testimonial/testi-logo-5-3.png"
-import brand_icon_11 from "../../public/assets/images/testimonial/testi-logo-5-3.png"
-import brand_icon_12 from "../../public/assets/images/testimonial/testi-logo-5-2.png"
 
 const testimonial_data = [
     // for home 01
     {
         id: 1, 
-        img: testimonial_img_1,
+        img: brand_img_9,
         name: "Alvin Ahmed Shoulin",
         title: "Owner at SAVIN", 
         rating: 5, 
@@ -52,7 +28,7 @@ const testimonial_data = [
     },
     {
         id: 2, 
-        img: testimonial_img_2,
+        img: brand_img_7,
         name: "Nazmul Hassan",
         title: "", 
         rating: 5, 
@@ -62,7 +38,7 @@ const testimonial_data = [
     },
     {
         id: 3, 
-        img: testimonial_img_3,
+        img: brand_img_10,
         name: "Ila Eva",
         title: "", 
         rating: 5, 
@@ -73,7 +49,7 @@ const testimonial_data = [
     },
     {
         id: 4, 
-        img: testimonial_img_4,
+        img: brand_img_11,
         name: "Trendy Wear",
         title: "WP Developer", 
         rating: 5, 
@@ -84,7 +60,7 @@ const testimonial_data = [
     },
     {
         id: 5, 
-        img: testimonial_img_5,
+        img: brand_img_5,
         name: "Hridoy Hasan",
         title: "Iconcareltd", 
         rating: 5, 
@@ -94,7 +70,7 @@ const testimonial_data = [
     },
     {
         id: 6, 
-        img: testimonial_img_6,
+        img: brand_img_7,
         name: "Benjamin Evalent",
         title: "WP Developer", 
         rating: 5, 
