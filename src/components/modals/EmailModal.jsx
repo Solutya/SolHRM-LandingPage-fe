@@ -25,11 +25,12 @@ const EmailModal = ({modalTitle}) => {
   };
 
   return (
-    <div>
+    <div >
 
       {/* Trigger/Open The Modal */}
       {/* Trigger/Open The Modal */}
-      <button onClick={openModal} className="">
+      <button onClick={openModal} className="bg-myDark text-white 
+                         w-fit rounded-full  top-0 py-3 left-0  transition px-6 text-xs  duration-300 hover:bg-myBlue hover:shadow-xl shadow-md font-semibold cursor-pointer">
         {
           modalTitle? modalTitle : "open modal"
         }
@@ -59,7 +60,7 @@ const EmailModal = ({modalTitle}) => {
               </div>
               <div>
                 <div>
-                  <h3 className="text-myBlue text-xl font-semibold text-center">Please Fill In the form </h3>
+                  <h3 className="text-myBlue text-xl font-semibold text-center py-3">Please Fill In the form </h3>
                 </div>
                 <CustomPlanForm/>
               </div>

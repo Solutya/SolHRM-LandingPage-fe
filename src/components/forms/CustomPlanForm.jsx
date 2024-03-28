@@ -1,4 +1,5 @@
-import React, { useRef } from "react";
+"use client";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import SectionWrapper from "../wrapper's/SectionWrapper";
 import toast from "react-hot-toast";
@@ -8,10 +9,13 @@ import BlueBtn from "../btn's/BlueBtn";
 
 const CustomPlanForm = () => {
   const form2 = useRef();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log("RUNNING")
+    if (isSubmitting) return; // Prevent multiple submissions
+    setIsSubmitting(true);
+
     emailjs
       .sendForm("SolHRM", "template_cxz25un", form2.current, {
         publicKey: "iUdL_30qtZCU2lb1l",
@@ -26,17 +30,20 @@ const CustomPlanForm = () => {
         (error) => {
           toast.error("Something went wrong!");
         }
-      );
+      )
+      .finally(() => {
+        setIsSubmitting(false); // Reset submission status after completion
+      });
   };
+
   return (
     <form
       ref={form2}
       onSubmit={sendEmail}
       className="pb-10 h-[60vh] overflow-y-scroll"
     >
-     
       <div className=" md:mt-8 mt-5 flex flex-col items-center justify-center px-4 border py-4 mx-3 gap-4 rounded-2xl">
-      <div className="w-[90%] space-y-2">
+        <div className="w-[90%] space-y-2">
           <label
             htmlFor="user_email"
             className="text-left text-myBlue font-semibold text-[14px]"
@@ -149,21 +156,23 @@ const CustomPlanForm = () => {
             name="user_planDuration"
             required
           >
-           
-            <option selected value="monthly">Monthly</option>
+            <option selected value="monthly">
+              Monthly
+            </option>
             <option value="yearly">Yearly</option>
           </select>
         </div>
+
         <div className=" w-fit">
           <BlueBtn>
-          <input
+            <input
               type="submit"
-              value="Send your Plan"
+              value={isSubmitting ? "Submitting..." : "Submit"}
               className="text-white cursor-pointer "
+              disabled={isSubmitting} // Disable button while submitting
             />
           </BlueBtn>
         </div>
-        
       </div>
     </form>
   );

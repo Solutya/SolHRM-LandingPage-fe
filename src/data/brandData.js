@@ -5,8 +5,11 @@ import brand_img_4 from "../../public/assets/images/brand/logo-iconcare.png";
 import brand_img_5 from "../../public/assets/images/brand/logo-malekairinternational.png";
 import brand_img_6 from "../../public/assets/images/brand/logo-new-life-marine-traders.png";
 import brand_img_7 from "../../public/assets/images/brand/logo-suntrust.png";
-import brand_img_8 from "../../public/assets/images/brand/brand-inner-8.png";
-import brand_img_9 from "../../public/assets/images/brand/brand-inner-9.png";
+import brand_img_8 from "../../public/assets/images/brand/logo-ausiaid.png";
+import brand_img_9 from "../../public/assets/images/brand/logo-savin.jpg";
+import brand_img_10 from "../../public/assets/images/brand/logo-rangdhanu.png";
+import brand_img_11 from "../../public/assets/images/brand/logo-raianarian.png";
+import brand_img_12 from "../../public/assets/images/brand/logo-sindabad.png";
 
 
 export const  brandData = [
@@ -51,6 +54,21 @@ export const  brandData = [
     {
         id: 9,
         img_1: brand_img_9,
+     
+    },
+    {
+        id: 10,
+        img_1: brand_img_10,
+     
+    },
+    {
+        id: 11,
+        img_1: brand_img_11,
+     
+    },
+    {
+        id: 12,
+        img_1: brand_img_12,
      
     },
     

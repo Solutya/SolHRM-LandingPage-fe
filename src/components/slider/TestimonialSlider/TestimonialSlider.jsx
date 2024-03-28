@@ -2,15 +2,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-
 import "slick-carousel/slick/slick-theme.css";
 import testimonial_data from "@/data/testimonial-data";
-import testimonial_svg from "@/data/testimonial_svg";
-import Link from "next/link";
 import Image from "next/image";
-import { MdArrowForward } from "react-icons/md";
-import { Rating ,ThinStar} from '@smastrom/react-rating'
+import { Rating } from '@smastrom/react-rating'
 import '@smastrom/react-rating/style.css'
+import testimonial_img from "@/data/testimonial_svg";
 
 
 
@@ -99,8 +96,8 @@ const TestimonialSlider = () => {
             <div className="flex flex-col lg:flex-row h-full w-full shadow-xl rounded-3xl mb-10">
               <div className="lg:w-[65%] h-auto">
                 <div className="bg-myBlue text-white h-full p-6 md:p-10 rounded-3xl  rounded-br-none shadow-md 2xl:p-16">
-                  <div className="">
-                    <Image src={item?.img} alt="brand-logo" className="py-4" />
+                  <div className="rounded-xl  w-fit">
+                    <Image src={item?.img} alt="brand-logo" className="py-4 rounded-xl" width={140} height={120} />
                   </div>
                   <div className="text-left md:text-[24px] font-semibold  ">
                     <p className="line-clamp-3">{item.description} </p>
@@ -146,9 +143,12 @@ const TestimonialSlider = () => {
         {...brands_setting}
         className="md:w-[60%] xl:w-[50%]  mx-auto  pt-10 brand-slider mt-10"
       >
-        {testimonial_svg.map((item, i) => (
-          <div key={i} className=" mx-auto">
-            <div className="cursor-pointer w-fit mx-auto">{item?.svg_img}</div>
+        {testimonial_img.map((item, i) => (
+          <div key={i} className="mx-auto flex justify-center items-center   h-full">
+            <div className="cursor-pointer w-[120px]   flex mx-auto">
+              <Image src={item?.img_url} width={150} height={120} alt="testimonial brands" className="rounded-xl"/>
+             
+              </div>
           </div>
         ))}
       </Slider>

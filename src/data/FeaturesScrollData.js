@@ -16,7 +16,6 @@ export const FeaturesScrollData = [
    
   },
   {
-    img1: fe4,
-    
+    img1: fe4,  
   },
 ];
