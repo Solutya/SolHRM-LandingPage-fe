@@ -6,7 +6,7 @@ const WhiteBtn = ({component=""}) => {
   return (
     <Link
       className={`tp-btn-white tp-btn-hover alt-color-black ${component === "nav"&&" max-md:hidden"}`}
-      href="https://demo.hrm.solutya.com" target='_blank'
+      href="https://hrm.demo.solutya.com" target='_blank'
     >
       <span className="white-text">View Demo</span>
       <b></b>

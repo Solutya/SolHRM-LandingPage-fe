@@ -60,7 +60,7 @@ const SideNavbar = ({ isOpen, setIsOpen }) => {
               ))}
             </div>
             <div className="w-fit pt-10 mx-auto">
-              <Link href='https://demo.hrm.solutya.com/' target='_blank' className="px-8 py-3 rounded-full bg-white text-myDark hover:text-white hover:bg-myBlue transition duration-500 font-semibold">
+              <Link href='https://hrm.demo.solutya.com/' target='_blank' className="px-8 py-3 rounded-full bg-white text-myDark hover:text-white hover:bg-myBlue transition duration-500 font-semibold">
               
               View Demo
               </Link>
